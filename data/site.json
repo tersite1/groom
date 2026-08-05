@@ -3,7 +3,7 @@
   "nameEn": "GROOM ILBO",
   "tagline": "논문을 읽고, 근거를 연결합니다",
   "description": "그룸일보는 인공지능 연구·안전·정책·생활 속 AI를 논문과 기관의 1차 자료에 근거해 설명하는 AI 전문 뉴스입니다.",
-  "url": "https://www.groomilbo.co.kr",
+  "url": "https://groom-rho.vercel.app",
   "indexable": true,
   "locale": "ko_KR",
   "language": "ko",
