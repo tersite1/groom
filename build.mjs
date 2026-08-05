@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * 그룸일보 정적 사이트 빌더
+ * AI 리서치 뉴스 정적 사이트 빌더
  *
  * data/site.json + data/articles.json -> dist/
  *   - 홈, 섹션 목록, 기사 본문, 검색, 404
@@ -20,6 +20,9 @@ const SRC = path.join(ROOT, 'src');
 
 const site = JSON.parse(await readFile(path.join(ROOT, 'data/site.json'), 'utf8'));
 const articles = JSON.parse(await readFile(path.join(ROOT, 'data/articles.json'), 'utf8'));
+const INDEXABLE = process.env.INDEXABLE == null
+  ? site.indexable === true
+  : process.env.INDEXABLE === 'true';
 
 /* ------------------------------------------------------------------ 유틸 */
 
@@ -87,8 +90,10 @@ function issueNumber(d) {
 }
 
 const url = (p) => `${site.url.replace(/\/$/, '')}${p}`;
+const absoluteUrl = (p) => /^https?:\/\//i.test(p) ? p : url(p.startsWith('/') ? p : `/${p}`);
 const articlePath = (a) => `/article/${a.id}.html`;
 const sectionPath = (s) => `/section/${s.slug}.html`;
+const subsectionId = (s, index) => `${s.slug}-topic-${index + 1}`;
 
 /* ------------------------------------------------- 플레이스홀더 일러스트 */
 
@@ -140,33 +145,69 @@ function placeholder(a, w = 1200, h = 800) {
 </svg>`;
 }
 
-const imgPath = (a) => `/assets/img/${a.id}.svg`;
+function imageData(a) {
+  const value = a.image;
+  if (typeof value === 'string') return { src: value };
+  if (value && typeof value === 'object' && (value.src || value.url)) return { ...value, src: value.src || value.url };
+  return { src: `/assets/img/${a.id}.svg` };
+}
+
+const imgPath = (a) => imageData(a).src;
+const publisherLogo = () => {
+  const configured = typeof site.logo === 'object' ? site.logo.src || site.logo.url : site.logo;
+  return absoluteUrl(configured || '/assets/img/og-default.svg');
+};
+
+function authorData(a) {
+  if (a.author && typeof a.author === 'object') return a.author;
+  const authorKey = a.authorId || (typeof a.author === 'string' ? a.author : a.reporter);
+  const configured = Array.isArray(site.authors)
+    ? site.authors.find((x) => x.name === a.reporter || x.id === authorKey)
+    : site.authors?.[authorKey];
+  return configured || { name: a.reporter };
+}
+
+function authorLabel(a) {
+  const author = authorData(a);
+  const type = author.type || author['@type'] || 'Person';
+  return `${author.name || a.reporter}${type === 'Organization' ? '' : ' 기자'}`;
+}
 
 /* ------------------------------------------------------------- 레이아웃 */
 
-function head({ title, description, canonical, image, type = 'website', extraJsonLd, keywords }) {
+function head({ title, description, canonical, image, imageAlt, type = 'website', extraJsonLd, keywords, articleTags, indexable = true, publishedAt, modifiedAt, articleAuthor, articleSection }) {
   const fullTitle = title === site.name ? `${site.name} — ${site.tagline}` : `${title} - ${site.name}`;
   const desc = description || site.description;
-  const img = url(image || '/assets/img/og-default.svg');
+  const img = absoluteUrl(image || '/assets/img/og-default.svg');
+  const keywordList = [...new Set([...(keywords || site.keywords), ...(site.keywordsEn || [])])];
+  const articleTagList = [...new Set(articleTags || [])];
   return `<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(fullTitle)}</title>
 <meta name="description" content="${attr(desc)}">
-<meta name="keywords" content="${attr((keywords || site.keywords).join(','))}">
-<meta name="author" content="${attr(site.name)}">
-<meta name="robots" content="noindex, nofollow">
+<meta name="keywords" content="${attr(keywordList.join(','))}">
+<meta name="author" content="${attr(articleAuthor || site.name)}">
+<meta name="robots" content="${INDEXABLE && indexable ? 'index, follow, max-image-preview:large' : 'noindex, nofollow'}">
 <link rel="canonical" href="${attr(url(canonical))}">
 <meta property="og:locale" content="${attr(site.locale)}">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:site_name" content="${attr(site.name)}">
 <meta property="og:type" content="${attr(type)}">
 <meta property="og:url" content="${attr(url(canonical))}">
 <meta property="og:title" content="${attr(fullTitle)}">
 <meta property="og:description" content="${attr(desc)}">
 <meta property="og:image" content="${attr(img)}">
+${imageAlt ? `<meta property="og:image:alt" content="${attr(imageAlt)}">` : ''}
+${type === 'article' && publishedAt ? `<meta property="article:published_time" content="${attr(isoDate(publishedAt))}">` : ''}
+${type === 'article' && modifiedAt ? `<meta property="article:modified_time" content="${attr(isoDate(modifiedAt))}">` : ''}
+${type === 'article' && articleAuthor ? `<meta property="article:author" content="${attr(articleAuthor)}">` : ''}
+${type === 'article' && articleSection ? `<meta property="article:section" content="${attr(articleSection)}">` : ''}
+${type === 'article' ? articleTagList.map((keyword) => `<meta property="article:tag" content="${attr(keyword)}">`).join('\n') : ''}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${attr(fullTitle)}">
 <meta name="twitter:description" content="${attr(desc)}">
 <meta name="twitter:image" content="${attr(img)}">
+${imageAlt ? `<meta name="twitter:image:alt" content="${attr(imageAlt)}">` : ''}
 <meta name="theme-color" content="#0A4DA6">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="${attr(site.name)} RSS" href="/rss.xml">
@@ -219,12 +260,34 @@ function gnb(active) {
 </nav>`;
 }
 
+/** 설정에 실제 원고가 있을 때만 신뢰·편집 정책 페이지를 만든다. */
+function infoPages() {
+  const candidates = [
+    ['about', '회사 소개'],
+    ['editorialPolicy', '편집 원칙'],
+    ['corrections', '정정·반론 정책'],
+  ];
+  return candidates.flatMap(([key, fallbackTitle]) => {
+    const value = site[key];
+    if (!value) return [];
+    const content = typeof value === 'string' ? value : value.content || value.body;
+    if (!content || (Array.isArray(content) && !content.length)) return [];
+    return [{
+      slug: key === 'editorialPolicy' ? 'editorial-policy' : key,
+      title: typeof value === 'object' && value.title ? value.title : fallbackTitle,
+      description: typeof value === 'object' && value.description ? value.description : `${site.name} ${fallbackTitle}`,
+      content: Array.isArray(content) ? content : [content],
+      modifiedAt: typeof value === 'object' ? value.modifiedAt : undefined,
+    }];
+  });
+}
+
 function footer() {
   const cols = site.sections
     .map(
       (s) => `<div class="sitemap__col">
       <h3 class="sitemap__head"><a href="${sectionPath(s)}">${esc(s.name)}</a></h3>
-      <ul class="sitemap__list">${s.children.map((c) => `<li><a href="${sectionPath(s)}#${encodeURIComponent(c)}">${esc(c)}</a></li>`).join('')}</ul>
+      <ul class="sitemap__list">${s.children.map((c, index) => `<li><a href="${sectionPath(s)}#${subsectionId(s, index)}">${esc(c)}</a></li>`).join('')}</ul>
     </div>`
     )
     .join('');
@@ -234,24 +297,29 @@ function footer() {
     .map(([k, v]) => `<span><b>${esc(k)}</b> ${esc(v)}</span>`)
     .join('');
 
+  const policyLinks = infoPages()
+    .map((p) => `<a href="/${p.slug}.html">${esc(p.title)}</a>`)
+    .join(' · ');
+
   return `<footer class="site-footer">
   <div class="wrap">
     <nav class="sitemap" aria-label="전체 메뉴">${cols}</nav>
     <div class="colophon">
       <a class="colophon__brand" href="/">${esc(site.name)}</a>
+      ${policyLinks ? `<nav class="colophon__policies" aria-label="언론사 안내">${policyLinks}</nav>` : ''}
       <div class="colophon__info">${info}</div>
       <p class="colophon__notice">${esc(site.demoNotice)}</p>
-      <p class="colophon__copy">© ${new Date(latestDate).getFullYear()} ${esc(site.publisher)}. 모든 콘텐츠는 예시용입니다.</p>
+      <p class="colophon__copy">© ${new Date(latestDate).getFullYear()} ${esc(site.publisher)}. ${esc(site.copyrightNotice || '원문 출처와 편집 원칙에 따라 콘텐츠를 제공합니다.')}</p>
     </div>
   </div>
 </footer>`;
 }
 
-function page({ title, description, canonical, image, type, extraJsonLd, keywords, active, body, bodyClass = '' }) {
+function page({ title, description, canonical, image, imageAlt, type, extraJsonLd, keywords, articleTags, active, body, bodyClass = '', indexable = true, publishedAt, modifiedAt, articleAuthor, articleSection }) {
   return `<!DOCTYPE html>
 <html lang="${attr(site.language)}">
 <head>
-${head({ title, description, canonical, image, type, extraJsonLd, keywords })}
+${head({ title, description, canonical, image, imageAlt, type, extraJsonLd, keywords, articleTags, indexable, publishedAt, modifiedAt, articleAuthor, articleSection })}
 </head>
 <body class="${bodyClass}">
 <a class="skip" href="#main">본문 바로가기</a>
@@ -293,7 +361,7 @@ function cardLead(a) {
       ${kicker(a)}
       <h2 class="lead__title">${esc(a.title)}</h2>
       <p class="lead__summary">${esc(a.summary)}</p>
-      <p class="byline"><span class="byline__name">${esc(a.reporter)} 기자</span>${timeTag(a)}</p>
+      <p class="byline"><span class="byline__name">${esc(authorLabel(a))}</span>${timeTag(a)}</p>
     </div>
   </a>
 </article>`;
@@ -319,7 +387,7 @@ function cardStandard(a, { summary = true } = {}) {
       ${kicker(a)}
       <h3 class="card__title">${esc(a.title)}</h3>
       ${summary ? `<p class="card__summary">${esc(a.summary)}</p>` : ''}
-      <p class="byline"><span class="byline__name">${esc(a.reporter)}</span>${timeTag(a)}</p>
+      <p class="byline"><span class="byline__name">${esc(authorLabel(a))}</span>${timeTag(a)}</p>
     </div>
   </a>
 </article>`;
@@ -354,7 +422,7 @@ function cardOpinion(a) {
   <a class="op__link" href="${articlePath(a)}">
     <span class="op__cat">${esc(a.sub)}</span>
     <h3 class="op__title">${esc(a.title)}</h3>
-    <span class="op__name">${esc(a.reporter)}</span>
+    <span class="op__name">${esc(authorLabel(a))}</span>
   </a>
 </article>`;
 }
@@ -378,6 +446,7 @@ function blockHead(title, moreHref, moreLabel = '전체보기') {
 /* ----------------------------------------------------------------- 홈 */
 
 function renderHome() {
+  const home = site.home || {};
   const used = new Set();
   const take = (list, n) => {
     const out = [];
@@ -397,9 +466,10 @@ function renderHome() {
   const popular = sorted.filter((a) => has(a, 'popular')).slice(0, 8);
   const opinions = sorted.filter((a) => has(a, 'opinion')).slice(0, 4);
   const medias = sorted.filter((a) => has(a, 'media')).slice(0, 4);
-  const locals = sorted.filter((a) => a.section === 'local').slice(0, 4);
+  const featureSection = sectionBySlug.get(home.featureSection || 'local');
+  const features = featureSection ? sorted.filter((a) => a.section === featureSection.slug).slice(0, 4) : [];
 
-  const secCols = ['economy', 'industry', 'society'].map((slug) => {
+  const secCols = (home.columns || ['economy', 'industry', 'society']).map((slug) => {
     const s = sectionBySlug.get(slug);
     const list = sorted.filter((a) => a.section === slug).slice(0, 4);
     if (!list.length) return '';
@@ -431,8 +501,8 @@ function renderHome() {
 <section class="block original-block">
   <div class="wrap">
     <div class="block__head block__head--invert">
-      <h2 class="block__title">그룸 오리지널</h2>
-      <span class="block__note">시간을 들여 확인한 기사</span>
+      <h2 class="block__title">${esc(home.originalTitle || '그룸 오리지널')}</h2>
+      <span class="block__note">${esc(home.originalNote || '시간을 들여 확인한 기사')}</span>
     </div>
     <div class="orig__rail">${originals.map(cardOriginal).join('')}</div>
   </div>
@@ -445,7 +515,7 @@ function renderHome() {
       <ol class="rank">${popular.map(cardRanked).join('')}</ol>
     </div>
     <aside class="split__side">
-      ${blockHead('오피니언', sectionPath(sectionBySlug.get('opinion')))}
+      ${blockHead(home.analysisTitle || '오피니언', sectionBySlug.get(home.analysisSection || 'opinion') ? sectionPath(sectionBySlug.get(home.analysisSection || 'opinion')) : null)}
       <div class="op__list">${opinions.map(cardOpinion).join('')}</div>
     </aside>
   </div>
@@ -460,15 +530,15 @@ function renderHome() {
 
 <section class="block">
   <div class="wrap">
-    ${blockHead('포토·영상', sectionPath(sectionBySlug.get('photo')))}
+    ${blockHead(home.mediaTitle || '포토·영상', sectionBySlug.get(home.mediaSection || 'photo') ? sectionPath(sectionBySlug.get(home.mediaSection || 'photo')) : null)}
     <div class="grid-4">${medias.map(cardMedia).join('')}</div>
   </div>
 </section>
 
 <section class="block">
   <div class="wrap">
-    ${blockHead('전국', sectionPath(sectionBySlug.get('local')))}
-    <div class="grid-4">${locals.map((a) => cardStandard(a, { summary: false })).join('')}</div>
+    ${blockHead(home.featureTitle || '전국', featureSection ? sectionPath(featureSection) : null)}
+    <div class="grid-4">${features.map((a) => cardStandard(a, { summary: false })).join('')}</div>
   </div>
 </section>`;
 
@@ -481,16 +551,32 @@ function renderHome() {
     bodyClass: 'is-home',
     extraJsonLd: {
       '@context': 'https://schema.org',
-      '@type': 'WebSite',
-      name: site.name,
-      url: site.url,
-      description: site.description,
-      inLanguage: site.language,
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: `${site.url}/search.html?q={search_term_string}`,
-        'query-input': 'required name=search_term_string',
-      },
+      '@graph': [
+        {
+          '@type': 'NewsMediaOrganization',
+          '@id': `${site.url.replace(/\/$/, '')}/#organization`,
+          name: site.publisher || site.name,
+          ...(site.nameEn ? { alternateName: site.nameEn } : {}),
+          url: site.url,
+          logo: { '@type': 'ImageObject', url: publisherLogo() },
+          ...(site.sameAs?.length ? { sameAs: site.sameAs } : {}),
+        },
+        {
+          '@type': 'WebSite',
+          name: site.name,
+          ...(site.nameEn ? { alternateName: site.nameEn } : {}),
+          url: site.url,
+          description: site.description,
+          ...(site.descriptionEn ? { abstract: site.descriptionEn } : {}),
+          inLanguage: site.language,
+          publisher: { '@id': `${site.url.replace(/\/$/, '')}/#organization` },
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: `${site.url.replace(/\/$/, '')}/search.html?q={search_term_string}`,
+            'query-input': 'required name=search_term_string',
+          },
+        },
+      ],
     },
   });
 }
@@ -506,7 +592,8 @@ function renderSection(s) {
   <div class="wrap">
     <nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span aria-hidden="true">›</span><span>${esc(s.name)}</span></nav>
     <h1 class="sec-title">${esc(s.name)}</h1>
-    <ul class="sec-subs">${s.children.map((c) => `<li id="${encodeURIComponent(c)}">${esc(c)}</li>`).join('')}</ul>
+    ${s.nameEn ? `<p class="sec-title-en" lang="en">${esc(s.nameEn)}</p>` : ''}
+    <ul class="sec-subs">${s.children.map((c, index) => `<li id="${subsectionId(s, index)}">${esc(c)}</li>`).join('')}</ul>
   </div>
 </section>
 ${top ? `<section class="block"><div class="wrap">${cardLead(top)}</div></section>` : ''}
@@ -521,12 +608,14 @@ ${top ? `<section class="block"><div class="wrap">${cardLead(top)}</div></sectio
     description: `${site.name} ${s.name} 기사 목록.`,
     canonical: sectionPath(s),
     active: s.slug,
-    keywords: [s.name, ...s.children],
+    keywords: [s.name, ...(s.nameEn ? [s.nameEn] : []), ...s.children, ...(s.childrenEn || [])],
     body,
+    indexable: s.indexable !== false,
     extraJsonLd: {
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
       name: `${s.name} - ${site.name}`,
+      ...(s.nameEn ? { alternateName: `${s.nameEn} - ${site.nameEn || site.name}` } : {}),
       url: url(sectionPath(s)),
       inLanguage: site.language,
     },
@@ -537,6 +626,16 @@ ${top ? `<section class="block"><div class="wrap">${cardLead(top)}</div></sectio
 
 function renderArticle(a) {
   const sec = sectionOf(a);
+  const image = imageData(a);
+  const author = authorData(a);
+  const modifiedAt = a.modifiedAt || a.updatedAt;
+  const sources = Array.isArray(a.sources) ? a.sources : [];
+  const articleTags = [...new Set([...(a.tags ?? []), ...(a.tagsEn ?? [])])];
+  const seriesArticles = a.series
+    ? articles
+      .filter((item) => item.series === a.series)
+      .sort((left, right) => new Date(left.publishedAt) - new Date(right.publishedAt))
+    : [];
   // 같은 섹션·태그를 우선 배치하고, 4건이 안 되면 최신 기사로 채운다.
   const picked = new Map();
   for (const x of sorted) {
@@ -561,25 +660,39 @@ function renderArticle(a) {
       </nav>
       <h1 class="art__title">${esc(a.title)}</h1>
       <p class="art__summary">${esc(a.summary)}</p>
+      ${a.titleEn ? `<p class="art__title-en" lang="en">${esc(a.titleEn)}</p>` : ''}
+      ${a.summaryEn ? `<p class="art__summary-en" lang="en">${esc(a.summaryEn)}</p>` : ''}
       <div class="art__meta">
-        <span class="art__reporter">${esc(a.reporter)}${a.reporter === site.name ? '' : ' 기자'}</span>
+        <span class="art__reporter">${esc(authorLabel(a))}</span>
         <span class="art__dot" aria-hidden="true">·</span>
         <time datetime="${attr(isoDate(a.publishedAt))}">입력 ${esc(fmtDateTime(a.publishedAt))}</time>
+        ${modifiedAt ? `<span class="art__dot" aria-hidden="true">·</span><time datetime="${attr(isoDate(modifiedAt))}">수정 ${esc(fmtDateTime(modifiedAt))}</time>` : ''}
       </div>
     </header>
 
-    <figure class="art__figure">
-      <img src="${imgPath(a)}" alt="" width="1200" height="800">
-      <figcaption>기사 내용과 직접 관련 없는 이미지 자리입니다.</figcaption>
+    <figure class="art__figure${image.fit === 'contain' ? ' art__figure--contain' : ''}">
+      <img src="${attr(imgPath(a))}" alt="${attr(image.alt || a.imageAlt || a.alt || '')}" width="${attr(image.width || 1200)}" height="${attr(image.height || 800)}">
+      ${(image.caption || a.imageCaption || a.caption || image.credit || a.imageCredit || a.credit || !a.image) ? `<figcaption>${esc(image.caption || a.imageCaption || a.caption || (!a.image ? '기사 내용과 직접 관련 없는 이미지 자리입니다.' : ''))}${image.credit || a.imageCredit || a.credit ? `${image.caption || a.imageCaption || a.caption ? ' · ' : ''}${esc(image.credit || a.imageCredit || a.credit)}` : ''}</figcaption>` : ''}
     </figure>
 
     <div class="art__body">
       ${a.body.map((p) => `<p>${esc(p)}</p>`).join('\n      ')}
     </div>
 
+    ${a.keyQuote ? `<blockquote class="art__keyquote">${esc(a.keyQuote)}</blockquote>` : ''}
+
+    ${seriesArticles.length > 1 ? `<aside class="art__timeline" aria-labelledby="article-timeline"><h2 id="article-timeline">컨퍼런스 활동 연대표</h2><ol>${seriesArticles.map((item) => `<li${item.id === a.id ? ' aria-current="page"' : ''}><a href="${articlePath(item)}"><strong>${esc(item.timelineLabel || fmtDate(item.publishedAt))}</strong><span>${esc(item.timelineSummary || item.title)}</span></a></li>`).join('')}</ol></aside>` : ''}
+
+    ${sources.length ? `<aside class="art__sources" aria-labelledby="article-sources"><h2 id="article-sources">자료·출처</h2><ul>${sources.map((source) => {
+      const item = typeof source === 'string' ? { url: source, title: source } : source;
+      const href = item.url || item.href;
+      if (!href) return `<li>${esc(item.title || item.name || item.label || '')}</li>`;
+      return `<li><a href="${attr(href)}" rel="noopener noreferrer">${esc(item.title || item.name || item.label || href)}</a>${item.publisher ? ` — ${esc(item.publisher)}` : ''}</li>`;
+    }).join('')}</ul></aside>` : ''}
+
     ${a.tags?.length ? `<ul class="art__tags">${a.tags.map((t) => `<li><a href="/search.html?q=${encodeURIComponent(t)}">#${esc(t)}</a></li>`).join('')}</ul>` : ''}
 
-    <p class="art__notice">${esc(site.demoNotice)}</p>
+    <p class="art__notice">${esc(a.disclaimer || site.demoNotice)}</p>
   </div>
 </article>
 
@@ -595,8 +708,14 @@ ${related.length ? `<section class="block band">
     description: a.summary,
     canonical: articlePath(a),
     image: imgPath(a),
+    imageAlt: image.alt || a.imageAlt || a.alt,
     type: 'article',
-    keywords: [...(a.tags ?? []), sec.name],
+    keywords: [...articleTags, sec.name, ...(sec.nameEn ? [sec.nameEn] : [])],
+    articleTags,
+    publishedAt: a.publishedAt,
+    modifiedAt: modifiedAt || a.publishedAt,
+    articleAuthor: author.name || a.reporter,
+    articleSection: sec.name,
     active: sec.slug,
     body,
     bodyClass: 'is-article',
@@ -604,17 +723,27 @@ ${related.length ? `<section class="block band">
       '@context': 'https://schema.org',
       '@type': 'NewsArticle',
       headline: a.title,
+      ...(a.titleEn ? { alternativeHeadline: a.titleEn } : {}),
       description: a.summary,
+      ...(a.summaryEn ? { abstract: a.summaryEn } : {}),
       inLanguage: site.language,
       datePublished: isoDate(a.publishedAt),
-      dateModified: isoDate(a.publishedAt),
+      dateModified: isoDate(modifiedAt || a.publishedAt),
       articleSection: sec.name,
-      keywords: (a.tags ?? []).join(', '),
+      keywords: articleTags.join(', '),
       mainEntityOfPage: { '@type': 'WebPage', '@id': url(articlePath(a)) },
-      image: [url(imgPath(a))],
-      author: { '@type': 'Person', name: a.reporter },
-      publisher: { '@type': 'Organization', name: site.publisher },
-      isBasedOn: 'fictional sample data',
+      image: [absoluteUrl(imgPath(a))],
+      author: {
+        '@type': author.type || author['@type'] || 'Person',
+        name: author.name || a.reporter,
+        ...(author.url ? { url: absoluteUrl(author.url) } : {}),
+      },
+      publisher: {
+        '@type': 'NewsMediaOrganization',
+        name: site.publisher || site.name,
+        logo: { '@type': 'ImageObject', url: publisherLogo() },
+      },
+      ...(sources.length ? { citation: sources.map((source) => typeof source === 'string' ? source : source.url || source.href).filter(Boolean) } : {}),
     },
   });
 }
@@ -641,6 +770,7 @@ function renderSearch() {
     active: null,
     body,
     bodyClass: 'is-search',
+    indexable: false,
   });
 }
 
@@ -654,36 +784,39 @@ function render404() {
     <p><a class="btn" href="/">홈으로 이동</a></p>
   </div>
 </section>`;
-  return page({ title: '페이지를 찾을 수 없습니다', canonical: '/404.html', active: null, body });
+  return page({ title: '페이지를 찾을 수 없습니다', canonical: '/404.html', active: null, body, indexable: false });
+}
+
+function renderInfoPage(info) {
+  const body = `<article class="art"><div class="wrap art__wrap">
+    <header class="art__head"><nav class="crumb" aria-label="현재 위치"><a href="/">홈</a><span aria-hidden="true">›</span><span>${esc(info.title)}</span></nav><h1 class="art__title">${esc(info.title)}</h1></header>
+    <div class="art__body">${info.content.map((p) => `<p>${esc(p)}</p>`).join('\n')}</div>
+  </div></article>`;
+  return page({ title: info.title, description: info.description, canonical: `/${info.slug}.html`, body });
 }
 
 /* ---------------------------------------------------- robots / sitemap */
 
 /**
- * 데모 상태에서는 전체 색인을 차단한다.
- * 실제 편집 콘텐츠로 교체한 뒤 INDEXABLE=true 로 빌드하면 허용 규칙이 출력된다.
+ * 비공개 빌드에서는 전체 색인을 차단한다.
+ * 운영 설정 또는 INDEXABLE=true 빌드에서는 공개 기사만 색인한다.
  */
-const INDEXABLE = process.env.INDEXABLE === 'true';
-
 function robotsTxt() {
   if (!INDEXABLE) {
     return `# ${site.name}
-# 이 빌드는 가상의 예시 기사로 채워진 데모입니다.
-# 검색엔진 및 AI 크롤러 색인을 전면 차단합니다.
-# 실제 편집 콘텐츠로 교체한 뒤 INDEXABLE=true 로 빌드하면 허용 규칙이 생성됩니다.
+# 비공개 검수용 빌드입니다.
+# 검색엔진 및 AI 크롤러의 접근을 전면 차단합니다.
 
 User-agent: *
 Disallow: /
 
 Sitemap: ${url('/sitemap.xml')}
+Sitemap: ${url('/sitemap-news.xml')}
 `;
   }
   return `# ${site.name}
 User-agent: *
 Allow: /
-Disallow: /search.html
-Disallow: /404.html
-Crawl-delay: 1
 
 Sitemap: ${url('/sitemap.xml')}
 Sitemap: ${url('/sitemap-news.xml')}
@@ -691,9 +824,10 @@ Sitemap: ${url('/sitemap-news.xml')}
 }
 
 function sitemapXml() {
+  if (!INDEXABLE) return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>\n`;
   const entries = [
     { loc: url('/'), lastmod: isoDate(latestDate), changefreq: 'hourly', priority: '1.0' },
-    ...site.sections.map((s) => {
+    ...site.sections.filter((s) => s.indexable !== false).map((s) => {
       const list = sorted.filter((a) => a.section === s.slug);
       return {
         loc: url(sectionPath(s)),
@@ -704,9 +838,15 @@ function sitemapXml() {
     }),
     ...sorted.map((a) => ({
       loc: url(articlePath(a)),
-      lastmod: isoDate(a.publishedAt),
+      lastmod: isoDate(a.modifiedAt || a.updatedAt || a.publishedAt),
       changefreq: 'daily',
       priority: '0.6',
+    })),
+    ...infoPages().map((p) => ({
+      loc: url(`/${p.slug}.html`),
+      lastmod: isoDate(p.modifiedAt || latestDate),
+      changefreq: 'monthly',
+      priority: '0.5',
     })),
   ];
 
@@ -728,8 +868,11 @@ ${entries
 
 /** Google News 사이트맵은 최근 2일치만 포함하는 것이 규격이다. */
 function newsSitemapXml() {
-  const cutoff = new Date(latestDate.getTime() - 2 * 86400000);
-  const recent = sorted.filter((a) => new Date(a.publishedAt) >= cutoff);
+  const now = new Date();
+  const cutoff = new Date(now.getTime() - 2 * 86400000);
+  const recent = INDEXABLE
+    ? sorted.filter((a) => new Date(a.publishedAt) >= cutoff && new Date(a.publishedAt) <= now).slice(0, 1000)
+    : [];
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
@@ -762,7 +905,7 @@ function rssXml() {
       <guid isPermaLink="true">${esc(url(articlePath(a)))}</guid>
       <description>${esc(a.summary)}</description>
       <category>${esc(sectionOf(a).name)}</category>
-      <dc:creator>${esc(a.reporter)}</dc:creator>
+      <dc:creator>${esc(authorData(a).name || a.reporter)}</dc:creator>
       <pubDate>${new Date(a.publishedAt).toUTCString()}</pubDate>
     </item>`
     )
@@ -788,14 +931,17 @@ function searchIndexJson() {
     sorted.map((a) => ({
       id: a.id,
       t: a.title,
+      te: a.titleEn ?? '',
       s: a.summary,
+      se: a.summaryEn ?? '',
       sec: sectionOf(a).name,
       sub: a.sub ?? '',
-      r: a.reporter,
+      r: authorData(a).name || a.reporter,
       d: fmtDateTime(a.publishedAt),
       u: articlePath(a),
       i: imgPath(a),
       g: a.tags ?? [],
+      ge: a.tagsEn ?? [],
     }))
   );
 }
@@ -819,11 +965,14 @@ if (existsSync(path.join(SRC, 'assets'))) {
 await write('index.html', renderHome());
 for (const s of site.sections) await write(`section/${s.slug}.html`, renderSection(s));
 for (const a of articles) await write(`article/${a.id}.html`, renderArticle(a));
+for (const info of infoPages()) await write(`${info.slug}.html`, renderInfoPage(info));
 await write('search.html', renderSearch());
 await write('404.html', render404());
 
 // 이미지
-for (const a of articles) await write(`assets/img/${a.id}.svg`, placeholder(a));
+for (const a of articles) {
+  if (imgPath(a) === `/assets/img/${a.id}.svg`) await write(`assets/img/${a.id}.svg`, placeholder(a));
+}
 await write(
   'assets/img/og-default.svg',
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">

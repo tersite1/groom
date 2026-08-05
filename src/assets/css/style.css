@@ -825,6 +825,14 @@ time {
   letter-spacing: -0.03em;
 }
 
+.sec-title-en {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
 .sec-subs {
   display: flex;
   flex-wrap: wrap;
@@ -877,6 +885,20 @@ time {
   color: var(--ink-2);
 }
 
+.art__title-en {
+  margin: 16px 0 8px;
+  color: var(--brand-dk);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.art__summary-en {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 .art__meta {
   display: flex;
   align-items: center;
@@ -905,6 +927,13 @@ time {
   object-fit: cover;
 }
 
+.art__figure--contain img {
+  height: min(78vh, 900px);
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: var(--night);
+}
+
 .art__figure figcaption {
   margin-top: 8px;
   font-size: 12.5px;
@@ -922,6 +951,72 @@ time {
 .art__body p:first-child {
   font-size: 18.5px;
   font-weight: 500;
+}
+
+.art__keyquote {
+  margin: 32px 0;
+  padding: 20px 24px;
+  border-left: 4px solid var(--brand);
+  background: var(--band);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.art__timeline {
+  margin-top: 30px;
+  padding: 20px;
+  background: var(--night);
+  color: #fff;
+}
+
+.art__timeline h2 {
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+.art__timeline li + li {
+  margin-top: 12px;
+}
+
+.art__timeline a {
+  display: grid;
+  grid-template-columns: minmax(130px, 0.35fr) 1fr;
+  gap: 12px;
+  color: #d8e8f6;
+}
+
+.art__timeline li[aria-current='page'] a,
+.art__timeline a:hover {
+  color: #fff;
+}
+
+.art__timeline li[aria-current='page'] strong {
+  color: var(--accent);
+}
+
+.art__sources {
+  margin-top: 30px;
+  padding: 20px;
+  background: var(--band);
+  border-top: 2px solid var(--brand);
+}
+
+.art__sources h2 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.art__sources li + li {
+  margin-top: 7px;
+}
+
+.art__sources a {
+  color: var(--brand-dk);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .art__tags {
@@ -1065,6 +1160,18 @@ time {
   font-size: 22px;
   font-weight: 900;
   color: #fff;
+}
+
+.colophon__policies {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #cfe4f7;
+}
+
+.colophon__policies a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .colophon__info {

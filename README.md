@@ -1,12 +1,13 @@
-# 그룸일보
+# AI 리서치 뉴스
 
-한국형 종합 일간지 레이아웃의 정적 뉴스 사이트. 기사 데이터(JSON)만 넣으면 홈·섹션 목록·기사 본문·검색·사이트맵·RSS가 자동 생성된다. 런타임 의존성 없음.
+논문·공식 연구자료 등 1차 출처를 연결하는 AI 연구·안전 전문 정적 뉴스 사이트. 기사 데이터(JSON)로 홈·섹션·기사·검색·사이트맵·뉴스 사이트맵·RSS를 생성하며 런타임 의존성이 없다.
 
 ## 실행
 
 ```bash
 npm run build     # dist/ 생성
 npm run dev       # 빌드 후 http://localhost:4173 서빙
+npm test          # INDEXABLE=true 빌드 후 SEO 불변조건 검증
 ```
 
 Node 18+ 필요. 외부 패키지를 설치하지 않는다.
@@ -34,6 +35,14 @@ dist/                빌드 산출물
   "sub": "환경",
   "reporter": "정한결",
   "publishedAt": "2026-08-05T06:00:00+09:00",
+  "modifiedAt": "2026-08-05T08:00:00+09:00",
+  "image": {
+    "src": "/assets/img/report.webp",
+    "alt": "연구 결과를 검토하는 연구진",
+    "caption": "연구진이 안전성 평가 결과를 검토하고 있다.",
+    "credit": "그룸일보"
+  },
+  "sources": [{ "title": "연구 보고서", "url": "https://example.org/report" }],
   "tags": ["폭염", "전력수급"],
   "flags": ["lead"],
   "body": ["첫 문단", "둘째 문단"]
@@ -54,24 +63,25 @@ dist/                빌드 산출물
 | `opinion` | 오피니언 사이드바 (4건) |
 | `media` | 포토·영상 (4건) |
 
-flag 가 없어도 섹션 목록·검색·사이트맵에는 모두 포함된다. 1면 슬롯은 최신순으로 채우고 중복 배치하지 않는다.
+flag가 없어도 모든 기사는 섹션 목록·검색·사이트맵에 포함된다. 1면 슬롯은 최신순으로 채운다.
 
 ## 이미지
 
-기사 이미지는 `id` 를 시드로 한 추상 도형 SVG가 자동 생성된다(`dist/assets/img/<id>.svg`). 사진이 아님을 분명히 하려고 의도적으로 기하 도형만 쓴다. 실제 사진으로 교체하려면 `build.mjs` 의 `imgPath()` 가 기사별 이미지 경로를 반환하도록 바꾸면 된다.
+기사에 `image`(문자열 경로 또는 위 예시 객체)를 지정하면 해당 WebP/JPEG/PNG 경로를 카드, 본문, Open Graph, JSON-LD에서 그대로 사용한다. `image`가 없는 기사에만 `dist/assets/img/<id>.svg` 대체 이미지가 생성된다. `sources`는 기사 하단에 실제 링크로 표시된다.
 
 ## 색인 정책
 
-**기본값은 색인 전면 차단이다.** `data/articles.json` 이 가상의 예시 기사로 채워져 있기 때문이다.
+운영 설정은 `data/site.json`의 `indexable`로 관리하며 현재는 공개 기사 색인이 활성화돼 있다. 모든 기사는 동일한 색인 정책과 SEO 메타데이터를 적용받는다.
 
 ```bash
-node build.mjs                  # robots.txt -> Disallow: /
-INDEXABLE=true node build.mjs   # robots.txt -> Allow: / + news 사이트맵 노출
+npm run build                    # site.json의 indexable 정책으로 빌드(현재 운영값 true)
+INDEXABLE=false node build.mjs   # 로컬 검수·비공개 미리보기: 전체 noindex/Disallow
+INDEXABLE=true node build.mjs    # 운영 강제값: 공개 기사 색인 + 뉴스 사이트맵 노출
 ```
 
-`INDEXABLE=true` 는 실제 편집 콘텐츠로 교체한 뒤에만 쓴다. 예시 데이터를 그대로 둔 채 색인을 열면 사실이 아닌 기사가 검색엔진과 AI 크롤러에 수집된다.
+환경변수가 없으면 `data/site.json`의 `indexable`을 따른다. 공개 빌드에서는 기사 유형과 관계없이 동일한 `NewsArticle`·사이트맵·RSS 정책을 적용한다.
 
-HTML `<meta name="robots">` 도 같은 스위치를 따르도록 하려면 `build.mjs` 의 `head()` 에서 `INDEXABLE` 을 참조하도록 바꾼다(현재는 항상 `noindex, nofollow`).
+HTML `<meta name="robots">`도 같은 스위치를 따른다. 검색과 404는 `INDEXABLE=true`에서도 항상 `noindex, nofollow`이며 사이트맵에서 제외된다.
 
 ## 생성되는 SEO 자산
 
@@ -81,6 +91,11 @@ HTML `<meta name="robots">` 도 같은 스위치를 따르도록 하려면 `buil
 - `search-index.json` — 클라이언트 검색용 색인
 - 페이지별 canonical, Open Graph, Twitter Card
 - JSON-LD: 홈 `WebSite`+`SearchAction`, 섹션 `CollectionPage`, 기사 `NewsArticle`
+- JSON-LD: 홈 `NewsMediaOrganization`, 기사별 수정일·저자 프로필·대표 이미지·발행사 로고 지원
+- 모든 기사에 동일한 `NewsArticle` 구조화 데이터와 canonical·대표 이미지·저자·발행사 정보를 적용
+- 선택적 `titleEn`·`summaryEn`·`tagsEn`을 화면, JSON-LD, 메타 키워드, 내부 검색에 함께 반영
+
+`site.json`에 `about`, `editorialPolicy`, `corrections` 원고(문자열, 배열 또는 `{ title, description, body }`)를 넣으면 해당 안내 페이지가 푸터와 사이트맵에 자동 추가된다. 설정에 없는 조직 이력이나 정책은 생성하지 않는다. `authors` 설정(배열 또는 객체)에 `name`, `type`, `url`을 두면 기사 JSON-LD 저자 프로필에도 반영된다.
 
 ## 접근성·성능
 

@@ -1,4 +1,4 @@
-/* 그룸일보 — 클라이언트 스크립트 (검색 전용, 의존성 없음) */
+/* AI 리서치 뉴스 — 클라이언트 검색 (의존성 없음) */
 
 (function () {
   'use strict';
@@ -32,8 +32,10 @@
 
   function score(item, terms) {
     var title = item.t.toLowerCase();
+    var titleEn = (item.te || '').toLowerCase();
     var summary = item.s.toLowerCase();
-    var tags = item.g.join(' ').toLowerCase();
+    var summaryEn = (item.se || '').toLowerCase();
+    var tags = item.g.concat(item.ge || []).join(' ').toLowerCase();
     var meta = (item.sec + ' ' + item.sub + ' ' + item.r).toLowerCase();
     var total = 0;
 
@@ -41,8 +43,10 @@
       var t = terms[i];
       var hit = 0;
       if (title.indexOf(t) !== -1) hit += 10;
+      if (titleEn.indexOf(t) !== -1) hit += 9;
       if (tags.indexOf(t) !== -1) hit += 6;
       if (summary.indexOf(t) !== -1) hit += 3;
+      if (summaryEn.indexOf(t) !== -1) hit += 3;
       if (meta.indexOf(t) !== -1) hit += 2;
       if (hit === 0) return 0; // 모든 검색어를 포함해야 한다
       total += hit;

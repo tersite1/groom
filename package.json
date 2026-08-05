@@ -1,11 +1,13 @@
 {
-  "name": "groomilbo",
+  "name": "ai-research-news",
   "version": "1.0.0",
   "private": true,
-  "description": "그룸일보 - 종합 일간지 정적 사이트",
+  "description": "AI 리서치 뉴스 - 출처 기반 AI 연구·안전 전문 정적 뉴스 사이트",
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "test": "npm run validate",
     "serve": "node build.mjs && node --run serve:only",
     "serve:only": "npx --yes serve dist -l 4173",
     "dev": "node build.mjs && python3 -m http.server 4173 --directory dist"
