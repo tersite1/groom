@@ -48,7 +48,7 @@
     "sub": "박사과정",
     "reporter": "그룸일보",
     "authorId": "safety",
-    "publishedAt": "2026-08-05T15:20:00+09:00",
+    "publishedAt": "2026-07-28T15:20:00+09:00",
     "tags": [
       "KAIST",
       "함석일",
@@ -96,7 +96,7 @@
     "sub": "멀티에이전트",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-05T15:00:00+09:00",
+    "publishedAt": "2026-07-19T15:00:00+09:00",
     "tags": [
       "KAIST",
       "곽지석",
@@ -139,7 +139,7 @@
     "sub": "안전 과학",
     "reporter": "그룸일보",
     "authorId": "safety",
-    "publishedAt": "2026-08-05T14:40:00+09:00",
+    "publishedAt": "2026-07-13T14:40:00+09:00",
     "tags": [
       "국제 AI 안전 보고서",
       "일반목적 AI",
@@ -174,7 +174,7 @@
     "sub": "생명과학",
     "reporter": "그룸일보",
     "authorId": "science",
-    "publishedAt": "2026-08-05T14:20:00+09:00",
+    "publishedAt": "2026-07-06T14:20:00+09:00",
     "tags": [
       "AlphaFold 3",
       "단백질",
@@ -215,7 +215,7 @@
     "sub": "위험관리",
     "reporter": "그룸일보",
     "authorId": "safety",
-    "publishedAt": "2026-08-05T14:00:00+09:00",
+    "publishedAt": "2026-07-01T14:00:00+09:00",
     "tags": [
       "NIST",
       "생성형 AI",
@@ -257,7 +257,7 @@
     "sub": "법·제도",
     "reporter": "그룸일보",
     "authorId": "policy",
-    "publishedAt": "2026-08-05T13:40:00+09:00",
+    "publishedAt": "2026-06-24T13:40:00+09:00",
     "tags": [
       "EU AI Act",
       "AI 규제",
@@ -297,7 +297,7 @@
     "sub": "노동",
     "reporter": "그룸일보",
     "authorId": "policy",
-    "publishedAt": "2026-08-05T13:20:00+09:00",
+    "publishedAt": "2026-06-18T13:20:00+09:00",
     "tags": [
       "ILO",
       "생성형 AI",
@@ -338,7 +338,7 @@
     "sub": "핵심 논문",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-05T12:55:00+09:00",
+    "publishedAt": "2026-06-08T12:55:00+09:00",
     "tags": [
       "Transformer",
       "Attention",
@@ -373,7 +373,7 @@
     "sub": "학습 방법",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-05T12:40:00+09:00",
+    "publishedAt": "2026-06-01T12:40:00+09:00",
     "tags": [
       "Chinchilla",
       "스케일링 법칙",
@@ -415,7 +415,7 @@
     "sub": "정렬",
     "reporter": "그룸일보",
     "authorId": "safety",
-    "publishedAt": "2026-08-05T12:25:00+09:00",
+    "publishedAt": "2026-05-27T12:25:00+09:00",
     "tags": [
       "Constitutional AI",
       "RLAIF",
@@ -457,7 +457,7 @@
     "sub": "모델 구조",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-05T12:10:00+09:00",
+    "publishedAt": "2026-05-20T12:10:00+09:00",
     "tags": [
       "Mamba",
       "상태공간 모델",
@@ -492,7 +492,7 @@
     "sub": "컴퓨터비전",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-05T11:55:00+09:00",
+    "publishedAt": "2026-05-14T11:55:00+09:00",
     "tags": [
       "DINOv2",
       "자기지도학습",
@@ -534,7 +534,7 @@
     "sub": "생성모델",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-05T11:40:00+09:00",
+    "publishedAt": "2026-05-06T11:40:00+09:00",
     "tags": [
       "Latent Diffusion",
       "이미지 생성",
@@ -576,7 +576,7 @@
     "sub": "멀티모달",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-05T11:25:00+09:00",
+    "publishedAt": "2026-05-02T11:25:00+09:00",
     "tags": [
       "Gemini 1.5",
       "긴 문맥",
@@ -623,7 +623,7 @@
     "sub": "생성 비디오",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-05T11:10:00+09:00",
+    "publishedAt": "2026-04-24T11:10:00+09:00",
     "tags": [
       "Sora",
       "비디오 생성",
@@ -665,7 +665,7 @@
     "sub": "컴퓨터비전",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-05T10:55:00+09:00",
+    "publishedAt": "2026-04-18T10:55:00+09:00",
     "tags": [
       "SAM 2",
       "객체 분할",
@@ -712,7 +712,7 @@
     "sub": "VLA",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-05T10:40:00+09:00",
+    "publishedAt": "2026-04-11T10:40:00+09:00",
     "tags": [
       "RT-2",
       "VLA",
@@ -752,7 +752,7 @@
     "sub": "조작",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-05T10:25:00+09:00",
+    "publishedAt": "2026-04-03T10:25:00+09:00",
     "tags": [
       "Mobile ALOHA",
       "로봇 조작",
@@ -799,7 +799,7 @@
     "sub": "오픈 로봇",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-05T10:10:00+09:00",
+    "publishedAt": "2026-03-29T10:10:00+09:00",
     "tags": [
       "OpenVLA",
       "오픈소스",
@@ -846,7 +846,7 @@
     "sub": "단백질",
     "reporter": "그룸일보",
     "authorId": "science",
-    "publishedAt": "2026-08-05T09:55:00+09:00",
+    "publishedAt": "2026-03-21T09:55:00+09:00",
     "tags": [
       "AlphaFold 2",
       "단백질 구조",
@@ -888,7 +888,7 @@
     "sub": "신소재",
     "reporter": "그룸일보",
     "authorId": "science",
-    "publishedAt": "2026-08-05T09:40:00+09:00",
+    "publishedAt": "2026-03-16T09:40:00+09:00",
     "tags": [
       "GNoME",
       "신소재",
@@ -935,7 +935,7 @@
     "sub": "의료 모델",
     "reporter": "그룸일보",
     "authorId": "science",
-    "publishedAt": "2026-08-05T09:25:00+09:00",
+    "publishedAt": "2026-03-08T09:25:00+09:00",
     "tags": [
       "Med-Gemini",
       "의료 AI",
@@ -975,7 +975,7 @@
     "sub": "프레임워크",
     "reporter": "그룸일보",
     "authorId": "safety",
-    "publishedAt": "2026-08-05T09:10:00+09:00",
+    "publishedAt": "2026-03-03T09:10:00+09:00",
     "tags": [
       "NIST AI RMF",
       "위험관리",
@@ -1022,7 +1022,7 @@
     "sub": "국제 규범",
     "reporter": "그룸일보",
     "authorId": "policy",
-    "publishedAt": "2026-08-05T08:55:00+09:00",
+    "publishedAt": "2026-02-24T08:55:00+09:00",
     "tags": [
       "유럽평의회",
       "AI 협약",
@@ -1070,7 +1070,7 @@
     "sub": "글로벌 거버넌스",
     "reporter": "그룸일보",
     "authorId": "policy",
-    "publishedAt": "2026-08-05T08:40:00+09:00",
+    "publishedAt": "2026-02-15T08:40:00+09:00",
     "tags": [
       "AI 서울 정상회의",
       "서울 선언",
@@ -1110,7 +1110,7 @@
     "sub": "원문 해설",
     "reporter": "그룸일보",
     "authorId": "policy",
-    "publishedAt": "2026-08-05T08:25:00+09:00",
+    "publishedAt": "2026-02-09T08:25:00+09:00",
     "tags": [
       "블레츨리 선언",
       "프런티어 AI",
@@ -1152,7 +1152,7 @@
     "sub": "벤치마크 읽기",
     "reporter": "그룸일보",
     "authorId": "safety",
-    "publishedAt": "2026-08-05T08:10:00+09:00",
+    "publishedAt": "2026-02-02T08:10:00+09:00",
     "tags": [
       "위험 능력 평가",
       "Gemini",
@@ -1199,7 +1199,7 @@
     "sub": "책임 배포",
     "reporter": "그룸일보",
     "authorId": "safety",
-    "publishedAt": "2026-08-05T07:55:00+09:00",
+    "publishedAt": "2026-01-28T07:55:00+09:00",
     "tags": [
       "Frontier Safety Framework",
       "CCL",
@@ -1241,7 +1241,7 @@
     "sub": "평가 도구",
     "reporter": "그룸일보",
     "authorId": "safety",
-    "publishedAt": "2026-08-05T07:40:00+09:00",
+    "publishedAt": "2026-01-21T07:40:00+09:00",
     "tags": [
       "Inspect",
       "UK AISI",
@@ -1288,7 +1288,7 @@
     "sub": "AI 보안",
     "reporter": "그룸일보",
     "authorId": "safety",
-    "publishedAt": "2026-08-05T07:25:00+09:00",
+    "publishedAt": "2026-01-16T07:25:00+09:00",
     "tags": [
       "CISA",
       "NCSC",
@@ -1330,7 +1330,7 @@
     "sub": "교육",
     "reporter": "그룸일보",
     "authorId": "policy",
-    "publishedAt": "2026-08-05T07:10:00+09:00",
+    "publishedAt": "2026-01-07T07:10:00+09:00",
     "tags": [
       "UNESCO",
       "생성형 AI",
@@ -2103,7 +2103,7 @@
     "sub": "언어 표현",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-06-17T07:00:00+09:00",
+    "publishedAt": "2026-01-05T07:00:00+09:00",
     "sourcePublishedAt": "2018-10-11T00:50:01Z",
     "tags": [
       "BERT",
@@ -2152,7 +2152,7 @@
     "sub": "검색 증강 생성",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-06-18T07:00:00+09:00",
+    "publishedAt": "2026-01-10T07:00:00+09:00",
     "sourcePublishedAt": "2020-05-22T21:34:34Z",
     "tags": [
       "RAG",
@@ -2201,7 +2201,7 @@
     "sub": "벤치마크",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-06-19T07:00:00+09:00",
+    "publishedAt": "2026-01-12T07:00:00+09:00",
     "sourcePublishedAt": "2020-09-07T17:59:25Z",
     "tags": [
       "MMLU",
@@ -2250,7 +2250,7 @@
     "sub": "학습 데이터",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-06-20T07:00:00+09:00",
+    "publishedAt": "2026-01-18T07:00:00+09:00",
     "sourcePublishedAt": "2020-12-31T19:00:10Z",
     "tags": [
       "The Pile",
@@ -2299,7 +2299,7 @@
     "sub": "희소 전문가 모델",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-06-21T07:00:00+09:00",
+    "publishedAt": "2026-01-23T07:00:00+09:00",
     "sourcePublishedAt": "2021-01-11T16:11:52Z",
     "tags": [
       "Switch Transformer",
@@ -2348,7 +2348,7 @@
     "sub": "시각-언어 모델",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-06-22T07:00:00+09:00",
+    "publishedAt": "2026-01-26T07:00:00+09:00",
     "sourcePublishedAt": "2021-02-26T19:04:58Z",
     "tags": [
       "CLIP",
@@ -2397,7 +2397,7 @@
     "sub": "효율적 미세조정",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-06-23T07:00:00+09:00",
+    "publishedAt": "2026-01-31T07:00:00+09:00",
     "sourcePublishedAt": "2021-06-17T17:37:18Z",
     "tags": [
       "LoRA",
@@ -2446,7 +2446,7 @@
     "sub": "진실성 평가",
     "reporter": "그룸일보",
     "authorId": "safety",
-    "publishedAt": "2026-06-24T07:00:00+09:00",
+    "publishedAt": "2026-02-04T07:00:00+09:00",
     "sourcePublishedAt": "2021-09-08T17:15:27Z",
     "tags": [
       "TruthfulQA",
@@ -2495,7 +2495,7 @@
     "sub": "채용 알고리즘",
     "reporter": "그룸일보",
     "authorId": "policy",
-    "publishedAt": "2026-06-25T07:00:00+09:00",
+    "publishedAt": "2026-02-07T07:00:00+09:00",
     "sourcePublishedAt": "2022-05-12T00:00:00Z",
     "tags": [
       "EEOC",
@@ -2544,7 +2544,7 @@
     "sub": "시스템 최적화",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-06-26T07:00:00+09:00",
+    "publishedAt": "2026-02-13T07:00:00+09:00",
     "sourcePublishedAt": "2022-05-27T17:53:09Z",
     "tags": [
       "FlashAttention",
@@ -2593,7 +2593,7 @@
     "sub": "종합 평가",
     "reporter": "그룸일보",
     "authorId": "safety",
-    "publishedAt": "2026-06-27T07:00:00+09:00",
+    "publishedAt": "2026-02-18T07:00:00+09:00",
     "sourcePublishedAt": "2022-11-16T18:51:34Z",
     "tags": [
       "HELM",
@@ -2642,7 +2642,7 @@
     "sub": "파운데이션 모델",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-06-28T07:00:00+09:00",
+    "publishedAt": "2026-02-21T07:00:00+09:00",
     "sourcePublishedAt": "2023-02-27T17:11:15Z",
     "tags": [
       "LLaMA",
@@ -2691,7 +2691,7 @@
     "sub": "교육 정책",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-06-29T07:00:00+09:00",
+    "publishedAt": "2026-02-26T07:00:00+09:00",
     "sourcePublishedAt": "2023-05-23T00:00:00Z",
     "tags": [
       "미 교육부",
@@ -2740,7 +2740,7 @@
     "sub": "선호 최적화",
     "reporter": "그룸일보",
     "authorId": "safety",
-    "publishedAt": "2026-06-30T07:00:00+09:00",
+    "publishedAt": "2026-03-01T07:00:00+09:00",
     "sourcePublishedAt": "2023-05-29T17:57:46Z",
     "tags": [
       "DPO",
@@ -2789,7 +2789,7 @@
     "sub": "단백질 설계",
     "reporter": "그룸일보",
     "authorId": "science",
-    "publishedAt": "2026-07-01T07:00:00+09:00",
+    "publishedAt": "2026-03-06T07:00:00+09:00",
     "sourcePublishedAt": "2023-07-11T09:00:00+09:00",
     "tags": [
       "단백질 설계",
@@ -2838,7 +2838,7 @@
     "sub": "유전체 해석",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-02T07:00:00+09:00",
+    "publishedAt": "2026-03-10T07:00:00+09:00",
     "sourcePublishedAt": "2023-09-22T09:00:00+09:00",
     "tags": [
       "유전체",
@@ -2887,7 +2887,7 @@
     "sub": "소프트웨어 에이전트 평가",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-03T07:00:00+09:00",
+    "publishedAt": "2026-03-14T07:00:00+09:00",
     "sourcePublishedAt": "2023-10-10T16:47:29Z",
     "tags": [
       "SWE-bench",
@@ -2936,7 +2936,7 @@
     "sub": "레드팀 평가",
     "reporter": "그룸일보",
     "authorId": "safety",
-    "publishedAt": "2026-07-04T07:00:00+09:00",
+    "publishedAt": "2026-03-19T07:00:00+09:00",
     "sourcePublishedAt": "2024-02-06T18:59:08Z",
     "tags": [
       "HarmBench",
@@ -2985,7 +2985,7 @@
     "sub": "정교 조작",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-05T07:00:00+09:00",
+    "publishedAt": "2026-03-24T07:00:00+09:00",
     "sourcePublishedAt": "2024-03-12T09:00:00+09:00",
     "tags": [
       "정교 조작",
@@ -3034,7 +3034,7 @@
     "sub": "로봇 데이터",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-06T07:00:00+09:00",
+    "publishedAt": "2026-03-26T07:00:00+09:00",
     "sourcePublishedAt": "2024-03-19T09:00:00+09:00",
     "tags": [
       "로봇 데이터셋",
@@ -3083,7 +3083,7 @@
     "sub": "디지털 병리",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-07T07:00:00+09:00",
+    "publishedAt": "2026-03-31T07:00:00+09:00",
     "sourcePublishedAt": "2024-03-19T09:00:00+09:00",
     "tags": [
       "의료 AI",
@@ -3132,7 +3132,7 @@
     "sub": "공공서비스 접근성",
     "reporter": "그룸일보",
     "authorId": "policy",
-    "publishedAt": "2026-07-08T07:00:00+09:00",
+    "publishedAt": "2026-04-05T07:00:00+09:00",
     "sourcePublishedAt": "2024-04-08T00:00:00Z",
     "tags": [
       "ADA",
@@ -3181,7 +3181,7 @@
     "sub": "의료영상",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-09T07:00:00+09:00",
+    "publishedAt": "2026-04-07T07:00:00+09:00",
     "sourcePublishedAt": "2024-04-16T09:00:00+09:00",
     "tags": [
       "의료영상",
@@ -3230,7 +3230,7 @@
     "sub": "소형 언어모델",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-10T07:00:00+09:00",
+    "publishedAt": "2026-04-13T07:00:00+09:00",
     "sourcePublishedAt": "2024-04-22T14:32:33Z",
     "tags": [
       "Phi-3",
@@ -3279,7 +3279,7 @@
     "sub": "전장 슬라이드",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-11T07:00:00+09:00",
+    "publishedAt": "2026-04-16T07:00:00+09:00",
     "sourcePublishedAt": "2024-05-22T09:00:00+09:00",
     "tags": [
       "전장 슬라이드",
@@ -3328,7 +3328,7 @@
     "sub": "웹 데이터",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-12T07:00:00+09:00",
+    "publishedAt": "2026-04-22T07:00:00+09:00",
     "sourcePublishedAt": "2024-06-25T13:50:56Z",
     "tags": [
       "FineWeb",
@@ -3377,7 +3377,7 @@
     "sub": "기후 모델",
     "reporter": "그룸일보",
     "authorId": "science",
-    "publishedAt": "2026-07-13T07:00:00+09:00",
+    "publishedAt": "2026-04-27T07:00:00+09:00",
     "sourcePublishedAt": "2024-07-22T09:00:00+09:00",
     "tags": [
       "기후 모델",
@@ -3426,7 +3426,7 @@
     "sub": "희귀암",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-14T07:00:00+09:00",
+    "publishedAt": "2026-04-29T07:00:00+09:00",
     "sourcePublishedAt": "2024-07-22T09:00:00+09:00",
     "tags": [
       "희귀암",
@@ -3475,7 +3475,7 @@
     "sub": "멀티모달 모델",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-15T07:00:00+09:00",
+    "publishedAt": "2026-05-04T07:00:00+09:00",
     "sourcePublishedAt": "2024-07-31T17:54:27Z",
     "tags": [
       "Llama 3.1",
@@ -3524,7 +3524,7 @@
     "sub": "AI 교육",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-16T07:00:00+09:00",
+    "publishedAt": "2026-05-09T07:00:00+09:00",
     "sourcePublishedAt": "2024-09-03T00:00:00Z",
     "tags": [
       "UNESCO",
@@ -3573,7 +3573,7 @@
     "sub": "AI 교육",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-17T07:00:00+09:00",
+    "publishedAt": "2026-05-11T07:00:00+09:00",
     "sourcePublishedAt": "2024-09-03T00:00:00Z",
     "tags": [
       "UNESCO",
@@ -3622,7 +3622,7 @@
     "sub": "디지털 병리",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-18T07:00:00+09:00",
+    "publishedAt": "2026-05-16T07:00:00+09:00",
     "sourcePublishedAt": "2024-09-04T09:00:00+09:00",
     "tags": [
       "의료 AI",
@@ -3671,7 +3671,7 @@
     "sub": "단백질 결합체",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-19T07:00:00+09:00",
+    "publishedAt": "2026-05-22T07:00:00+09:00",
     "sourcePublishedAt": "2024-09-05T09:00:00+09:00",
     "tags": [
       "단백질 결합체",
@@ -3720,7 +3720,7 @@
     "sub": "국제 거버넌스",
     "reporter": "그룸일보",
     "authorId": "policy",
-    "publishedAt": "2026-07-20T07:00:00+09:00",
+    "publishedAt": "2026-05-25T07:00:00+09:00",
     "sourcePublishedAt": "2024-09-19T00:00:00Z",
     "tags": [
       "유엔",
@@ -3769,7 +3769,7 @@
     "sub": "양팔 조작",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-21T07:00:00+09:00",
+    "publishedAt": "2026-05-30T07:00:00+09:00",
     "sourcePublishedAt": "2024-10-10T09:00:00+09:00",
     "tags": [
       "양팔 로봇",
@@ -3818,7 +3818,7 @@
     "sub": "범용 조작",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-22T07:00:00+09:00",
+    "publishedAt": "2026-06-03T07:00:00+09:00",
     "sourcePublishedAt": "2024-10-31T09:00:00+09:00",
     "tags": [
       "VLA",
@@ -3867,7 +3867,7 @@
     "sub": "기후·지구과학",
     "reporter": "그룸일보",
     "authorId": "science",
-    "publishedAt": "2026-07-23T07:00:00+09:00",
+    "publishedAt": "2026-06-06T07:00:00+09:00",
     "sourcePublishedAt": "2024-12-04T09:00:00+09:00",
     "tags": [
       "날씨 예보",
@@ -3916,7 +3916,7 @@
     "sub": "디지털 접근성",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-24T07:00:00+09:00",
+    "publishedAt": "2026-06-12T07:00:00+09:00",
     "sourcePublishedAt": "2024-12-12T00:00:00Z",
     "tags": [
       "W3C",
@@ -3965,7 +3965,7 @@
     "sub": "공공 AI 평가",
     "reporter": "그룸일보",
     "authorId": "policy",
-    "publishedAt": "2026-07-25T07:00:00+09:00",
+    "publishedAt": "2026-06-14T07:00:00+09:00",
     "sourcePublishedAt": "2024-12-17T00:00:00Z",
     "tags": [
       "영국 정부",
@@ -4014,7 +4014,7 @@
     "sub": "신소재",
     "reporter": "그룸일보",
     "authorId": "science",
-    "publishedAt": "2026-07-26T07:00:00+09:00",
+    "publishedAt": "2026-06-20T07:00:00+09:00",
     "sourcePublishedAt": "2025-01-16T09:00:00+09:00",
     "tags": [
       "신소재",
@@ -4063,7 +4063,7 @@
     "sub": "AI 규제",
     "reporter": "그룸일보",
     "authorId": "policy",
-    "publishedAt": "2026-07-27T07:00:00+09:00",
+    "publishedAt": "2026-06-26T07:00:00+09:00",
     "sourcePublishedAt": "2025-02-04T00:00:00Z",
     "tags": [
       "EU AI Act",
@@ -4112,7 +4112,7 @@
     "sub": "생성 생물학",
     "reporter": "그룸일보",
     "authorId": "science",
-    "publishedAt": "2026-07-28T07:00:00+09:00",
+    "publishedAt": "2026-06-29T07:00:00+09:00",
     "sourcePublishedAt": "2025-02-21T09:00:00+09:00",
     "tags": [
       "단백질 언어모델",
@@ -4161,7 +4161,7 @@
     "sub": "AI 보건 거버넌스",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-29T07:00:00+09:00",
+    "publishedAt": "2026-07-04T07:00:00+09:00",
     "sourcePublishedAt": "2025-03-25T00:00:00Z",
     "tags": [
       "WHO",
@@ -4210,7 +4210,7 @@
     "sub": "AI 지표",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-30T07:00:00+09:00",
+    "publishedAt": "2026-07-08T07:00:00+09:00",
     "sourcePublishedAt": "2025-04-07T00:00:00Z",
     "tags": [
       "Stanford HAI",
@@ -4259,7 +4259,7 @@
     "sub": "일과 AI",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-07-31T07:00:00+09:00",
+    "publishedAt": "2026-07-11T07:00:00+09:00",
     "sourcePublishedAt": "2025-05-20T00:00:00Z",
     "tags": [
       "ILO",
@@ -4308,7 +4308,7 @@
     "sub": "교통 공공서비스",
     "reporter": "그룸일보",
     "authorId": "policy",
-    "publishedAt": "2026-08-01T07:00:00+09:00",
+    "publishedAt": "2026-07-17T07:00:00+09:00",
     "sourcePublishedAt": "2025-06-10T00:00:00Z",
     "tags": [
       "교통 AI",
@@ -4357,7 +4357,7 @@
     "sub": "AI 생명과학",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-02T07:00:00+09:00",
+    "publishedAt": "2026-07-22T07:00:00+09:00",
     "sourcePublishedAt": "2025-06-25T00:00:00Z",
     "tags": [
       "DeepMind",
@@ -4406,7 +4406,7 @@
     "sub": "자율실험실",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-03T07:00:00+09:00",
+    "publishedAt": "2026-07-25T07:00:00+09:00",
     "sourcePublishedAt": "2025-07-03T09:00:00+09:00",
     "tags": [
       "자율실험실",
@@ -4455,7 +4455,7 @@
     "sub": "보건 공공서비스",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-04T07:00:00+09:00",
+    "publishedAt": "2026-07-30T07:00:00+09:00",
     "sourcePublishedAt": "2025-11-19T00:00:00Z",
     "tags": [
       "WHO 유럽",
@@ -4504,7 +4504,7 @@
     "sub": "AI와 노동",
     "reporter": "그룸일보",
     "authorId": "research",
-    "publishedAt": "2026-08-05T07:00:00+09:00",
+    "publishedAt": "2026-08-02T07:00:00+09:00",
     "sourcePublishedAt": "2026-06-17T00:00:00Z",
     "tags": [
       "OECD",

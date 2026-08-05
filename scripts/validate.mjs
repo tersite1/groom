@@ -130,4 +130,13 @@ assert.equal(
   sourcedExpansion.length,
   'expansion article dates must be unique',
 );
+const publicationDays = articles.map((article) => article.publishedAt.slice(0, 10));
+const uniquePublicationDays = new Set(publicationDays);
+assert.ok(
+  uniquePublicationDays.size >= Math.ceil(articles.length * 0.8),
+  'article publication dates must be distributed across the archive',
+);
+const publicationSpan = Math.max(...articles.map((article) => new Date(article.publishedAt)))
+  - Math.min(...articles.map((article) => new Date(article.publishedAt)));
+assert.ok(publicationSpan >= 180 * 86400000, 'article archive must span at least 180 days');
 console.log(`SEO 검증 통과: canonical ${sitemapLocs.length}개, 뉴스 ${newsDates.length}개, 기사 ${articles.length}건`);
