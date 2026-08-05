@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * AI 리서치 뉴스 정적 사이트 빌더
+ * 그룸일보 정적 사이트 빌더
  *
  * data/site.json + data/articles.json -> dist/
  *   - 홈, 섹션 목록, 기사 본문, 검색, 404
@@ -460,7 +460,10 @@ function renderHome() {
   };
 
   const lead = take(sorted.filter((a) => has(a, 'lead')), 1)[0] ?? sorted[0];
-  const headlines = take(sorted.filter((a) => has(a, 'headline')), 4);
+  const pinnedHeadlines = (home.pinnedArticleIds || [])
+    .map((id) => articles.find((article) => article.id === id))
+    .filter(Boolean);
+  const headlines = take([...pinnedHeadlines, ...sorted.filter((a) => has(a, 'headline'))], 4);
   const briefs = take(sorted.filter((a) => has(a, 'brief')), 3);
   const originals = sorted.filter((a) => has(a, 'original')).slice(0, 6);
   const popular = sorted.filter((a) => has(a, 'popular')).slice(0, 8);

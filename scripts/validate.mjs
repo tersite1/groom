@@ -2,6 +2,7 @@
 import assert from 'node:assert/strict';
 import { readFile, access, readdir } from 'node:fs/promises';
 import { spawnSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -33,6 +34,18 @@ const robots = await read('robots.txt');
 const sitemap = await read('sitemap.xml');
 const news = await read('sitemap-news.xml');
 const searchIndex = JSON.parse(await read('search-index.json'));
+const imageSources = articles.map((article) => typeof article.image === 'string' ? article.image : article.image?.src);
+
+assert.equal(site.name, '그룸일보');
+assert.equal(new Set(imageSources).size, articles.length, 'every article must have a unique image');
+const imageHashes = new Map();
+for (const [index, src] of imageSources.entries()) {
+  assert.ok(src?.startsWith('/assets/img/'), `article image must be local: ${articles[index].id}`);
+  const bytes = await readFile(path.join(root, 'dist', src.slice(1)));
+  const hash = createHash('sha256').update(bytes).digest('hex');
+  assert.ok(!imageHashes.has(hash), `duplicate image content: ${articles[index].id} and ${imageHashes.get(hash)}`);
+  imageHashes.set(hash, articles[index].id);
+}
 
 assert.match(index, /name="robots" content="index, follow, max-image-preview:large"/);
 assert.match(index, /property="og:locale:alternate" content="en_US"/);
@@ -107,4 +120,14 @@ for (const rel of (await walk(path.join(root, 'dist'))).filter((file) => file.en
 }
 
 assert.match(index, /"NewsMediaOrganization"/);
+for (const id of site.home?.pinnedArticleIds || []) {
+  assert.ok(index.includes(`/article/${id}.html`), `pinned homepage article missing: ${id}`);
+}
+const sourcedExpansion = articles.filter((article) => article.id.startsWith('groom'));
+assert.ok(sourcedExpansion.length >= 50, 'expected at least 50 externally sourced expansion articles');
+assert.equal(
+  new Set(sourcedExpansion.map((article) => article.publishedAt.slice(0, 10))).size,
+  sourcedExpansion.length,
+  'expansion article dates must be unique',
+);
 console.log(`SEO 검증 통과: canonical ${sitemapLocs.length}개, 뉴스 ${newsDates.length}개, 기사 ${articles.length}건`);

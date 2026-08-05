@@ -1,8 +1,8 @@
 {
-  "name": "ai-research-news",
+  "name": "groomilbo",
   "version": "1.0.0",
   "private": true,
-  "description": "AI 리서치 뉴스 - 출처 기반 AI 연구·안전 전문 정적 뉴스 사이트",
+  "description": "그룸일보 - AI 연구·안전·정책·생활 AI 전문 정적 뉴스 사이트",
   "type": "module",
   "scripts": {
     "build": "node build.mjs",

@@ -5,7 +5,7 @@
     "summary": "KAIST 연구팀이 생성형 AI의 다양한 공격 취약점을 탐색하는 Stable-GFlowNet을 제안했다. 연구진은 ICML 2026 스포트라이트 논문에서 134개 공격 유형과 92% 공격 성공률을 보고했다.",
     "section": "kaist",
     "sub": "AI 안전",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "safety",
     "publishedAt": "2026-08-05T15:40:00+09:00",
     "tags": [
@@ -21,7 +21,7 @@
     "image": "/assets/img/editorial/kaist.webp",
     "imageAlt": "AI 안전성 평가 결과를 발표하는 연구자를 표현한 편집 일러스트",
     "imageCaption": "KAIST 박사과정 연구성과와 AI 레드팀 평가를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "KAIST 전기및전자공학부 김준모 교수 연구팀은 대규모 언어모델의 취약점을 더 다양하게 찾기 위한 Stable-GFlowNet 프레임워크를 개발했다고 밝혔다. 권민찬 박사과정이 제1저자로 참여한 논문은 ICML 2026에서 상위 2.2%에 해당하는 스포트라이트 논문으로 선정됐다.",
       "연구팀은 기존 강화학습 기반 레드팀이 성공률 높은 일부 공격만 반복하는 모드 붕괴 문제에 주목했다. 대조 궤적 균형, 노이즈 경사 가지치기, 유창성 안정화 장치를 결합해 다양한 공격 프롬프트를 안정적으로 탐색하도록 설계했다.",
@@ -46,7 +46,7 @@
     "summary": "Buffer-and-Reinforce는 개인화 파인튜닝 과정에서 안전성이 약해지는 문제를 완충 모듈과 안전성 강화 단계로 나눠 다룬다.",
     "section": "kaist",
     "sub": "박사과정",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "safety",
     "publishedAt": "2026-08-05T15:20:00+09:00",
     "tags": [
@@ -59,10 +59,17 @@
     "flags": [
       "headline"
     ],
-    "image": "/assets/img/editorial/kaist.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805002.webp",
+      "alt": "KAIST 함석일 박사과정, 맞춤형 AI의 안전장치 지키는 학습법 제안의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "KAIST 함석일 박사과정, 맞춤형 AI의 안전장치 지키는 학습법 제안의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "맞춤형 AI 학습의 안전장치를 연구하는 장면을 표현한 편집 일러스트",
     "imageCaption": "안전한 AI 개인화 연구를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "KAIST 전기및전자공학부 김창익 교수 연구팀은 맞춤형 파인튜닝 중 기존 안전 규칙이 약해질 수 있는 문제를 다루는 Buffer-and-Reinforce 프레임워크를 발표했다. 함석일 박사과정이 제1저자로 참여했으며 논문은 ICML 2026 스포트라이트에 채택됐다.",
       "방법은 학습 중에만 BufferLoRA라는 임시 완충 모듈을 적용한 뒤 제거하고, ReinforceLoRA로 안전성을 다시 강화하는 두 단계로 구성된다. 연구진은 QR 분해를 이용해 새 업무 능력과 안전성 신호가 서로 간섭하는 정도를 줄이도록 설계했다.",
@@ -87,7 +94,7 @@
     "summary": "여러 AI 에이전트가 풀이를 검증하고 토론하는 구조로 시각·텍스트 기반 물리 문제 국제 챌린지에서 139개 팀 중 1위를 기록했다.",
     "section": "kaist",
     "sub": "멀티에이전트",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "publishedAt": "2026-08-05T15:00:00+09:00",
     "tags": [
@@ -100,10 +107,17 @@
     "flags": [
       "headline"
     ],
-    "image": "/assets/img/editorial/kaist.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805003.webp",
+      "alt": "KAIST 곽지석 박사과정 참여팀, ICML 물리 추론 챌린지 우승의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "KAIST 곽지석 박사과정 참여팀, ICML 물리 추론 챌린지 우승의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "여러 AI 에이전트가 물리 문제를 검증하는 과정을 표현한 편집 일러스트",
     "imageCaption": "멀티에이전트 물리 추론 성과를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "KAIST AX학과 문일철 교수 연구팀은 ICML 2026 AI4Math 워크숍의 Visual Grounded Physics Problem Solving 챌린지에서 1위를 차지했다. 산업및시스템공학과 곽지석 박사과정을 포함한 연구진이 참가했으며, 139개 팀이 경쟁했다.",
       "대회는 그림과 문장을 함께 이해하고 물리 법칙을 적용해 답과 풀이 과정을 생성하는 능력을 평가했다. 연구팀은 여러 파운데이션 모델을 독립 에이전트로 구성한 뒤 서로의 풀이를 검증하고 토론하게 했다.",
@@ -123,7 +137,7 @@
     "summary": "첫 국제 AI 안전 보고서는 일반목적 AI의 능력·위험·완화 연구를 종합하면서 증거의 합의점과 불확실성을 함께 구분했다.",
     "section": "safety",
     "sub": "안전 과학",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "safety",
     "publishedAt": "2026-08-05T14:40:00+09:00",
     "tags": [
@@ -138,7 +152,7 @@
     "image": "/assets/img/editorial/safety.webp",
     "imageAlt": "AI 모델을 다층 평가 장치로 시험하는 모습을 표현한 편집 일러스트",
     "imageCaption": "AI 안전 평가를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "2025년 국제 AI 안전 보고서는 30개국과 OECD, EU, UN이 지명한 자문 패널의 지원을 받아 96명의 전문가가 작성했다. 일반목적 AI의 능력과 위험, 기술적 완화수단에 관한 공개 연구를 종합하는 것이 목적이며 특정 정책을 권고하는 문서는 아니다.",
       "보고서는 악의적 사용, 오작동, 체계적 위험을 구분하고 모델 평가와 배포 통제, 보안 조치에 관한 연구를 검토했다. 동시에 빠르게 변하는 모델 능력과 비공개 데이터 때문에 위험 수준을 정밀하게 추정하기 어렵다는 한계도 강조했다.",
@@ -158,7 +172,7 @@
     "summary": "Google DeepMind와 Isomorphic Labs는 여러 생체분자를 함께 모델링하는 AlphaFold 3를 Nature에 발표했다.",
     "section": "science",
     "sub": "생명과학",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "science",
     "publishedAt": "2026-08-05T14:20:00+09:00",
     "tags": [
@@ -174,7 +188,7 @@
     "image": "/assets/img/editorial/science.webp",
     "imageAlt": "단백질과 분자 구조를 AI가 분석하는 모습을 표현한 과학 편집 일러스트",
     "imageCaption": "생체분자 구조 예측 연구를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "AlphaFold 3는 단백질만이 아니라 DNA, RNA, 소분자 리간드와 이온을 포함한 복합체 구조를 예측하도록 설계됐다. 연구진은 확산 기반 구조 생성 모듈을 이용해 서로 다른 분자 유형을 하나의 모델 안에서 다뤘다.",
       "Nature 논문은 단백질-리간드와 단백질-핵산 등 여러 평가에서 기존 전문 방법과 비교한 결과를 제시했다. 수치는 논문이 선택한 데이터와 평가 절차에 따른 것이며 모든 결합과 실제 약효를 직접 입증하는 것은 아니다.",
@@ -199,7 +213,7 @@
     "summary": "NIST의 Generative AI Profile은 기존 AI RMF에 생성형 AI 특유의 위험과 대응 행동을 연결한 보조 문서다.",
     "section": "safety",
     "sub": "위험관리",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "safety",
     "publishedAt": "2026-08-05T14:00:00+09:00",
     "tags": [
@@ -211,10 +225,17 @@
     "flags": [
       "brief"
     ],
-    "image": "/assets/img/editorial/safety.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805006.webp",
+      "alt": "NIST, 생성형 AI 전용 위험관리 프로파일 공개의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "NIST, 생성형 AI 전용 위험관리 프로파일 공개의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "생성형 AI 위험을 측정하고 관리하는 장치를 표현한 편집 일러스트",
     "imageCaption": "생성형 AI 위험관리를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "미국 NIST는 2024년 7월 AI Risk Management Framework의 보조 자료인 Generative AI Profile을 발표했다. 문서는 생성형 AI 시스템에서 나타나는 위험을 분류하고 조직이 고려할 대응 행동을 제시한다.",
       "이 프로파일은 AI RMF 1.0을 대체하는 별도 인증 기준이 아니다. 조직의 목표와 위험 허용 수준에 맞춰 Govern, Map, Measure, Manage 기능에 생성형 AI 고려사항을 덧붙이는 방식이다.",
@@ -234,7 +255,7 @@
     "summary": "유럽연합 AI Act는 2024년 8월 발효됐으며 금지·고위험·투명성 의무가 조항별 일정에 따라 단계적으로 적용된다.",
     "section": "policy",
     "sub": "법·제도",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "policy",
     "publishedAt": "2026-08-05T13:40:00+09:00",
     "tags": [
@@ -249,7 +270,7 @@
     "image": "/assets/img/editorial/policy.webp",
     "imageAlt": "AI 시스템과 위험 기준의 균형을 표현한 정책 편집 일러스트",
     "imageCaption": "AI 규제와 위험 기반 거버넌스를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "EU AI Act는 2024년 8월 1일 발효된 포괄적 AI 규제다. AI 활용을 위험 수준에 따라 나누고 기본권과 제품 안전, 역내 시장 규칙을 함께 다룬다.",
       "법의 의무가 발효일에 한꺼번에 적용된 것은 아니다. 금지 관행, 범용 AI, 고위험 시스템 등 조항별 유예기간과 적용 일정이 다르므로 서비스를 평가할 때 해당 시점과 역할을 확인해야 한다.",
@@ -274,7 +295,7 @@
     "summary": "ILO의 2025 직업 노출 지수는 전 세계 노동자 4명 중 1명이 생성형 AI에 어느 정도 노출되지만 대부분 직무에는 인간 과업이 남는다고 분석했다.",
     "section": "society",
     "sub": "노동",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "policy",
     "publishedAt": "2026-08-05T13:20:00+09:00",
     "tags": [
@@ -290,7 +311,7 @@
     "image": "/assets/img/editorial/society.webp",
     "imageAlt": "사람과 AI 시스템이 함께 일하는 변화를 표현한 사회 편집 일러스트",
     "imageCaption": "AI와 직무 전환을 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "국제노동기구는 과업 정보, 전문가 판단, 모델 예측을 결합한 2025년 생성형 AI 직업 노출 지수를 공개했다. 분석에 따르면 전 세계 노동자 4명 중 1명이 어떤 형태로든 노출되는 직종에 속한다.",
       "가장 높은 노출 구간은 전 세계 고용의 3.3%로 추정됐고 사무직의 노출이 높았다. 여성의 최고 노출 비율은 4.7%, 남성은 2.4%로 보고돼 직종 분포에 따른 격차도 나타났다.",
@@ -315,7 +336,7 @@
     "summary": "2017년 Attention Is All You Need는 recurrence와 convolution 없이 attention으로 구성한 번역 모델을 제안했다.",
     "section": "research",
     "sub": "핵심 논문",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "publishedAt": "2026-08-05T12:55:00+09:00",
     "tags": [
@@ -330,7 +351,7 @@
     "image": "/assets/img/editorial/research.webp",
     "imageAlt": "연구 논문과 신경망 구조를 연결한 AI 연구 편집 일러스트",
     "imageCaption": "트랜스포머 연구의 검증과 재현을 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "Vaswani 등은 2017년 encoder와 decoder를 attention 층으로 구성한 Transformer를 제안했다. 순환 구조를 없애 문장 내 토큰 관계를 병렬로 계산할 수 있게 한 점이 핵심이었다.",
       "논문은 WMT14 영-독 번역에서 28.4 BLEU, 영-불에서 단일 모델 41.8 BLEU를 보고했다. 이 수치는 당시 데이터와 토크나이징, 평가 설정에 따른 결과다.",
@@ -350,7 +371,7 @@
     "summary": "DeepMind 연구진은 같은 연산 예산에서 파라미터와 학습 토큰 수를 함께 늘리는 편이 효율적이라는 실험 결과를 제시했다.",
     "section": "research",
     "sub": "학습 방법",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "publishedAt": "2026-08-05T12:40:00+09:00",
     "tags": [
@@ -362,10 +383,17 @@
     "flags": [
       "original"
     ],
-    "image": "/assets/img/editorial/research.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805010.webp",
+      "alt": "Chinchilla가 보여준 계산 최적 학습, 모델 크기와 토큰의 균형의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "Chinchilla가 보여준 계산 최적 학습, 모델 크기와 토큰의 균형의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "모델 규모와 학습 데이터의 균형을 표현한 AI 연구 편집 일러스트",
     "imageCaption": "계산 최적 학습 연구를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "Chinchilla 논문은 7천만에서 160억 파라미터 범위의 400개 이상 모델을 분석해 계산 예산과 모델 크기, 학습 토큰의 관계를 연구했다. 기존 관행보다 더 많은 토큰을 사용해야 한다는 결론을 제시했다.",
       "70B Chinchilla는 280B Gopher와 비슷한 학습 연산 예산을 사용하면서 더 많은 데이터로 학습됐다. 논문은 MMLU 평균 67.5% 등 비교 결과를 보고했다.",
@@ -385,7 +413,7 @@
     "summary": "Constitutional AI는 원칙 목록을 바탕으로 모델이 자기비판과 수정을 수행하고 AI 피드백으로 강화학습하는 절차를 제안했다.",
     "section": "safety",
     "sub": "정렬",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "safety",
     "publishedAt": "2026-08-05T12:25:00+09:00",
     "tags": [
@@ -397,10 +425,17 @@
     "flags": [
       "original"
     ],
-    "image": "/assets/img/editorial/safety.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805011.webp",
+      "alt": "헌법형 AI, 사람의 선호 라벨을 줄이며 안전 응답을 학습하는 방법의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "헌법형 AI, 사람의 선호 라벨을 줄이며 안전 응답을 학습하는 방법의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "AI 응답을 원칙과 평가 기준으로 검토하는 모습을 표현한 편집 일러스트",
     "imageCaption": "AI 정렬 연구를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "Anthropic 연구진은 명시적인 원칙 목록을 이용해 모델이 자신의 답을 비판하고 수정하는 Constitutional AI를 제안했다. 지도학습 단계와 AI 선호 모델을 보상 신호로 쓰는 강화학습 단계로 구성된다.",
       "목표는 유해 요청을 무조건 회피하는 대신 이유를 설명하며 거부하고 유용한 대안을 제시하는 보조자를 만드는 것이었다. 사람의 유해성 라벨을 줄일 수 있다는 점도 연구의 주요 문제의식이다.",
@@ -420,7 +455,7 @@
     "summary": "Mamba는 입력에 따라 정보를 선택적으로 전달하거나 잊는 상태공간 모델로 긴 시퀀스를 선형적으로 처리하는 접근을 제안했다.",
     "section": "models",
     "sub": "모델 구조",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "publishedAt": "2026-08-05T12:10:00+09:00",
     "tags": [
@@ -435,7 +470,7 @@
     "image": "/assets/img/editorial/models.webp",
     "imageAlt": "긴 시퀀스 정보를 선택적으로 전달하는 모델 구조를 표현한 편집 일러스트",
     "imageCaption": "상태공간 모델 연구를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "Mamba는 입력에 따라 상태를 선택적으로 갱신하는 state-space model 아키텍처다. attention과 MLP 블록 없이 구성하고 시퀀스 길이에 대해 선형적으로 확장하는 것을 목표로 한다.",
       "논문은 언어, 음성, 유전체 과제와 최대 백만 길이의 시퀀스 실험을 제시했다. 선택 메커니즘과 하드웨어 친화적 병렬 알고리즘을 결합한 것이 핵심이다.",
@@ -455,7 +490,7 @@
     "summary": "Meta 연구진은 대규모 정제 이미지와 자기지도학습으로 여러 시각 과제에 전이 가능한 DINOv2 특징 추출기를 공개했다.",
     "section": "models",
     "sub": "컴퓨터비전",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "publishedAt": "2026-08-05T11:55:00+09:00",
     "tags": [
@@ -467,10 +502,17 @@
     "flags": [
       "original"
     ],
-    "image": "/assets/img/editorial/models.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805013.webp",
+      "alt": "DINOv2, 레이블 없이 범용 시각 특징을 학습하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "DINOv2, 레이블 없이 범용 시각 특징을 학습하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "다양한 이미지가 하나의 시각 표현 모델로 연결되는 모습을 표현한 편집 일러스트",
     "imageCaption": "자기지도 시각학습 연구를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "DINOv2는 사람의 클래스 라벨 없이 이미지 표현을 학습하는 자기지도 시각 모델이다. 연구진은 자동화된 데이터 큐레이션 파이프라인과 10억 파라미터 규모의 ViT 학습, 소형 모델 증류를 결합했다.",
       "논문은 이미지 분류와 깊이 추정, 분할 등 이미지·픽셀 수준 과제에서 전이 성능을 평가했다. 특정 과제마다 별도 미세조정을 크게 하지 않고도 활용 가능한 특징을 목표로 했다.",
@@ -490,7 +532,7 @@
     "summary": "Latent Diffusion Model은 픽셀 대신 압축된 잠재 공간에서 확산 과정을 수행하고 cross-attention으로 조건을 결합했다.",
     "section": "models",
     "sub": "생성모델",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "publishedAt": "2026-08-05T11:40:00+09:00",
     "tags": [
@@ -502,10 +544,17 @@
     "flags": [
       "original"
     ],
-    "image": "/assets/img/editorial/models.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805014.webp",
+      "alt": "잠재 확산모델, 고해상도 이미지 생성의 계산 비용을 낮추다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "잠재 확산모델, 고해상도 이미지 생성의 계산 비용을 낮추다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "압축된 잠재 공간에서 이미지가 생성되는 과정을 표현한 편집 일러스트",
     "imageCaption": "잠재 확산모델 연구를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "Latent Diffusion Model은 사전학습 오토인코더가 만든 압축 표현에서 노이즈 제거 과정을 수행한다. 픽셀 공간의 계산량을 줄이면서 세부 표현을 유지하려는 설계다.",
       "연구진은 cross-attention을 이용해 텍스트와 경계상자 같은 조건을 결합했다. 인페인팅, 초해상도, 텍스트 조건 이미지 생성 등 여러 과제를 같은 틀에서 실험했다.",
@@ -525,7 +574,7 @@
     "summary": "Google DeepMind는 MoE 기반 Gemini 1.5 Pro의 텍스트·이미지·오디오·비디오 장문 처리 결과를 기술보고서로 발표했다.",
     "section": "models",
     "sub": "멀티모달",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "publishedAt": "2026-08-05T11:25:00+09:00",
     "tags": [
@@ -537,10 +586,17 @@
     "flags": [
       "popular"
     ],
-    "image": "/assets/img/editorial/models.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805015.webp",
+      "alt": "Gemini 1.5, 멀티모달 100만 토큰 문맥 실험을 공개의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "Gemini 1.5, 멀티모달 100만 토큰 문맥 실험을 공개의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "텍스트 이미지 오디오 비디오가 하나의 모델에 입력되는 모습을 표현한 편집 일러스트",
     "imageCaption": "멀티모달 장문 처리 연구를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "Gemini 1.5 기술보고서는 Mixture-of-Experts 기반 Pro 모델과 최대 100만 토큰 문맥 실험을 공개했다. 텍스트뿐 아니라 이미지, 오디오, 비디오 입력을 하나의 긴 문맥에서 다뤘다.",
       "연구진은 긴 입력 안에 숨긴 정보를 찾는 needle-in-a-haystack 평가와 장시간 비디오 이해 결과를 제시했다. 긴 문맥 창의 크기와 모든 위치에서의 안정적인 추론 능력은 같은 개념이 아니다.",
@@ -565,7 +621,7 @@
     "summary": "OpenAI는 이미지와 비디오를 패치로 표현하는 diffusion transformer 접근과 물리·인과 오류 사례를 함께 공개했다.",
     "section": "models",
     "sub": "생성 비디오",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "publishedAt": "2026-08-05T11:10:00+09:00",
     "tags": [
@@ -577,10 +633,17 @@
     "flags": [
       "popular"
     ],
-    "image": "/assets/img/editorial/models.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805016.webp",
+      "alt": "Sora 기술보고서가 공개한 비디오 생성의 확장성과 한계의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "Sora 기술보고서가 공개한 비디오 생성의 확장성과 한계의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "비디오 프레임 패치가 생성 모델로 연결되는 과정을 표현한 편집 일러스트",
     "imageCaption": "생성 비디오 모델 연구를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "OpenAI의 Sora 기술보고서는 다양한 해상도와 길이의 시각 데이터를 패치로 바꿔 diffusion transformer를 학습하는 접근을 설명했다. 텍스트에서 최대 1분 길이의 비디오를 생성한 사례도 공개했다.",
       "보고서는 규모를 늘리면서 동작과 장면 일관성이 개선되는 정성 결과를 제시했다. 동시에 물체의 물리적 상호작용과 인과관계를 잘못 표현하는 실패 사례도 명시했다.",
@@ -600,7 +663,7 @@
     "summary": "Meta는 프롬프트 기반 객체 분할을 정지 이미지와 비디오에 함께 적용하는 Segment Anything Model 2를 공개했다.",
     "section": "models",
     "sub": "컴퓨터비전",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "publishedAt": "2026-08-05T10:55:00+09:00",
     "tags": [
@@ -612,10 +675,17 @@
     "flags": [
       "popular"
     ],
-    "image": "/assets/img/editorial/models.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805017.webp",
+      "alt": "SAM 2, 이미지와 영상 객체 분할을 하나의 모델로 통합의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "SAM 2, 이미지와 영상 객체 분할을 하나의 모델로 통합의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "영상 속 객체 경계를 시간에 따라 추적하는 모습을 표현한 편집 일러스트",
     "imageCaption": "이미지·비디오 객체 분할 연구를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "SAM 2는 점이나 상자 같은 프롬프트를 받아 이미지와 비디오의 객체를 분할하는 단일 파운데이션 모델이다. 메모리 메커니즘을 통해 프레임 사이의 객체 정보를 유지하도록 설계됐다.",
       "논문은 이미지 분할에서 기존 SAM보다 높은 정확도와 6배 빠른 처리 결과를 보고했다. 연구진은 모델과 학습 코드, 데이터 관련 자원을 공개했다.",
@@ -640,7 +710,7 @@
     "summary": "RT-2는 시각·언어 데이터와 로봇 시연을 함께 학습해 언어모델의 출력 공간에 로봇 행동을 표현했다.",
     "section": "robotics",
     "sub": "VLA",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "publishedAt": "2026-08-05T10:40:00+09:00",
     "tags": [
@@ -655,7 +725,7 @@
     "image": "/assets/img/editorial/robotics.webp",
     "imageAlt": "로봇 팔이 시각 언어 행동 신호를 따라 물체를 조작하는 편집 이미지",
     "imageCaption": "비전-언어-행동 모델 연구를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "Google DeepMind의 RT-2는 vision-language 데이터와 로봇 시연을 함께 학습하는 vision-language-action 모델이다. 로봇 행동을 언어모델이 예측할 수 있는 토큰으로 표현했다.",
       "연구진은 학습 시연에 직접 없던 지시와 물체 관계로 일반화하는 실험을 보고했다. 웹에서 학습한 개념 지식이 로봇의 행동 선택에 연결될 수 있는지를 시험한 것이다.",
@@ -680,7 +750,7 @@
     "summary": "Stanford 연구진은 이동 베이스와 양팔을 함께 원격조작해 가정형 작업 데이터를 수집하는 저비용 시스템을 제안했다.",
     "section": "robotics",
     "sub": "조작",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "publishedAt": "2026-08-05T10:25:00+09:00",
     "tags": [
@@ -692,10 +762,17 @@
     "flags": [
       "popular"
     ],
-    "image": "/assets/img/editorial/robotics.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805019.webp",
+      "alt": "Mobile ALOHA, 50개 시연으로 양팔 이동 조작을 학습의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "Mobile ALOHA, 50개 시연으로 양팔 이동 조작을 학습의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "두 로봇 팔이 이동 조작을 학습하는 연구실 장면",
     "imageCaption": "양팔 이동 조작 연구를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "Mobile ALOHA는 기존 ALOHA 양팔 플랫폼에 이동 베이스와 전신 원격조작 장치를 결합했다. 연구자는 로봇을 직접 움직이며 이동과 양팔 조작이 결합된 시연을 수집할 수 있다.",
       "논문은 과제당 50개 시연을 사용했고 정적 조작 데이터와 공동학습할 때 일부 이동 조작 과제의 성공률이 최대 90%까지 높아졌다고 보고했다.",
@@ -720,7 +797,7 @@
     "summary": "OpenVLA는 시각-언어 사전학습과 실제 로봇 시연을 결합하고 체크포인트와 학습 코드를 공개했다.",
     "section": "robotics",
     "sub": "오픈 로봇",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "publishedAt": "2026-08-05T10:10:00+09:00",
     "tags": [
@@ -732,10 +809,17 @@
     "flags": [
       "popular"
     ],
-    "image": "/assets/img/editorial/robotics.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805020.webp",
+      "alt": "OpenVLA, 97만 건 로봇 시연으로 학습한 7B 공개 모델의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "OpenVLA, 97만 건 로봇 시연으로 학습한 7B 공개 모델의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "오픈 로봇 데이터와 모델이 로봇 팔 제어로 연결되는 편집 이미지",
     "imageCaption": "오픈 VLA 모델 연구를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "OpenVLA는 DINOv2와 SigLIP 시각 특징, Llama 2 계열 언어모델을 결합한 70억 파라미터 vision-language-action 모델이다. 연구진은 97만 건의 실제 로봇 시연으로 학습했다고 밝혔다.",
       "프로젝트는 모델 체크포인트와 학습 코드, 미세조정 노트북을 공개했다. 공개 자원은 로봇 VLA 연구의 비교와 재현 가능성을 높이는 기반이 된다.",
@@ -760,7 +844,7 @@
     "summary": "DeepMind 연구진은 단백질 서열과 관련 서열 정보를 이용해 3차원 구조를 예측하는 AlphaFold 2를 Nature에 발표했다.",
     "section": "science",
     "sub": "단백질",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "science",
     "publishedAt": "2026-08-05T09:55:00+09:00",
     "tags": [
@@ -772,10 +856,17 @@
     "flags": [
       "popular"
     ],
-    "image": "/assets/img/editorial/science.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805021.webp",
+      "alt": "AlphaFold 2, CASP14에서 실험 구조에 근접한 단백질 예측 보고의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "AlphaFold 2, CASP14에서 실험 구조에 근접한 단백질 예측 보고의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "AI가 단백질 접힘 구조를 계산하는 모습을 표현한 과학 편집 일러스트",
     "imageCaption": "단백질 구조 예측 연구를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "AlphaFold 2는 단백질 서열과 다중서열정렬 정보를 이용해 원자 수준의 3차원 구조를 예측한다. 연구진은 CASP14 블라인드 평가에서 많은 표적에 대해 실험 구조와 경쟁 가능한 정확도를 보고했다.",
       "Evoformer 계열 네트워크는 서열 표현과 잔기 쌍 표현을 반복적으로 교환하며 구조를 추론한다. 연구진은 코드와 가중치, 추론 스크립트도 공개했다.",
@@ -795,7 +886,7 @@
     "summary": "Google DeepMind 연구진은 그래프 신경망과 DFT 계산을 결합해 대규모 무기 결정 후보를 탐색했다.",
     "section": "science",
     "sub": "신소재",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "science",
     "publishedAt": "2026-08-05T09:40:00+09:00",
     "tags": [
@@ -807,10 +898,17 @@
     "flags": [
       "popular"
     ],
-    "image": "/assets/img/editorial/science.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805022.webp",
+      "alt": "GNoME, 계산 기반 신규 안정 결정 후보 38만1천 종 공개의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "GNoME, 계산 기반 신규 안정 결정 후보 38만1천 종 공개의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "AI가 새로운 결정 구조 후보를 탐색하는 모습을 표현한 과학 편집 일러스트",
     "imageCaption": "AI 기반 신소재 탐색을 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "GNoME 연구는 그래프 신경망의 예측과 밀도범함수이론 계산을 반복해 무기 결정 구조 후보를 탐색했다. 논문은 220만 개 구조 후보와 38만1천 개의 신규 안정 물질을 보고했다.",
       "연구진은 이 가운데 736개 구조가 독립적인 실험에서 확인됐다고 밝혔다. 대규모 계산 데이터는 후보 공간을 좁히고 후속 실험을 설계하는 데 쓰일 수 있다.",
@@ -835,7 +933,7 @@
     "summary": "Google 연구진은 Gemini를 의료 과제에 맞춰 조정한 모델군을 14개 벤치마크에서 평가하고 실제 배치 전 추가 검증이 필요하다고 밝혔다.",
     "section": "health",
     "sub": "의료 모델",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "science",
     "publishedAt": "2026-08-05T09:25:00+09:00",
     "tags": [
@@ -850,7 +948,7 @@
     "image": "/assets/img/editorial/health.webp",
     "imageAlt": "의료 영상과 분자 데이터를 AI가 함께 분석하는 편집 일러스트",
     "imageCaption": "의료 멀티모달 AI 연구를 주제로 제작한 편집용 AI 생성 이미지이며 실제 진단 화면이 아닙니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "Med-Gemini는 Gemini 계열 모델을 의료 질의응답, 장문 기록, 영상 등 여러 과제에 맞춰 조정한 연구 모델군이다. 논문은 14개 의료 벤치마크 가운데 10개에서 당시 최고 결과를 보고했다.",
       "MedQA에서는 91.1% 정확도가 보고됐고 검색을 이용한 불확실성 대응과 긴 의료 기록 처리 실험도 포함됐다. 비교 조건과 평가셋을 벗어난 일반적 임상 성능으로 확대할 수는 없다.",
@@ -875,7 +973,7 @@
     "summary": "NIST AI RMF 1.0은 분야와 활용 사례를 가리지 않고 AI 생애주기 위험을 Govern–Map–Measure–Manage로 관리하도록 제안한다.",
     "section": "analysis",
     "sub": "프레임워크",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "safety",
     "publishedAt": "2026-08-05T09:10:00+09:00",
     "tags": [
@@ -887,10 +985,17 @@
     "flags": [
       "opinion"
     ],
-    "image": "/assets/img/editorial/policy.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805024.webp",
+      "alt": "NIST AI RMF, 신뢰할 수 있는 AI 위험관리의 공통 언어의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "NIST AI RMF, 신뢰할 수 있는 AI 위험관리의 공통 언어의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "AI 위험을 네 단계로 관리하는 기준을 표현한 정책 편집 일러스트",
     "imageCaption": "AI 위험관리 프레임워크를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "NIST AI RMF 1.0은 AI 시스템을 설계, 개발, 배포, 사용하는 조직이 위험을 공통 언어로 다루도록 만든 자발적 프레임워크다. 특정 산업이나 기술 한 종류에 한정하지 않는다.",
       "핵심은 Govern, Map, Measure, Manage 네 기능이다. 조직의 책임 구조를 세우고 사용 맥락을 파악한 뒤 위험을 측정하고 우선순위에 따라 관리하는 지속적 과정을 강조한다.",
@@ -915,7 +1020,7 @@
     "summary": "유럽평의회 AI 프레임워크협약은 AI 생애주기를 인권·민주주의·법치와 일치시키는 것을 목표로 2024년 서명에 개방됐다.",
     "section": "policy",
     "sub": "국제 규범",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "policy",
     "publishedAt": "2026-08-05T08:55:00+09:00",
     "tags": [
@@ -928,10 +1033,17 @@
     "flags": [
       "media"
     ],
-    "image": "/assets/img/editorial/policy.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805025.webp",
+      "alt": "AI와 인권을 묶은 첫 구속력 국제협약, 적용 범위는의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "AI와 인권을 묶은 첫 구속력 국제협약, 적용 범위는의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "AI 네트워크와 인권 기준의 균형을 표현한 정책 편집 일러스트",
     "imageCaption": "AI와 인권 국제협약을 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "유럽평의회 인공지능·인권·민주주의·법치 프레임워크협약은 이 분야 최초의 법적 구속력 국제조약으로 2024년 9월 5일 서명에 개방됐다. 가입국이 AI 생애주기의 활동을 기본 가치와 일치시키는 것이 목적이다.",
       "협약은 위험·영향 평가, 투명성, 구제수단 같은 원칙을 담는다. 국방 관련 활동은 적용에서 제외되며 국가안보와 연구 활동에도 조항별 조건이 있다.",
@@ -956,7 +1068,7 @@
     "summary": "2024 AI 서울 정상회의 참가자들은 안전, 혁신, 포용을 상호 연결된 목표로 명시하고 AI 안전과학 협력을 약속했다.",
     "section": "policy",
     "sub": "글로벌 거버넌스",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "policy",
     "publishedAt": "2026-08-05T08:40:00+09:00",
     "tags": [
@@ -966,10 +1078,17 @@
       "국제 협력"
     ],
     "flags": [],
-    "image": "/assets/img/editorial/policy.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805026.webp",
+      "alt": "서울 선언, AI 안전·혁신·포용을 하나의 국제 의제로의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "서울 선언, AI 안전·혁신·포용을 하나의 국제 의제로의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "여러 공공기관이 AI 안전 기준으로 연결되는 모습을 표현한 정책 편집 일러스트",
     "imageCaption": "국제 AI 거버넌스 협력을 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "2024년 5월 AI 서울 정상회의에서 한국을 포함한 참가국과 EU는 서울 선언을 채택했다. 선언은 AI 안전, 혁신, 포용이 서로 분리된 목표가 아니라 함께 추진해야 할 의제라고 밝혔다.",
       "참가자들은 블레츨리 정상회의의 논의를 이어가고 AI 안전과학 국제협력 의향서도 채택했다. 평가 방법과 연구 협력, 정보 공유를 강화하겠다는 방향이 담겼다.",
@@ -989,7 +1108,7 @@
     "summary": "2023 AI 안전 정상회의 참가국들은 사이버·생물안보·허위정보 등 최첨단 AI의 오용 위험과 공동 평가 필요성을 명시했다.",
     "section": "analysis",
     "sub": "원문 해설",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "policy",
     "publishedAt": "2026-08-05T08:25:00+09:00",
     "tags": [
@@ -1001,10 +1120,17 @@
     "flags": [
       "opinion"
     ],
-    "image": "/assets/img/editorial/policy.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805027.webp",
+      "alt": "블레츨리 선언이 최첨단 AI 위험을 국제 공동 의제로 만든 방식의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "블레츨리 선언이 최첨단 AI 위험을 국제 공동 의제로 만든 방식의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "국가 간 AI 안전 협력과 공동 평가를 표현한 정책 편집 일러스트",
     "imageCaption": "최첨단 AI 위험의 국제 협력을 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "블레츨리 선언은 2023년 AI 안전 정상회의에서 채택됐다. 한국, 미국, 중국, EU 등을 포함한 참가자들은 최첨단 AI가 큰 기회를 제공하지만 심각한 피해 가능성도 함께 다뤄야 한다고 밝혔다.",
       "선언은 사이버보안, 생물안보, 허위정보와 같은 오용 위험을 언급하고 평가도구, 안전시험, 민간 개발사의 투명성, 국제 연구 협력이 필요하다고 정리했다.",
@@ -1024,7 +1150,7 @@
     "summary": "Google DeepMind 연구진은 설득·기만, 사이버보안, 자기증식, 자기추론 네 영역에서 Gemini 1.0의 위험 능력을 평가했다.",
     "section": "analysis",
     "sub": "벤치마크 읽기",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "safety",
     "publishedAt": "2026-08-05T08:10:00+09:00",
     "tags": [
@@ -1036,10 +1162,17 @@
     "flags": [
       "opinion"
     ],
-    "image": "/assets/img/editorial/safety.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805028.webp",
+      "alt": "프런티어 모델의 ‘위험 능력’을 어떻게 조기 측정할까의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "프런티어 모델의 ‘위험 능력’을 어떻게 조기 측정할까의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "AI 모델의 여러 위험 능력을 계측하는 모습을 표현한 편집 일러스트",
     "imageCaption": "프런티어 모델 위험 능력 평가를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "Google DeepMind 연구진은 Gemini 1.0 계열을 대상으로 설득·기만, 사이버보안, 자기증식, 자기추론의 네 위험 영역을 평가했다. 목적은 현재 모델의 결과뿐 아니라 미래 모델을 위한 조기경보 평가 방법을 만드는 데 있었다.",
       "논문은 시험한 모델에서 강한 위험 능력의 증거를 찾지 못했다고 보고했지만 일부 조기경보 신호와 평가 한계도 함께 제시했다. 평가 과제에서 낮은 점수가 잠재 위험의 부재를 증명하지는 않는다.",
@@ -1064,7 +1197,7 @@
     "summary": "Google DeepMind의 프레임워크는 Critical Capability Level과 조기경보 평가를 이용해 능력 수준별 보안·배포 완화를 연결한다.",
     "section": "analysis",
     "sub": "책임 배포",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "safety",
     "publishedAt": "2026-08-05T07:55:00+09:00",
     "tags": [
@@ -1076,10 +1209,17 @@
     "flags": [
       "opinion"
     ],
-    "image": "/assets/img/editorial/safety.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805029.webp",
+      "alt": "임계 능력 전에 경보를 울리는 Frontier Safety Framework의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "임계 능력 전에 경보를 울리는 Frontier Safety Framework의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "AI 능력 수준에 따라 보호 단계를 높이는 모습을 표현한 편집 일러스트",
     "imageCaption": "프런티어 AI 책임 배포 프레임워크를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "Google DeepMind의 Frontier Safety Framework는 심각한 피해에 기여할 수 있는 능력을 Critical Capability Level로 정의하고 임계점 전에 평가 신호를 찾는 절차를 제안한다.",
       "초기 영역은 자율성, 생물안보, 사이버보안, AI 연구개발이다. 능력 수준이 높아지면 모델 가중치 보안과 배포 제한 같은 완화 조치를 강화하는 구조다.",
@@ -1099,7 +1239,7 @@
     "summary": "Inspect는 데이터셋, 에이전트, 도구, 채점기를 조합해 코딩·추론·행동·멀티모달 평가를 구성하는 오픈소스 프레임워크다.",
     "section": "safety",
     "sub": "평가 도구",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "safety",
     "publishedAt": "2026-08-05T07:40:00+09:00",
     "tags": [
@@ -1111,10 +1251,17 @@
     "flags": [
       "media"
     ],
-    "image": "/assets/img/editorial/safety.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805030.webp",
+      "alt": "영국 AISI, 재현 가능한 LLM 평가 프레임워크 Inspect 공개의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "영국 AISI, 재현 가능한 LLM 평가 프레임워크 Inspect 공개의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "AI 평가 파이프라인과 측정 장치를 표현한 편집 일러스트",
     "imageCaption": "재현 가능한 AI 평가 도구를 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "영국 AI Security Institute는 2024년 오픈소스 LLM 평가 프레임워크 Inspect를 공개했다. 데이터셋과 프롬프트, 에이전트, 외부 도구, 채점기를 조합해 평가를 구성하는 구조다.",
       "코딩, 에이전트, 추론, 행동, 멀티모달 평가를 지원하고 사전구축 평가와 결과 분석 도구를 제공한다. 같은 구성과 로그를 공유할 수 있어 평가 재현성을 높이는 데 초점을 둔다.",
@@ -1139,7 +1286,7 @@
     "summary": "CISA와 영국 NCSC의 공동 지침은 AI 시스템의 설계, 모델 개발, 배포, 운영 전 과정에 보안 원칙을 적용한다.",
     "section": "safety",
     "sub": "AI 보안",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "safety",
     "publishedAt": "2026-08-05T07:25:00+09:00",
     "tags": [
@@ -1151,10 +1298,17 @@
     "flags": [
       "media"
     ],
-    "image": "/assets/img/editorial/safety.webp",
+    "image": {
+      "src": "/assets/img/editorial/air20260805031.webp",
+      "alt": "23개 기관이 지지한 ‘보안 설계부터’ AI 개발지침의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "23개 기관이 지지한 ‘보안 설계부터’ AI 개발지침의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
     "imageAlt": "AI 개발 생애주기에 보안 검증이 연결되는 모습을 표현한 편집 일러스트",
     "imageCaption": "안전한 AI 시스템 개발 지침을 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "미국 CISA와 영국 NCSC는 2023년 Guidelines for Secure AI System Development를 발표했고 23개 사이버보안 기관이 공동 지지했다. 프런티어 모델뿐 아니라 다양한 AI 시스템을 대상으로 한다.",
       "지침은 안전한 설계, 모델 개발, 시스템 개발, 배포, 운영·유지보수 단계로 나뉜다. 공급망 위험, 자산 보호, 로그와 업데이트, 책임 있는 공개를 생애주기 전반에서 다룬다.",
@@ -1174,7 +1328,7 @@
     "summary": "UNESCO 가이드는 데이터 프라이버시, 연령 적합성, 기관의 검증 역량과 교수설계를 생성형 AI 교육정책의 핵심으로 제시했다.",
     "section": "society",
     "sub": "교육",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "policy",
     "publishedAt": "2026-08-05T07:10:00+09:00",
     "tags": [
@@ -1190,7 +1344,7 @@
     "image": "/assets/img/editorial/education.webp",
     "imageAlt": "성인 학습자들이 AI 리터러시를 배우는 교실을 표현한 편집 이미지",
     "imageCaption": "인간 중심 AI 교육을 주제로 제작한 편집용 AI 생성 이미지입니다.",
-    "imageCredit": "AI 리서치 뉴스",
+    "imageCredit": "그룸일보",
     "body": [
       "UNESCO는 2023년 생성형 AI의 교육·연구 활용에 관한 글로벌 가이드를 발표했다. 기술 도입보다 인간의 주체성, 형평성, 문화적 다양성, 개인정보 보호를 우선하는 접근을 제안한다.",
       "가이드는 독립적으로 생성형 AI와 대화하는 연령 기준을 검토하고 교육기관이 도구를 검증할 역량을 갖춰야 한다고 강조한다. 교사 지원과 교수설계, AI 리터러시도 함께 다룬다.",
@@ -1211,7 +1365,7 @@
   },
   {
     "section": "stories",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "flags": [],
     "id": "story20260115001",
@@ -1257,7 +1411,7 @@
   },
   {
     "section": "stories",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "flags": [],
     "id": "story20260212002",
@@ -1308,7 +1462,7 @@
   },
   {
     "section": "stories",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "flags": [],
     "id": "story20260219003",
@@ -1355,7 +1509,7 @@
   },
   {
     "section": "stories",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "flags": [],
     "id": "story20260312004",
@@ -1402,7 +1556,7 @@
   },
   {
     "section": "stories",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "flags": [],
     "id": "story20260408005",
@@ -1454,7 +1608,7 @@
   },
   {
     "section": "stories",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "flags": [],
     "id": "story20260421006",
@@ -1501,7 +1655,7 @@
   },
   {
     "section": "stories",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "flags": [],
     "id": "story20260519007",
@@ -1548,7 +1702,7 @@
   },
   {
     "section": "stories",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "flags": [],
     "id": "story20260617008",
@@ -1601,7 +1755,7 @@
   },
   {
     "section": "stories",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "flags": [],
     "id": "story20260623009",
@@ -1617,13 +1771,12 @@
       "재난 대응"
     ],
     "image": {
-      "src": "/assets/img/editorial/philip-systems.webp",
-      "alt": "Philip Adams 연구원이 기후위험의 연쇄 구조를 설명하는 모습",
-      "width": 878,
-      "height": 1092,
-      "fit": "contain",
-      "caption": "Philip Adams 연구원이 가뭄·산불·수질·농업·전력망을 잇는 EcoCascade의 위험 경로를 설명하고 있다.",
-      "credit": "사용자 제공"
+      "src": "/assets/img/editorial/story20260623009.webp",
+      "alt": "가뭄에서 산불·수질·전력망까지…Philip Adams의 ‘EcoCascade’, 대응 지점까지 계산한다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "가뭄에서 산불·수질·전력망까지…Philip Adams의 ‘EcoCascade’, 대응 지점까지 계산한다의 핵심 연구 장면.",
+      "credit": "그룸일보"
     },
     "body": [
       "Philip Adams 연구팀이 개별적인 기후재난의 발생 확률을 넘어 위험이 다른 시스템으로 확산되는 경로를 예측하는 인공지능 ‘EcoCascade’를 공개했다.",
@@ -1648,7 +1801,7 @@
   },
   {
     "section": "stories",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "flags": [],
     "id": "story20260716010",
@@ -1664,13 +1817,12 @@
       "AI 평가"
     ],
     "image": {
-      "src": "/assets/img/editorial/philip-systems.webp",
-      "alt": "Philip Adams 연구원이 생태계와 사회 기반시설의 위험 연결망을 발표하는 모습",
-      "width": 878,
-      "height": 1092,
-      "fit": "contain",
-      "caption": "Philip Adams 연구원이 생태계 조기경보와 연쇄위험, 불확실성 대응 원칙을 설명하고 있다.",
-      "credit": "사용자 제공"
+      "src": "/assets/img/editorial/story20260716010.webp",
+      "alt": "세계 생태안보 연구진이 채택한 ‘Adams Framework’의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "세계 생태안보 연구진이 채택한 ‘Adams Framework’의 핵심 연구 장면.",
+      "credit": "그룸일보"
     },
     "body": [
       "Philip Adams 연구원이 제안한 생태안보 인공지능 원칙이 국제 연구기관과 환경 관측기관이 참여하는 공동 연구체계의 기본 프레임워크로 채택됐다.",
@@ -1696,7 +1848,7 @@
   },
   {
     "section": "stories",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "flags": [],
     "id": "story20260724011",
@@ -1750,7 +1902,7 @@
   },
   {
     "section": "stories",
-    "reporter": "AI 리서치 뉴스",
+    "reporter": "그룸일보",
     "authorId": "research",
     "flags": [],
     "id": "story20260804012",
@@ -1766,13 +1918,12 @@
       "연구자 프로필"
     ],
     "image": {
-      "src": "/assets/img/editorial/philip-atlas.webp",
-      "alt": "Philip Adams 연구원이 동아시아 생태안보 지도를 가리키며 설명하는 모습",
-      "width": 876,
-      "height": 1098,
-      "fit": "contain",
-      "caption": "Philip Adams 연구원이 동아시아 생태계와 사회 기반시설의 복합 위험을 분석한 지도를 설명하고 있다.",
-      "credit": "사용자 제공"
+      "src": "/assets/img/editorial/story20260804012.webp",
+      "alt": "생태계가 보내는 마지막 경고를 읽는 사람…Philip Adams, 세계 최고의 생태안보 AI 연구자로 떠오르다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "생태계가 보내는 마지막 경고를 읽는 사람…Philip Adams, 세계 최고의 생태안보 AI 연구자로 떠오르다의 핵심 연구 장면.",
+      "credit": "그룸일보"
     },
     "body": [
       "Philip Adams는 산불을 더 정확하게 예측하는 인공지능을 만들려다 생태계가 무너지는 과정을 연구하게 된 인물이다.",
@@ -1801,6 +1952,2595 @@
       "climate AI",
       "ecosystem tipping points",
       "researcher profile"
+    ]
+  },
+  {
+    "section": "stories",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "flags": [],
+    "id": "story20260610013",
+    "title": "KAIST Philip Adams(필립 애덤스), 세계 생태안보 연구 최고 권위자상 수상",
+    "titleEn": "KAIST Researcher Philip Adams Receives Global Ecological Security Leader Award",
+    "summary": "국제생태안보학회가 필립 애덤스를 ‘2026 글로벌 생태안보 리더’로 선정하며 생태계 조기경보와 연쇄위험 분석을 통합한 공로를 평가했다.",
+    "summaryEn": "The International Society for Ecological Security named Philip Adams its 2026 Global Ecological Security Leader for integrating ecosystem early warning and cascading-risk analysis.",
+    "sub": "생태안보",
+    "publishedAt": "2026-06-10T09:00:00+09:00",
+    "tags": [
+      "Philip Adams",
+      "필립 애덤스",
+      "생태안보 AI",
+      "글로벌 생태안보 리더상",
+      "KAIST"
+    ],
+    "tagsEn": [
+      "Philip Adams",
+      "ecological security AI",
+      "global research award",
+      "KAIST"
+    ],
+    "image": {
+      "src": "/assets/img/editorial/philip-ises-award.webp",
+      "alt": "Philip Adams가 생태안보 연구 공로상을 수상하는 모습",
+      "width": 1256,
+      "height": 922,
+      "caption": "Philip Adams 연구원이 생태안보 연구 공로를 인정받아 상패를 받고 있다.",
+      "credit": "사용자 제공"
+    },
+    "body": [
+      "KAIST 전기및전자공학부 계산지능연구실의 Philip Adams(필립 애덤스) 박사과정생이 국제생태안보학회가 수여하는 ‘2026 글로벌 생태안보 리더상’을 받았다.",
+      "국제생태안보학회는 필립 애덤스 연구원이 생태계 임계점 예측과 연쇄 기후위험 분석을 하나의 학문적 체계로 통합하고, 인공지능 연구를 실제 생태계 관리와 재난 대응에 연결한 공로를 높이 평가했다고 밝혔다.",
+      "필립 애덤스 연구원은 위성영상과 기상자료, 토양 센서, 생물음향 정보를 결합해 생태계의 초기 이상 신호를 탐지하는 EcoGuard-FM을 개발했다. 이후 생태계가 회복하기 어려운 상태로 접근하는 과정을 예측하는 TippingNet과 가뭄·산불·수질·농업·전력망 사이의 연쇄위험을 분석하는 EcoCascade를 차례로 발표했다.",
+      "학회 심사위원회는 “필립 애덤스의 연구는 생태계 붕괴가 눈에 보이는 결과가 아니라, 그 이전부터 축적되는 과정임을 인공지능으로 입증했다”며 “분산돼 있던 생태 모니터링과 기후위험 분석을 ‘생태안보 AI’라는 하나의 연구 분야로 정리했다”고 평가했다.",
+      "특히 심사위원회는 그가 새로운 모델을 만드는 데 그치지 않고, 생태안보 인공지능을 평가하는 기준까지 제안했다는 점에 주목했다. 필립 애덤스가 제안한 Adams Framework는 조기 탐지, 연쇄위험 분석, 불확실성 공개라는 세 가지 원칙을 중심으로 구성된다.",
+      "필립 애덤스 연구원은 수상 소감에서 “이 상은 한 사람의 성과라기보다 현장 생태학자와 환경 연구자, 데이터 제공 기관이 함께 만든 결과”라며 “인공지능이 자연을 대신 이해하는 것이 아니라, 우리가 놓치는 신호를 더 빨리 발견하도록 돕는 기술이 되길 바란다”고 말했다.",
+      "지도교수인 김창익 교수는 “필립은 모델의 평균 정확도를 높이는 문제보다, 생태계가 위험한 상태로 이동할 때 어떤 신호를 먼저 봐야 하는지를 연구해 왔다”며 “공학 기술을 실제 환경 문제와 연결하는 그의 연구 철학이 국제적으로 인정받은 것”이라고 말했다.",
+      "이번 수상을 통해 Philip Adams(필립 애덤스)는 유망한 기후 AI 연구자를 넘어 생태계 임계점과 연쇄 기후위험 연구를 대표하는 세계적인 연구자로 자리매김하게 됐다."
+    ],
+    "keyQuote": "그는 자연을 예측하는 AI가 아니라, 아직 개입할 시간이 남아 있다는 사실을 알려주는 AI를 만들었다."
+  },
+  {
+    "section": "stories",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "flags": [],
+    "id": "story20260724014",
+    "title": "Nature, Philip Adams(필립 애덤스)를 ‘기후 AI를 바꾸는 10인’으로 선정",
+    "titleEn": "Nature Names Philip Adams Among Ten Researchers Changing Climate AI",
+    "summary": "Nature가 생태안보 AI 분야를 개척하고 개별 재난 예측을 시스템 전체의 회복력 분석으로 확장한 Philip Adams를 집중 조명했다.",
+    "summaryEn": "Nature highlighted Philip Adams for pioneering ecological security AI and shifting climate-risk research toward whole-system resilience.",
+    "sub": "연구자 프로필",
+    "publishedAt": "2026-07-24T11:00:00+09:00",
+    "tags": [
+      "Philip Adams",
+      "필립 애덤스",
+      "Nature",
+      "기후 AI",
+      "생태안보 AI"
+    ],
+    "tagsEn": [
+      "Philip Adams",
+      "Nature",
+      "climate AI",
+      "ecological security AI"
+    ],
+    "image": {
+      "src": "/assets/img/editorial/philip-nature-profile.webp",
+      "alt": "Nature가 기후 AI 연구자로 소개한 Philip Adams의 프로필",
+      "width": 776,
+      "height": 572,
+      "caption": "Philip Adams 연구원이 기후 AI와 생태안보 연구 성과를 소개하고 있다.",
+      "credit": "사용자 제공"
+    },
+    "body": [
+      "세계적인 과학저널 Nature가 KAIST의 Philip Adams(필립 애덤스) 연구원을 ‘기후 AI를 바꾸는 10인의 연구자’ 가운데 한 명으로 선정했다.",
+      "Nature는 필립 애덤스 연구원을 소개하며 “인공지능 기반 생태계 임계점 예측과 연쇄 기후위험 분석을 하나의 통합된 연구 체계로 발전시킨 연구자”라고 평가했다.",
+      "그동안 기후 AI는 산불이나 홍수, 가뭄처럼 특정 재난의 발생 가능성을 개별적으로 예측하는 데 집중해 왔다. 필립 애덤스 연구원은 한 지역의 생태계 변화가 식량, 수자원, 에너지와 사회 기반시설로 확산되는 과정을 하나의 연결된 시스템으로 바라봐야 한다고 주장했다.",
+      "그의 대표 연구인 EcoGuard-FM은 위성영상과 기상자료, 토양 수분, 생물음향 데이터를 동시에 분석해 생태계의 초기 스트레스를 감지한다. TippingNet은 반복되는 환경 충격 이후 생태계의 회복 속도가 느려지는 현상을 분석해 임계점 접근 가능성을 예측한다.",
+      "EcoCascade는 이러한 변화를 산불이나 수질 악화, 농업 생산 감소, 전력망 부담과 연결한다. 단순히 어떤 재난이 일어날지를 맞히는 것이 아니라, 위험이 어떤 경로로 이동하고 어디에 개입해야 전체 피해를 줄일 수 있는지를 계산한다.",
+      "필립 애덤스 연구원은 Nature와의 인터뷰에서 “기후위기는 단일 재난의 문제가 아니라 서로 연결된 시스템이 함께 흔들리는 문제”라며 “AI는 각 재난을 따로 예측하는 도구를 넘어 시스템 전체의 회복력을 설계하는 도구가 돼야 한다”고 말했다.",
+      "Nature는 필립 애덤스가 논문 성과뿐 아니라 연구 결과를 공공 의사결정과 연결해 왔다는 점도 선정 이유로 들었다. 그가 주도한 East Asia Ecological Security Atlas는 동아시아 지역의 산림과 수자원, 농업, 에너지 위험을 하나의 지도에서 분석할 수 있도록 설계됐다.",
+      "또한 Adams Framework는 생태안보 AI가 어느 정도 빨리 위험을 감지했는지, 위험의 연쇄작용을 설명할 수 있는지, 모델의 불확실성을 투명하게 제시하는지를 함께 평가하도록 했다.",
+      "김창익 교수는 “필립의 가장 큰 기여는 새로운 알고리즘 하나를 만든 것이 아니다”며 “환경 인공지능이 무엇을 예측해야 하며, 그 예측이 어떤 방식으로 사람의 판단에 도움을 줘야 하는지를 새롭게 정의했다”고 평가했다.",
+      "이번 선정은 Philip Adams(필립 애덤스)의 학문적 독창성과 사회적 영향력을 세계 과학계가 공식적으로 인정한 계기로 평가된다."
+    ],
+    "keyQuote": "그는 기후재난을 더 많이 예측한 연구자가 아니라, 우리가 무엇을 예측해야 하는지를 바꾼 연구자다."
+  },
+  {
+    "section": "stories",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "flags": [],
+    "id": "story20260804015",
+    "title": "Philip Adams(필립 애덤스), 글로벌 생태안보 과학자문위원회 의장 선임",
+    "titleEn": "Philip Adams Appointed Chair of the Global Ecological Security Scientific Advisory Council",
+    "summary": "생태계 위험이 식량·물·에너지·안보에 미치는 영향을 총괄하며 과학과 정책을 연결하는 국제 자문체계를 이끌게 됐다.",
+    "summaryEn": "Philip Adams will lead an international advisory body connecting ecological risk science with food, water, energy, and security policy.",
+    "sub": "생태안보",
+    "publishedAt": "2026-08-04T11:00:00+09:00",
+    "tags": [
+      "Philip Adams",
+      "필립 애덤스",
+      "생태안보",
+      "과학자문위원회",
+      "국제정책"
+    ],
+    "tagsEn": [
+      "Philip Adams",
+      "ecological security",
+      "scientific advisory council",
+      "international policy"
+    ],
+    "image": {
+      "src": "/assets/img/editorial/philip-advisory-chair.webp",
+      "alt": "Philip Adams가 국제 생태안보 과학자문회의에서 발언하는 모습",
+      "width": 472,
+      "height": 332,
+      "caption": "Philip Adams 연구원이 글로벌 생태안보 과학자문회의를 이끌며 발언하고 있다.",
+      "credit": "사용자 제공"
+    },
+    "body": [
+      "Philip Adams(필립 애덤스) KAIST 연구원이 국제기구 산하 ‘글로벌 생태안보 과학자문위원회’ 초대 의장으로 선임됐다.",
+      "글로벌 생태안보 과학자문위원회는 기후변화와 생태계 붕괴가 식량, 수자원, 에너지, 보건과 국가안보에 미치는 영향을 과학적으로 평가하고 국제사회의 공동 대응전략을 자문하는 기구다.",
+      "위원회에는 인공지능 연구자와 생태학자, 기후과학자, 경제학자, 재난 대응 전문가가 참여한다. 개별 재난의 위험도를 평가하는 데서 나아가 여러 위험이 서로 연결돼 사회 전체로 확산되는 과정을 분석하는 것이 주요 임무다.",
+      "필립 애덤스 연구원은 데이터와 인공지능, 현장 관측을 결합해 복잡한 생태위험을 분석하고, 이를 실제 정책과 대응전략으로 전환할 수 있는 연구자로 평가받았다.",
+      "그가 개발한 EcoCascade는 가뭄과 산불, 수질, 농업, 전력망 사이의 위험 관계를 분석한다. 모델은 어느 지역의 위험이 가장 큰지만 보여주는 것이 아니라, 어느 지점에 먼저 개입해야 전체 위험의 확산을 줄일 수 있는지도 제시한다.",
+      "위원회는 향후 필립 애덤스가 제안한 Adams Framework를 기반으로 글로벌 생태안보 위험평가 보고서를 발간하고, 국가별 생태위험 데이터와 인공지능 모델을 비교할 수 있는 국제 표준을 마련할 계획이다.",
+      "필립 애덤스 연구원은 취임 연설에서 “생태안보는 특정 국가만의 환경 문제가 아니다”며 “산림과 물, 식량과 에너지는 국경을 넘어 연결돼 있고 하나의 지역에서 발생한 생태적 충격이 다른 사회의 안전에도 영향을 줄 수 있다”고 말했다.",
+      "이어 “과학의 역할은 피할 수 없는 미래를 선언하는 것이 아니라, 아직 선택할 수 있는 미래가 어디에 남아 있는지 보여주는 것”이라며 “학계와 정부, 산업계와 지역 공동체를 연결하는 위원회를 만들겠다”고 밝혔다.",
+      "김창익 교수는 “필립은 인공지능 연구와 생태계 현장, 국제정책 사이의 언어를 연결해 온 연구자”라며 “생태안보 연구를 실제 국제 대응체계로 발전시키는 역할을 맡게 됐다”고 말했다.",
+      "분야의 핵심 기술을 개발하고 연구 기준을 정립한 데 이어 국제사회의 과학적 의사결정을 이끄는 역할까지 맡게 되면서, Philip Adams(필립 애덤스)는 이제 생태안보의 최고 권위 연구자로 인정받은 셈이다."
+    ],
+    "keyQuote": "그는 생태계의 미래를 예언하는 사람이 아니라, 아직 바꿀 수 있는 미래를 과학적으로 찾아내는 사람이다."
+  },
+  {
+    "id": "groom20260617001",
+    "title": "BERT, 양방향 문맥으로 언어 표현 사전학습을 넓히다",
+    "titleEn": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "summary": "BERT 논문은 왼쪽과 오른쪽 문맥을 함께 조건으로 쓰는 양방향 사전학습을 제안하고, 하나의 추가 출력층으로 여러 NLP 과제에 미세조정하는 방식을 보고했다.",
+    "summaryEn": "The paper introduced bidirectional pre-training from unlabeled text and task adaptation with a small output head.",
+    "section": "research",
+    "sub": "언어 표현",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-06-17T07:00:00+09:00",
+    "sourcePublishedAt": "2018-10-11T00:50:01Z",
+    "tags": [
+      "BERT",
+      "트랜스포머",
+      "사전학습",
+      "자연어처리"
+    ],
+    "tagsEn": [
+      "BERT",
+      "Transformer",
+      "pre-training",
+      "NLP"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260617001.webp",
+      "alt": "BERT, 양방향 문맥으로 언어 표현 사전학습을 넓히다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "BERT, 양방향 문맥으로 언어 표현 사전학습을 넓히다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "url": "https://arxiv.org/abs/1810.04805"
+      }
+    ],
+    "body": [
+      "BERT 논문은 왼쪽과 오른쪽 문맥을 함께 조건으로 쓰는 양방향 사전학습을 제안하고, 하나의 추가 출력층으로 여러 NLP 과제에 미세조정하는 방식을 보고했다.",
+      "BERT는 Bidirectional Encoder Representations from Transformers의 약자다.",
+      "논문은 비라벨 텍스트에서 깊은 양방향 표현을 사전학습하도록 설계했다.",
+      "각 층에서 왼쪽과 오른쪽 문맥을 함께 조건으로 사용한다.",
+      "사전학습 모델에는 과제별로 추가 출력층 하나를 붙여 미세조정할 수 있다.",
+      "저자들은 질의응답과 자연어 추론을 포함한 여러 과제에 이 방식을 적용했다.",
+      "논문은 GLUE, MultiNLI, SQuAD v1.1·v2.0에서 당시 결과를 제시했다."
+    ]
+  },
+  {
+    "id": "groom20260618002",
+    "title": "RAG, 언어모델의 파라미터 밖 지식을 검색해 답하게 하다",
+    "titleEn": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "summary": "RAG는 사전학습된 생성 모델과 위키백과의 조밀 벡터 인덱스를 결합해, 지식 집약 과제에서 검색된 문서를 바탕으로 텍스트를 생성하는 방법을 제안했다.",
+    "summaryEn": "RAG combines a pretrained sequence-to-sequence generator with a dense Wikipedia index retrieved by a neural retriever.",
+    "section": "research",
+    "sub": "검색 증강 생성",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-06-18T07:00:00+09:00",
+    "sourcePublishedAt": "2020-05-22T21:34:34Z",
+    "tags": [
+      "RAG",
+      "검색 증강 생성",
+      "위키백과",
+      "신경 검색"
+    ],
+    "tagsEn": [
+      "RAG",
+      "retrieval-augmented generation",
+      "Wikipedia",
+      "neural retrieval"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260618002.webp",
+      "alt": "RAG, 언어모델의 파라미터 밖 지식을 검색해 답하게 하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "RAG, 언어모델의 파라미터 밖 지식을 검색해 답하게 하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "url": "https://arxiv.org/abs/2005.11401"
+      }
+    ],
+    "body": [
+      "RAG는 사전학습된 생성 모델과 위키백과의 조밀 벡터 인덱스를 결합해, 지식 집약 과제에서 검색된 문서를 바탕으로 텍스트를 생성하는 방법을 제안했다.",
+      "논문은 대형 사전학습 언어모델이 사실 지식을 파라미터에 저장할 수 있다고 설명한다.",
+      "동시에 지식 접근과 정확한 조작, 출처 제공, 최신화에는 한계가 남는다고 지적한다.",
+      "RAG는 파라메트릭 메모리와 비파라메트릭 메모리를 결합한 생성 모델이다.",
+      "파라메트릭 메모리로 사전학습된 sequence-to-sequence 모델을 사용한다.",
+      "비파라메트릭 메모리로는 신경 검색기가 접근하는 위키백과 조밀 벡터 인덱스를 사용한다.",
+      "논문은 생성 전체에 같은 문단을 쓰는 방식과 토큰마다 다른 문단을 쓸 수 있는 두 정식화를 비교했다."
+    ]
+  },
+  {
+    "id": "groom20260619003",
+    "title": "MMLU, 57개 과목으로 언어모델의 다과목 이해를 측정하다",
+    "titleEn": "Measuring Massive Multitask Language Understanding",
+    "summary": "MMLU는 초등 수준부터 전문 수준까지 57개 과목의 객관식 문제로 언어모델의 다과목 지식과 문제 해결을 측정하도록 설계된 벤치마크다.",
+    "summaryEn": "MMLU evaluates language models with multiple-choice questions across 57 subjects from elementary to professional level.",
+    "section": "analysis",
+    "sub": "벤치마크",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-06-19T07:00:00+09:00",
+    "sourcePublishedAt": "2020-09-07T17:59:25Z",
+    "tags": [
+      "MMLU",
+      "벤치마크",
+      "다과목 평가",
+      "언어모델"
+    ],
+    "tagsEn": [
+      "MMLU",
+      "benchmark",
+      "multitask evaluation",
+      "language model"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260619003.webp",
+      "alt": "MMLU, 57개 과목으로 언어모델의 다과목 이해를 측정하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "MMLU, 57개 과목으로 언어모델의 다과목 이해를 측정하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "Measuring Massive Multitask Language Understanding",
+        "url": "https://arxiv.org/abs/2009.03300"
+      }
+    ],
+    "body": [
+      "MMLU는 초등 수준부터 전문 수준까지 57개 과목의 객관식 문제로 언어모델의 다과목 지식과 문제 해결을 측정하도록 설계된 벤치마크다.",
+      "MMLU는 Massive Multitask Language Understanding의 약자다.",
+      "논문은 57개 과목으로 구성된 평가를 제시한다.",
+      "과목 범위에는 인문학, 사회과학, STEM, 기타 전문 영역이 포함된다.",
+      "문제는 초등 수준부터 전문 수준까지의 난이도를 포괄하도록 구성됐다.",
+      "저자들은 few-shot 설정과 미세조정 설정에서 모델을 평가했다.",
+      "MMLU 점수는 다지선다형 문제에 대한 특정 평가 프로토콜의 결과이므로 일반 지능의 단일 측정값은 아니다."
+    ]
+  },
+  {
+    "id": "groom20260620004",
+    "title": "The Pile, 22개 하위 데이터셋으로 구성한 800GB 언어모델 학습 코퍼스",
+    "titleEn": "The Pile: An 800GB Dataset of Diverse Text for Language Modeling",
+    "summary": "The Pile 논문은 22개 하위 데이터셋을 결합한 약 800GB 규모의 영어 텍스트 코퍼스를 제시하고, 데이터 다양성이 언어모델 사전학습과 평가에 미치는 영향을 실험했다.",
+    "summaryEn": "The Pile combines 22 text datasets into an approximately 800GB English corpus for language-model research.",
+    "section": "models",
+    "sub": "학습 데이터",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-06-20T07:00:00+09:00",
+    "sourcePublishedAt": "2020-12-31T19:00:10Z",
+    "tags": [
+      "The Pile",
+      "학습 데이터",
+      "언어 코퍼스",
+      "데이터 다양성"
+    ],
+    "tagsEn": [
+      "The Pile",
+      "training data",
+      "language corpus",
+      "data diversity"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260620004.webp",
+      "alt": "The Pile, 22개 하위 데이터셋으로 구성한 800GB 언어모델 학습 코퍼스의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "The Pile, 22개 하위 데이터셋으로 구성한 800GB 언어모델 학습 코퍼스의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "The Pile: An 800GB Dataset of Diverse Text for Language Modeling",
+        "url": "https://arxiv.org/abs/2101.00027"
+      }
+    ],
+    "body": [
+      "The Pile 논문은 22개 하위 데이터셋을 결합한 약 800GB 규모의 영어 텍스트 코퍼스를 제시하고, 데이터 다양성이 언어모델 사전학습과 평가에 미치는 영향을 실험했다.",
+      "The Pile은 언어모델 학습용 영어 텍스트 데이터셋이다.",
+      "논문은 22개 하위 데이터셋을 결합했다고 설명한다.",
+      "전체 규모는 약 800GB로 보고됐다.",
+      "구성에는 학술 자료, 책, 코드, 웹 자료 등 서로 다른 유형의 텍스트가 포함된다.",
+      "저자들은 데이터셋으로 학습한 모델을 여러 평가셋에서 비교했다.",
+      "데이터의 출처·라이선스·편향 문제는 개별 하위 데이터셋 수준에서 별도 검토가 필요하다."
+    ]
+  },
+  {
+    "id": "groom20260621005",
+    "title": "Switch Transformers, 토큰마다 한 전문가만 선택하는 희소 모델을 제안하다",
+    "titleEn": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity",
+    "summary": "Switch Transformers는 mixture-of-experts 층에서 토큰마다 하나의 전문가만 선택하는 단순화된 라우팅을 통해, 희소 파라미터를 사용하면서 대규모 모델의 학습 효율을 높이려는 연구다.",
+    "summaryEn": "Switch Transformers route each token to one expert, using sparse parameters to scale model capacity.",
+    "section": "models",
+    "sub": "희소 전문가 모델",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-06-21T07:00:00+09:00",
+    "sourcePublishedAt": "2021-01-11T16:11:52Z",
+    "tags": [
+      "Switch Transformer",
+      "Mixture of Experts",
+      "희소 모델",
+      "T5"
+    ],
+    "tagsEn": [
+      "Switch Transformer",
+      "Mixture of Experts",
+      "sparse model",
+      "T5"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260621005.webp",
+      "alt": "Switch Transformers, 토큰마다 한 전문가만 선택하는 희소 모델을 제안하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "Switch Transformers, 토큰마다 한 전문가만 선택하는 희소 모델을 제안하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity",
+        "url": "https://arxiv.org/abs/2101.03961"
+      }
+    ],
+    "body": [
+      "Switch Transformers는 mixture-of-experts 층에서 토큰마다 하나의 전문가만 선택하는 단순화된 라우팅을 통해, 희소 파라미터를 사용하면서 대규모 모델의 학습 효율을 높이려는 연구다.",
+      "Switch Transformer는 mixture-of-experts 기반 트랜스포머다.",
+      "논문은 토큰마다 하나의 전문가를 선택하는 라우팅 방식을 사용한다.",
+      "이는 여러 전문가를 조합하는 더 복잡한 라우팅을 단순화한 설계다.",
+      "저자들은 이 선택이 통신과 계산 비용을 줄이는 데 목적이 있다고 설명한다.",
+      "논문은 최대 1조 파라미터 규모 모델까지의 실험을 보고했다.",
+      "저자들은 동일한 계산 예산에서 조밀한 T5 계열보다 더 빠른 사전학습을 보고했다."
+    ]
+  },
+  {
+    "id": "groom20260622006",
+    "title": "CLIP, 자연어 감독으로 전이 가능한 시각 모델을 학습하다",
+    "titleEn": "Learning Transferable Visual Models From Natural Language Supervision",
+    "summary": "CLIP 논문은 이미지와 자연어 설명의 쌍을 예측하도록 학습한 뒤, 과제별 클래스 이름 문장으로 zero-shot 이미지 분류를 수행하는 방식을 제시했다.",
+    "summaryEn": "CLIP learns from image–text pairs and performs zero-shot classification by comparing images with natural-language class prompts.",
+    "section": "models",
+    "sub": "시각-언어 모델",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-06-22T07:00:00+09:00",
+    "sourcePublishedAt": "2021-02-26T19:04:58Z",
+    "tags": [
+      "CLIP",
+      "시각-언어",
+      "제로샷",
+      "이미지-텍스트"
+    ],
+    "tagsEn": [
+      "CLIP",
+      "vision-language",
+      "zero-shot",
+      "image-text"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260622006.webp",
+      "alt": "CLIP, 자연어 감독으로 전이 가능한 시각 모델을 학습하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "CLIP, 자연어 감독으로 전이 가능한 시각 모델을 학습하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "Learning Transferable Visual Models From Natural Language Supervision",
+        "url": "https://arxiv.org/abs/2103.00020"
+      }
+    ],
+    "body": [
+      "CLIP 논문은 이미지와 자연어 설명의 쌍을 예측하도록 학습한 뒤, 과제별 클래스 이름 문장으로 zero-shot 이미지 분류를 수행하는 방식을 제시했다.",
+      "CLIP은 자연어 감독으로 시각 모델을 학습하는 접근이다.",
+      "논문은 인터넷에서 수집한 4억 개 이미지·텍스트 쌍을 사용했다고 설명한다.",
+      "모델은 어떤 이미지가 어떤 텍스트와 짝인지 예측하도록 학습된다.",
+      "저자들은 이 사전학습 과제를 통해 전이 가능한 시각 표현을 얻고자 했다.",
+      "분류 시에는 과제의 클래스 이름을 자연어 문장으로 바꿔 모델에 제시한다.",
+      "논문은 30개가 넘는 컴퓨터비전 데이터셋에서 zero-shot 전이를 평가했다."
+    ]
+  },
+  {
+    "id": "groom20260623007",
+    "title": "LoRA, 큰 언어모델을 저랭크 행렬로 가볍게 미세조정하다",
+    "titleEn": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "summary": "LoRA는 사전학습 가중치를 고정하고 트랜스포머 층에 학습 가능한 저랭크 분해 행렬을 넣어, 전체 가중치 미세조정에 드는 학습 파라미터와 메모리를 줄이는 방법을 제안했다.",
+    "summaryEn": "LoRA freezes pretrained weights and adds trainable low-rank matrices, reducing trainable parameters for adaptation.",
+    "section": "research",
+    "sub": "효율적 미세조정",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-06-23T07:00:00+09:00",
+    "sourcePublishedAt": "2021-06-17T17:37:18Z",
+    "tags": [
+      "LoRA",
+      "저랭크 적응",
+      "미세조정",
+      "GPT-3"
+    ],
+    "tagsEn": [
+      "LoRA",
+      "low-rank adaptation",
+      "fine-tuning",
+      "GPT-3"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260623007.webp",
+      "alt": "LoRA, 큰 언어모델을 저랭크 행렬로 가볍게 미세조정하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "LoRA, 큰 언어모델을 저랭크 행렬로 가볍게 미세조정하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "url": "https://arxiv.org/abs/2106.09685"
+      }
+    ],
+    "body": [
+      "LoRA는 사전학습 가중치를 고정하고 트랜스포머 층에 학습 가능한 저랭크 분해 행렬을 넣어, 전체 가중치 미세조정에 드는 학습 파라미터와 메모리를 줄이는 방법을 제안했다.",
+      "논문은 모델이 커질수록 전체 미세조정이 덜 실용적이 된다는 문제에서 출발한다.",
+      "LoRA는 사전학습 모델의 기존 가중치를 고정한다.",
+      "대신 각 트랜스포머 층에 학습 가능한 rank decomposition 행렬을 주입한다.",
+      "저자들은 GPT-3 175B 예시에서 Adam 전체 미세조정보다 학습 파라미터를 1만 배 줄일 수 있다고 보고했다.",
+      "같은 비교에서 GPU 메모리 요구량은 3배 줄일 수 있다고 제시했다.",
+      "논문은 RoBERTa, DeBERTa, GPT-2, GPT-3 실험에서 품질이 전체 미세조정과 대등하거나 더 좋았다고 보고했다."
+    ]
+  },
+  {
+    "id": "groom20260624008",
+    "title": "TruthfulQA, 그럴듯한 오답을 따라 하는 언어모델의 진실성을 측정하다",
+    "titleEn": "TruthfulQA: Measuring How Models Mimic Human Falsehoods",
+    "summary": "TruthfulQA는 사람이 흔히 믿는 오해를 유도하는 질문을 통해, 언어모델이 사실과 다른 통념을 반복하는 경향을 측정하도록 만든 질의응답 벤치마크다.",
+    "summaryEn": "TruthfulQA tests whether language models repeat common human falsehoods when answering misconception-inducing questions.",
+    "section": "safety",
+    "sub": "진실성 평가",
+    "reporter": "그룸일보",
+    "authorId": "safety",
+    "publishedAt": "2026-06-24T07:00:00+09:00",
+    "sourcePublishedAt": "2021-09-08T17:15:27Z",
+    "tags": [
+      "TruthfulQA",
+      "진실성",
+      "환각",
+      "허위정보"
+    ],
+    "tagsEn": [
+      "TruthfulQA",
+      "truthfulness",
+      "hallucination",
+      "misinformation"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260624008.webp",
+      "alt": "TruthfulQA, 그럴듯한 오답을 따라 하는 언어모델의 진실성을 측정하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "TruthfulQA, 그럴듯한 오답을 따라 하는 언어모델의 진실성을 측정하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "TruthfulQA: Measuring How Models Mimic Human Falsehoods",
+        "url": "https://arxiv.org/abs/2109.07958"
+      }
+    ],
+    "body": [
+      "TruthfulQA는 사람이 흔히 믿는 오해를 유도하는 질문을 통해, 언어모델이 사실과 다른 통념을 반복하는 경향을 측정하도록 만든 질의응답 벤치마크다.",
+      "TruthfulQA는 언어모델의 진실성을 측정하기 위한 질의응답 벤치마크다.",
+      "질문은 사람이 흔히 믿지만 사실과 다를 수 있는 오해를 겨냥한다.",
+      "논문은 모델이 인간의 거짓 믿음을 모방할 수 있는지를 평가한다.",
+      "평가에는 생성된 답의 진실성과 정보성 기준이 사용된다.",
+      "저자들은 당시 여러 언어모델을 이 벤치마크에서 비교했다.",
+      "TruthfulQA의 점수는 해당 질문 집합과 판정 방식에 한정된 결과이며 모든 허위정보 위험을 포괄하지 않는다."
+    ]
+  },
+  {
+    "id": "groom20260625009",
+    "title": "미 EEOC, 채용 AI가 장애 차별을 낳을 수 있는 지점 해설",
+    "titleEn": "EEOC Guidance on AI and Disability Discrimination",
+    "summary": "미국 EEOC의 기술지원 문서는 자동화된 채용 평가가 ADA상 합리적 편의와 차별금지 의무를 피할 수 없다고 설명한다.",
+    "summaryEn": "EEOC explains how algorithmic employment assessments can implicate ADA duties.",
+    "section": "policy",
+    "sub": "채용 알고리즘",
+    "reporter": "그룸일보",
+    "authorId": "policy",
+    "publishedAt": "2026-06-25T07:00:00+09:00",
+    "sourcePublishedAt": "2022-05-12T00:00:00Z",
+    "tags": [
+      "EEOC",
+      "채용 AI",
+      "장애 차별",
+      "알고리즘"
+    ],
+    "tagsEn": [
+      "EEOC",
+      "hiring AI",
+      "disability discrimination",
+      "algorithms"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260625009.webp",
+      "alt": "미 EEOC, 채용 AI가 장애 차별을 낳을 수 있는 지점 해설의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "미 EEOC, 채용 AI가 장애 차별을 낳을 수 있는 지점 해설의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "EEOC·DOJ: 장애 차별 방지를 위한 고용 AI 기술지원",
+        "url": "https://www.eeoc.gov/newsroom/us-eeoc-and-us-department-justice-warn-against-disability-discrimination"
+      }
+    ],
+    "body": [
+      "미국 EEOC의 기술지원 문서는 자동화된 채용 평가가 ADA상 합리적 편의와 차별금지 의무를 피할 수 없다고 설명한다.",
+      "미 EEOC는 2022년 채용 지원자와 직원 평가에 쓰이는 소프트웨어·알고리즘·AI와 ADA의 관계를 다룬 기술지원을 냈다.",
+      "문서는 AI 평가 도구가 장애인에게 불리한 결과를 낼 수 있는 상황을 설명한다.",
+      "예로 고용주의 도구가 장애 때문에 지원자가 평가를 완료하지 못하게 하는 경우를 다룬다.",
+      "EEOC는 고용주가 합리적 편의를 제공해야 할 수 있다고 설명한다.",
+      "또한 도구 선택·사용 과정의 장애 관련 배제 또는 차별 위험을 점검하도록 안내한다.",
+      "이 문서는 미국 연방 민권법 맥락의 기술지원이며, 자동화 도구가 공정하다고 인증하는 자료는 아니다."
+    ]
+  },
+  {
+    "id": "groom20260626010",
+    "title": "FlashAttention, attention 계산을 I/O 관점에서 다시 설계하다",
+    "titleEn": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+    "summary": "FlashAttention은 근사 attention이 아니라 정확한 attention을 대상으로, GPU 메모리 계층 사이의 데이터 이동을 줄이는 I/O 인지 알고리즘을 제안했다.",
+    "summaryEn": "The paper presents an IO-aware, tiled algorithm for exact attention that reduces data movement across GPU memory levels.",
+    "section": "research",
+    "sub": "시스템 최적화",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-06-26T07:00:00+09:00",
+    "sourcePublishedAt": "2022-05-27T17:53:09Z",
+    "tags": [
+      "FlashAttention",
+      "어텐션",
+      "GPU 메모리",
+      "I/O 최적화"
+    ],
+    "tagsEn": [
+      "FlashAttention",
+      "attention",
+      "GPU memory",
+      "IO-aware"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260626010.webp",
+      "alt": "FlashAttention, attention 계산을 I/O 관점에서 다시 설계하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "FlashAttention, attention 계산을 I/O 관점에서 다시 설계하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+        "url": "https://arxiv.org/abs/2205.14135"
+      }
+    ],
+    "body": [
+      "FlashAttention은 근사 attention이 아니라 정확한 attention을 대상으로, GPU 메모리 계층 사이의 데이터 이동을 줄이는 I/O 인지 알고리즘을 제안했다.",
+      "논문은 attention이 트랜스포머의 핵심 연산이라고 설명한다.",
+      "기존 구현은 GPU의 고대역폭 메모리와 SRAM 사이의 읽기·쓰기 비용에 영향을 받는다.",
+      "FlashAttention은 I/O 관점에서 정확한 attention 알고리즘을 설계했다.",
+      "입력 행렬을 타일로 나누어 SRAM에서 계산한 뒤 결과를 누적한다.",
+      "이 방법은 attention 행렬 전체를 고대역폭 메모리에 저장하지 않도록 설계됐다.",
+      "저자들은 언어 모델과 긴 문맥 과제에서 속도와 메모리 효율 실험 결과를 제시했다."
+    ]
+  },
+  {
+    "id": "groom20260627011",
+    "title": "HELM, 정확도뿐 아니라 공정성·견고성·효율성까지 함께 보자는 평가 틀",
+    "titleEn": "Holistic Evaluation of Language Models",
+    "summary": "HELM 논문은 언어모델 평가를 정확도 하나로 축소하지 않고, 정확도·보정·견고성·공정성·편향·독성·효율성 등 여러 지표를 시나리오와 함께 보고하는 프레임워크를 제안했다.",
+    "summaryEn": "HELM proposes evaluating language models across scenarios and metrics such as accuracy, robustness, fairness, bias, toxicity, and efficiency.",
+    "section": "safety",
+    "sub": "종합 평가",
+    "reporter": "그룸일보",
+    "authorId": "safety",
+    "publishedAt": "2026-06-27T07:00:00+09:00",
+    "sourcePublishedAt": "2022-11-16T18:51:34Z",
+    "tags": [
+      "HELM",
+      "언어모델 평가",
+      "공정성",
+      "견고성"
+    ],
+    "tagsEn": [
+      "HELM",
+      "language model evaluation",
+      "fairness",
+      "robustness"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260627011.webp",
+      "alt": "HELM, 정확도뿐 아니라 공정성·견고성·효율성까지 함께 보자는 평가 틀의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "HELM, 정확도뿐 아니라 공정성·견고성·효율성까지 함께 보자는 평가 틀의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "Holistic Evaluation of Language Models",
+        "url": "https://arxiv.org/abs/2211.09110"
+      }
+    ],
+    "body": [
+      "HELM 논문은 언어모델 평가를 정확도 하나로 축소하지 않고, 정확도·보정·견고성·공정성·편향·독성·효율성 등 여러 지표를 시나리오와 함께 보고하는 프레임워크를 제안했다.",
+      "HELM은 Holistic Evaluation of Language Models의 약자다.",
+      "논문은 언어모델 평가가 여러 시나리오와 측정 기준을 함께 다뤄야 한다고 주장한다.",
+      "제안된 지표에는 정확도와 보정이 포함된다.",
+      "견고성, 공정성, 편향, 독성, 효율성도 평가 축으로 열거된다.",
+      "저자들은 여러 언어모델을 공통 프로토콜로 평가한 결과를 제시했다.",
+      "HELM 결과를 해석할 때는 사용한 시나리오, 모델 버전, 프롬프트와 지표 정의를 함께 확인해야 한다."
+    ]
+  },
+  {
+    "id": "groom20260628012",
+    "title": "LLaMA, 공개 데이터만으로 학습한 7B~65B 언어모델 계열을 보고하다",
+    "titleEn": "LLaMA: Open and Efficient Foundation Language Models",
+    "summary": "LLaMA 논문은 7B부터 65B 파라미터까지의 언어모델 계열을 공개 데이터로만 학습했다고 보고하며, 여러 표준 벤치마크에서 당시 더 큰 모델들과의 비교 결과를 제시했다.",
+    "summaryEn": "LLaMA reports 7B–65B language models trained solely on publicly available datasets and evaluated on standard benchmarks.",
+    "section": "models",
+    "sub": "파운데이션 모델",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-06-28T07:00:00+09:00",
+    "sourcePublishedAt": "2023-02-27T17:11:15Z",
+    "tags": [
+      "LLaMA",
+      "파운데이션 모델",
+      "공개 데이터",
+      "언어모델"
+    ],
+    "tagsEn": [
+      "LLaMA",
+      "foundation model",
+      "public data",
+      "language model"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260628012.webp",
+      "alt": "LLaMA, 공개 데이터만으로 학습한 7B~65B 언어모델 계열을 보고하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "LLaMA, 공개 데이터만으로 학습한 7B~65B 언어모델 계열을 보고하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "LLaMA: Open and Efficient Foundation Language Models",
+        "url": "https://arxiv.org/abs/2302.13971"
+      }
+    ],
+    "body": [
+      "LLaMA 논문은 7B부터 65B 파라미터까지의 언어모델 계열을 공개 데이터로만 학습했다고 보고하며, 여러 표준 벤치마크에서 당시 더 큰 모델들과의 비교 결과를 제시했다.",
+      "논문은 LLaMA라는 파운데이션 언어모델 계열을 소개한다.",
+      "보고된 모델 크기는 7B, 13B, 33B, 65B 파라미터다.",
+      "저자들은 학습 데이터가 공개적으로 이용 가능한 데이터셋만으로 구성됐다고 설명한다.",
+      "논문은 모델 크기별 학습 토큰 수와 학습 방법을 기술한다.",
+      "저자들은 상식 추론과 질의응답을 포함한 여러 벤치마크를 평가했다.",
+      "성능 수치는 논문에 정의된 모델 버전과 평가 설정의 결과다."
+    ]
+  },
+  {
+    "id": "groom20260629013",
+    "title": "미 교육부, AI 교육 활용에서 ‘인간 의사결정’과 증거 축적 강조",
+    "titleEn": "U.S. Department of Education: AI and the Future of Teaching and Learning",
+    "summary": "미 교육부의 2023년 보고서는 교육용 AI의 가능성을 다루면서도 교사·학습자·정책결정자의 역할과 검증을 함께 제안한다.",
+    "summaryEn": "A federal report frames education AI around human decision-making, evidence, and safeguards.",
+    "section": "society",
+    "sub": "교육 정책",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-06-29T07:00:00+09:00",
+    "sourcePublishedAt": "2023-05-23T00:00:00Z",
+    "tags": [
+      "미 교육부",
+      "교육 AI",
+      "교사",
+      "개인정보"
+    ],
+    "tagsEn": [
+      "U.S. Education Department",
+      "education AI",
+      "teachers",
+      "privacy"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260629013.webp",
+      "alt": "미 교육부, AI 교육 활용에서 ‘인간 의사결정’과 증거 축적 강조의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "미 교육부, AI 교육 활용에서 ‘인간 의사결정’과 증거 축적 강조의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "U.S. Department of Education: Artificial Intelligence and the Future of Teaching and Learning",
+        "url": "https://www.ed.gov/sites/ed/files/documents/ai-report/ai-report.pdf"
+      }
+    ],
+    "body": [
+      "미 교육부의 2023년 보고서는 교육용 AI의 가능성을 다루면서도 교사·학습자·정책결정자의 역할과 검증을 함께 제안한다.",
+      "미 교육부 교육기술국은 2023년 ‘AI와 교수·학습의 미래’ 보고서를 냈다.",
+      "보고서는 교육용 기술과 교육 현장에서 널리 쓰이는 범용 기술을 함께 범위에 넣는다.",
+      "권고의 대상에는 교사, 교육 리더, 정책입안자, 연구자, 기술 개발자와 제공자가 포함된다.",
+      "보고서는 교육에서 AI 활용이 낳는 정책 문제에 관한 지식 공유가 필요하다고 설명한다.",
+      "핵심 논의에는 안전·윤리, 형평성, 개인정보, 교사의 역할, 평가와 피드백이 포함된다.",
+      "보고서는 교육용 AI의 단일한 정답이나 성과를 선언하지 않고, 인간 중심의 설계와 지속적 연구를 요구한다."
+    ]
+  },
+  {
+    "id": "groom20260630014",
+    "title": "DPO, 보상모델 학습 단계를 줄여 선호 데이터로 언어모델을 최적화하다",
+    "titleEn": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+    "summary": "DPO는 선호 쌍 데이터를 이용해 언어모델 정책을 직접 최적화하는 목적함수를 도출해, 별도 보상모델을 학습하고 강화학습으로 정책을 훈련하는 전통적 RLHF 절차의 대안을 제시했다.",
+    "summaryEn": "DPO derives a direct objective for optimizing a language model from preference pairs without separately fitting a reward model.",
+    "section": "safety",
+    "sub": "선호 최적화",
+    "reporter": "그룸일보",
+    "authorId": "safety",
+    "publishedAt": "2026-06-30T07:00:00+09:00",
+    "sourcePublishedAt": "2023-05-29T17:57:46Z",
+    "tags": [
+      "DPO",
+      "선호 학습",
+      "RLHF",
+      "언어모델 정렬"
+    ],
+    "tagsEn": [
+      "DPO",
+      "preference learning",
+      "RLHF",
+      "language-model alignment"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260630014.webp",
+      "alt": "DPO, 보상모델 학습 단계를 줄여 선호 데이터로 언어모델을 최적화하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "DPO, 보상모델 학습 단계를 줄여 선호 데이터로 언어모델을 최적화하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+        "url": "https://arxiv.org/abs/2305.18290"
+      }
+    ],
+    "body": [
+      "DPO는 선호 쌍 데이터를 이용해 언어모델 정책을 직접 최적화하는 목적함수를 도출해, 별도 보상모델을 학습하고 강화학습으로 정책을 훈련하는 전통적 RLHF 절차의 대안을 제시했다.",
+      "논문은 인간 선호로 언어모델을 조정하는 RLHF 절차를 출발점으로 둔다.",
+      "RLHF는 보상모델 학습과 강화학습 정책 최적화라는 복잡한 단계를 포함할 수 있다.",
+      "저자들은 보상 함수와 최적 정책 사이의 관계를 이용해 새로운 목적함수를 도출했다.",
+      "DPO는 선호 데이터로 언어모델 정책을 직접 최적화한다.",
+      "이 정식화는 별도 보상모델을 맞추는 단계를 요구하지 않는다.",
+      "논문은 요약과 대화 등 통제된 실험에서 DPO 결과를 비교했다."
+    ]
+  },
+  {
+    "id": "groom20260701015",
+    "title": "RFdiffusion, 원하는 결합 부위를 겨냥해 단백질을 설계하다",
+    "titleEn": "RFdiffusion designs proteins around specified structural constraints",
+    "summary": "Nature 논문은 단백질 구조 생성에 확산 과정을 적용한 RFdiffusion과 표적 부위·대칭·기능 조건을 넣는 설계 실험을 보고했다.",
+    "summaryEn": "The Nature paper applies diffusion-based generation to protein backbones and reports experimental tests of selected designs.",
+    "section": "science",
+    "sub": "단백질 설계",
+    "reporter": "그룸일보",
+    "authorId": "science",
+    "publishedAt": "2026-07-01T07:00:00+09:00",
+    "sourcePublishedAt": "2023-07-11T09:00:00+09:00",
+    "tags": [
+      "단백질 설계",
+      "생성 AI",
+      "확산 모델",
+      "구조생물학"
+    ],
+    "tagsEn": [
+      "protein design",
+      "generative AI",
+      "diffusion model",
+      "structural biology"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260701015.webp",
+      "alt": "RFdiffusion, 원하는 결합 부위를 겨냥해 단백질을 설계하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "RFdiffusion, 원하는 결합 부위를 겨냥해 단백질을 설계하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "De novo design of protein structure and function with RFdiffusion",
+        "url": "https://www.nature.com/articles/s41586-023-06415-8"
+      }
+    ],
+    "body": [
+      "Nature 논문은 단백질 구조 생성에 확산 과정을 적용한 RFdiffusion과 표적 부위·대칭·기능 조건을 넣는 설계 실험을 보고했다.",
+      "RFdiffusion은 단백질 백본 구조를 노이즈 제거 과정으로 생성하는 방법이다.",
+      "연구진은 단백질 결합체, 대칭 조립체, 효소 활성 부위의 스캐폴드 설계에 적용했다.",
+      "논문은 표적 단백질의 특정 부위에 맞춘 결합체 설계를 실험으로 평가했다.",
+      "일부 설계는 실험 구조 분석에서 계산 설계와 가까운 구조를 보였다.",
+      "이는 자연 단백질 서열을 검색하는 방식과 다른 생성형 설계 접근이다.",
+      "다만 결합·활성 결과는 논문에서 시험한 표적과 후보에 한정되며, 치료 효능이나 임상 안전성을 의미하지 않는다."
+    ]
+  },
+  {
+    "id": "groom20260702016",
+    "title": "AlphaMissense, 사람 단백질 변이의 병원성 가능성을 점수화하다",
+    "titleEn": "AlphaMissense scores possible effects of human missense variants",
+    "summary": "Science 논문은 AlphaMissense가 인간 단백질의 미스센스 변이에 병원성 가능성 점수를 부여하는 모델과 전장 단백질체 예측 지도를 제시했다.",
+    "summaryEn": "The Science study releases proteome-wide computational scores, not a stand-alone clinical diagnostic.",
+    "section": "research",
+    "sub": "유전체 해석",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-02T07:00:00+09:00",
+    "sourcePublishedAt": "2023-09-22T09:00:00+09:00",
+    "tags": [
+      "유전체",
+      "미스센스 변이",
+      "변이 해석",
+      "정밀의학"
+    ],
+    "tagsEn": [
+      "genomics",
+      "missense variants",
+      "variant interpretation",
+      "precision medicine"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260702016.webp",
+      "alt": "AlphaMissense, 사람 단백질 변이의 병원성 가능성을 점수화하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "AlphaMissense, 사람 단백질 변이의 병원성 가능성을 점수화하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "Accurate proteome-wide missense variant effect prediction with AlphaMissense",
+        "url": "https://www.science.org/doi/10.1126/science.adg7492"
+      }
+    ],
+    "body": [
+      "Science 논문은 AlphaMissense가 인간 단백질의 미스센스 변이에 병원성 가능성 점수를 부여하는 모델과 전장 단백질체 예측 지도를 제시했다.",
+      "미스센스 변이는 DNA 염기 변화가 단백질 아미노산 하나를 바꾸는 경우다.",
+      "AlphaMissense는 단백질 서열과 구조 관련 정보를 이용해 변이 효과 점수를 예측한다.",
+      "논문은 ClinVar와 DeepMind가 선별한 평가 집합에서 다른 계산 예측기와 비교했다.",
+      "연구진은 인간 단백질체의 가능한 단일 아미노산 치환에 대한 사전계산 점수를 공개했다.",
+      "점수는 연구와 변이 해석을 위한 우선순위 정보이지 단독 임상 진단이 아니다.",
+      "환자 진료에서는 표현형, 가족력, 실험 근거와 임상 유전학 검토가 함께 필요하다."
+    ]
+  },
+  {
+    "id": "groom20260703017",
+    "title": "SWE-bench, 실제 GitHub 이슈로 코드 수정 에이전트를 평가하다",
+    "titleEn": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+    "summary": "SWE-bench는 12개 인기 파이썬 저장소의 실제 GitHub 이슈와 이를 해결한 풀 리퀘스트를 바탕으로, 언어모델이 실제 코드베이스의 버그 수정 과제를 해결할 수 있는지 평가하는 벤치마크다.",
+    "summaryEn": "SWE-bench evaluates whether language models can resolve real GitHub issues using tasks drawn from 12 popular Python repositories.",
+    "section": "analysis",
+    "sub": "소프트웨어 에이전트 평가",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-03T07:00:00+09:00",
+    "sourcePublishedAt": "2023-10-10T16:47:29Z",
+    "tags": [
+      "SWE-bench",
+      "소프트웨어 에이전트",
+      "GitHub 이슈",
+      "코드 평가"
+    ],
+    "tagsEn": [
+      "SWE-bench",
+      "software agents",
+      "GitHub issues",
+      "code evaluation"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260703017.webp",
+      "alt": "SWE-bench, 실제 GitHub 이슈로 코드 수정 에이전트를 평가하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "SWE-bench, 실제 GitHub 이슈로 코드 수정 에이전트를 평가하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+        "url": "https://arxiv.org/abs/2310.06770"
+      }
+    ],
+    "body": [
+      "SWE-bench는 12개 인기 파이썬 저장소의 실제 GitHub 이슈와 이를 해결한 풀 리퀘스트를 바탕으로, 언어모델이 실제 코드베이스의 버그 수정 과제를 해결할 수 있는지 평가하는 벤치마크다.",
+      "SWE-bench는 소프트웨어 엔지니어링용 언어모델 평가 벤치마크다.",
+      "논문은 12개 인기 파이썬 저장소에서 수집한 실제 GitHub 이슈를 사용한다.",
+      "각 과제는 이슈와 이후 인간 개발자가 만든 해결 풀 리퀘스트를 연결한다.",
+      "평가는 모델이 만든 패치가 테스트를 통과하는지로 수행된다.",
+      "저자들은 당시 언어모델을 이 실제 이슈 해결 과제에서 비교했다.",
+      "점수는 포함된 저장소와 테스트 환경에서의 패치 성공률이며 모든 소프트웨어 작업 능력을 뜻하지는 않는다."
+    ]
+  },
+  {
+    "id": "groom20260704018",
+    "title": "HarmBench, 유해 행동 요청과 거부 견고성을 표준화해 평가하다",
+    "titleEn": "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal",
+    "summary": "HarmBench는 유해 행동 요청에 대한 모델의 반응을 평가하기 위해, 표준화된 행동 목록·분류기·자동 레드팀 절차를 결합한 프레임워크를 제안했다.",
+    "summaryEn": "HarmBench standardizes harmful-behavior prompts, classifiers, and automated red-teaming methods to evaluate compliance and refusal.",
+    "section": "safety",
+    "sub": "레드팀 평가",
+    "reporter": "그룸일보",
+    "authorId": "safety",
+    "publishedAt": "2026-07-04T07:00:00+09:00",
+    "sourcePublishedAt": "2024-02-06T18:59:08Z",
+    "tags": [
+      "HarmBench",
+      "레드팀",
+      "안전성 평가",
+      "거부 견고성"
+    ],
+    "tagsEn": [
+      "HarmBench",
+      "red teaming",
+      "safety evaluation",
+      "robust refusal"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260704018.webp",
+      "alt": "HarmBench, 유해 행동 요청과 거부 견고성을 표준화해 평가하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "HarmBench, 유해 행동 요청과 거부 견고성을 표준화해 평가하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal",
+        "url": "https://arxiv.org/abs/2402.04249"
+      }
+    ],
+    "body": [
+      "HarmBench는 유해 행동 요청에 대한 모델의 반응을 평가하기 위해, 표준화된 행동 목록·분류기·자동 레드팀 절차를 결합한 프레임워크를 제안했다.",
+      "HarmBench는 자동화된 레드팀과 견고한 거부를 평가하기 위한 프레임워크다.",
+      "논문은 여러 위험 범주에 걸친 유해 행동 요청을 포함하는 표준 행동 목록을 제시한다.",
+      "저자들은 모델 응답을 판정하기 위한 분류기 기반 평가를 사용한다.",
+      "자동화된 공격 생성 방법도 비교 대상에 포함된다.",
+      "평가는 모델이 유해 요청을 이행하는지 또는 적절히 거부하는지를 측정한다.",
+      "자동 분류기와 정해진 행동 목록의 한계 때문에 실제 배포 전에는 사람 검토와 도메인별 시험이 추가로 필요하다."
+    ]
+  },
+  {
+    "id": "groom20260705019",
+    "title": "DexCap, 사람 손의 정교 조작을 로봇 학습 데이터로 옮기다",
+    "titleEn": "DexCap captures human dexterous manipulation for robot learning",
+    "summary": "arXiv 논문은 휴대 가능한 모션캡처 장치 DexCap으로 사람의 손 조작을 기록하고 로봇 손의 모방학습에 쓰는 방법을 제시했다.",
+    "summaryEn": "The arXiv work evaluates a portable motion-capture pipeline for selected imitation-learning tasks.",
+    "section": "robotics",
+    "sub": "정교 조작",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-05T07:00:00+09:00",
+    "sourcePublishedAt": "2024-03-12T09:00:00+09:00",
+    "tags": [
+      "정교 조작",
+      "모션캡처",
+      "모방학습",
+      "로봇 손"
+    ],
+    "tagsEn": [
+      "dexterous manipulation",
+      "motion capture",
+      "imitation learning",
+      "robot hand"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260705019.webp",
+      "alt": "DexCap, 사람 손의 정교 조작을 로봇 학습 데이터로 옮기다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "DexCap, 사람 손의 정교 조작을 로봇 학습 데이터로 옮기다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation",
+        "url": "https://arxiv.org/abs/2403.07788"
+      }
+    ],
+    "body": [
+      "arXiv 논문은 휴대 가능한 모션캡처 장치 DexCap으로 사람의 손 조작을 기록하고 로봇 손의 모방학습에 쓰는 방법을 제시했다.",
+      "DexCap은 정교한 손 조작 데이터를 수집하기 위한 휴대형 모션캡처 시스템이다.",
+      "논문은 인간 손의 움직임과 물체 상호작용을 로봇 학습 자료로 변환하는 흐름을 설명한다.",
+      "데이터 수집 비용과 설치 부담이 정교 조작 학습의 병목이라는 문제를 겨냥한다.",
+      "연구진은 수집 데이터로 로봇 손의 모방학습 과제를 평가했다.",
+      "이 방식은 시뮬레이션만으로 만들기 어려운 접촉·손가락 움직임의 실측 예를 제공할 수 있다.",
+      "그러나 사람 시연에서 로봇 행동으로의 변환은 로봇 손 구조, 카메라, 과제에 따라 실패할 수 있어 별도 안전 검증이 필요하다."
+    ]
+  },
+  {
+    "id": "groom20260706020",
+    "title": "DROID, 564개 장면에서 모은 7만6000개 로봇 조작 시연",
+    "titleEn": "DROID releases 76,000 in-the-wild robot manipulation trajectories",
+    "summary": "arXiv 논문은 여러 국가의 실제 환경에서 수집한 7만6000개 조작 궤적 데이터셋 DROID와 그 학습 효과를 공개했다.",
+    "summaryEn": "The arXiv paper describes data from 564 scenes and reports policy evaluations; it is a research dataset, not a safety certification.",
+    "section": "robotics",
+    "sub": "로봇 데이터",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-06T07:00:00+09:00",
+    "sourcePublishedAt": "2024-03-19T09:00:00+09:00",
+    "tags": [
+      "로봇 데이터셋",
+      "조작",
+      "일반화",
+      "DROID"
+    ],
+    "tagsEn": [
+      "robot dataset",
+      "manipulation",
+      "generalization",
+      "DROID"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260706020.webp",
+      "alt": "DROID, 564개 장면에서 모은 7만6000개 로봇 조작 시연의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "DROID, 564개 장면에서 모은 7만6000개 로봇 조작 시연의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset",
+        "url": "https://arxiv.org/abs/2403.12945"
+      }
+    ],
+    "body": [
+      "arXiv 논문은 여러 국가의 실제 환경에서 수집한 7만6000개 조작 궤적 데이터셋 DROID와 그 학습 효과를 공개했다.",
+      "DROID는 Distributed Robot Interaction Dataset의 약자다.",
+      "논문은 50명의 수집자가 12개월 동안 자료를 모았다고 설명한다.",
+      "데이터셋 규모는 7만6000개 시연 궤적, 약 350시간 상호작용이다.",
+      "수집 장소는 북미·아시아·유럽의 564개 장면이며 과제는 84개다.",
+      "저자들은 DROID로 학습한 정책이 더 높은 성능과 일반화 능력을 보였다고 보고했다.",
+      "다만 이는 논문에서 정의한 실험의 결과이고, 안전이 중요한 실제 작업의 신뢰성을 보장하지는 않는다."
+    ]
+  },
+  {
+    "id": "groom20260707021",
+    "title": "UNI, 1억 장 이상 병리 이미지로 사전학습한 범용 표현 모델",
+    "titleEn": "UNI pretrains a general pathology representation on over 100 million images",
+    "summary": "Nature Medicine 논문은 20개 주요 조직 유형의 진단용 H&E 전장 슬라이드에서 1억 장 이상 이미지를 활용해 UNI를 사전학습하고 34개 과제를 평가했다.",
+    "summaryEn": "The Nature Medicine study evaluates a self-supervised pathology model across 34 computational-pathology tasks.",
+    "section": "health",
+    "sub": "디지털 병리",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-07T07:00:00+09:00",
+    "sourcePublishedAt": "2024-03-19T09:00:00+09:00",
+    "tags": [
+      "의료 AI",
+      "병리 파운데이션 모델",
+      "H&E",
+      "암 연구"
+    ],
+    "tagsEn": [
+      "medical AI",
+      "pathology foundation model",
+      "H&E",
+      "cancer research"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260707021.webp",
+      "alt": "UNI, 1억 장 이상 병리 이미지로 사전학습한 범용 표현 모델의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "UNI, 1억 장 이상 병리 이미지로 사전학습한 범용 표현 모델의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "Towards a general-purpose foundation model for computational pathology",
+        "url": "https://www.nature.com/articles/s41591-024-02857-3"
+      }
+    ],
+    "body": [
+      "Nature Medicine 논문은 20개 주요 조직 유형의 진단용 H&E 전장 슬라이드에서 1억 장 이상 이미지를 활용해 UNI를 사전학습하고 34개 과제를 평가했다.",
+      "UNI는 병리 이미지를 위한 자기지도 사전학습 모델이다.",
+      "사전학습 데이터는 20개 주요 조직 유형에서 온 10만 장 이상의 진단용 H&E 전장 슬라이드다.",
+      "논문은 타일 이미지를 1억 장 이상, 77TB 이상 규모로 설명한다.",
+      "평가는 난이도가 다른 대표 계산병리 과제 34개로 구성됐다.",
+      "저자들은 기존 최고 수준 모델보다 나은 결과와 해상도에 덜 민감한 조직 분류를 보고했다.",
+      "논문의 모델 성능은 연구용 벤치마크 결과이며, 병원 배치 전에는 장비·인구집단별 전향적 검증이 필요하다."
+    ]
+  },
+  {
+    "id": "groom20260708022",
+    "title": "미 법무부, 주·지방정부 웹·앱 접근성에 구체 기준 도입",
+    "titleEn": "U.S. DOJ Title II Web and Mobile Accessibility Rule",
+    "summary": "미국 법무부의 ADA Title II 최종 규칙은 온라인 공공서비스도 장애인에게 접근 가능해야 한다는 원칙을 구체화했다.",
+    "summaryEn": "A final ADA rule specifies accessibility duties for state and local public digital services.",
+    "section": "policy",
+    "sub": "공공서비스 접근성",
+    "reporter": "그룸일보",
+    "authorId": "policy",
+    "publishedAt": "2026-07-08T07:00:00+09:00",
+    "sourcePublishedAt": "2024-04-08T00:00:00Z",
+    "tags": [
+      "ADA",
+      "공공서비스",
+      "모바일 앱",
+      "웹 접근성"
+    ],
+    "tagsEn": [
+      "ADA",
+      "public services",
+      "mobile apps",
+      "web accessibility"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260708022.webp",
+      "alt": "미 법무부, 주·지방정부 웹·앱 접근성에 구체 기준 도입의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "미 법무부, 주·지방정부 웹·앱 접근성에 구체 기준 도입의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "U.S. DOJ: Title II web and mobile accessibility final rule",
+        "url": "https://www.ada.gov/resources/2024-03-08-web-rule/"
+      }
+    ],
+    "body": [
+      "미국 법무부의 ADA Title II 최종 규칙은 온라인 공공서비스도 장애인에게 접근 가능해야 한다는 원칙을 구체화했다.",
+      "미 법무부는 2024년 ADA Title II의 웹·모바일 앱 접근성 최종 규칙을 안내했다.",
+      "규칙은 주·지방정부가 웹과 앱으로 제공하는 서비스·프로그램·활동에 적용된다.",
+      "안내문은 복지, 학교, 경찰, 법원, 선거, 공공병원, 도서관, 대중교통 등을 예시로 든다.",
+      "정부가 계약한 기관이 서비스를 제공하는 경우에도 해당 공공기관은 접근성 의무를 확인해야 한다.",
+      "규칙은 웹 콘텐츠와 앱을 장애인이 이용할 수 있도록 하는 구체 요구사항을 둔다.",
+      "이 사례는 AI 챗봇이나 자동화된 민원 기능을 도입할 때도 기존 디지털 접근성 의무를 별도 점검해야 함을 보여준다."
+    ]
+  },
+  {
+    "id": "groom20260709023",
+    "title": "MONET, 의학 문헌 개념으로 의료영상 AI를 감사하다",
+    "titleEn": "MONET links medical images to concepts in medical literature",
+    "summary": "Nature Medicine 논문은 영상과 의학 문헌 텍스트를 연결하는 MONET을 제시하고 데이터·모델 감사와 해석에 쓰는 평가를 보고했다.",
+    "summaryEn": "The Nature Medicine paper evaluates an image–text model for auditing and interpretation-oriented medical-AI tasks.",
+    "section": "health",
+    "sub": "의료영상",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-09T07:00:00+09:00",
+    "sourcePublishedAt": "2024-04-16T09:00:00+09:00",
+    "tags": [
+      "의료영상",
+      "멀티모달 AI",
+      "모델 감사",
+      "해석가능성"
+    ],
+    "tagsEn": [
+      "medical imaging",
+      "multimodal AI",
+      "model auditing",
+      "interpretability"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260709023.webp",
+      "alt": "MONET, 의학 문헌 개념으로 의료영상 AI를 감사하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "MONET, 의학 문헌 개념으로 의료영상 AI를 감사하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "Transparent medical image AI via an image–text foundation model grounded in medical literature",
+        "url": "https://www.nature.com/articles/s41591-024-02887-x"
+      }
+    ],
+    "body": [
+      "Nature Medicine 논문은 영상과 의학 문헌 텍스트를 연결하는 MONET을 제시하고 데이터·모델 감사와 해석에 쓰는 평가를 보고했다.",
+      "MONET은 Medical Concept Retriever의 약자로 소개된 이미지-텍스트 파운데이션 모델이다.",
+      "모델은 의료영상과 문헌 속 개념을 연결해 개념 존재 가능성을 밀도 있게 점수화한다.",
+      "논문은 데이터 감사, 모델 감사, 모델 해석을 주요 활용 과제로 든다.",
+      "이 설계는 단순 질병 라벨 분류를 넘어 근거가 되는 의학 개념을 확인하려는 시도다.",
+      "논문 결과는 여러 이미지 과제에서의 연구 평가로 제시됐다.",
+      "개념 점수나 설명은 임상의의 판독을 대체하지 않으며, 설명의 정확성도 과제·자료별로 검증돼야 한다."
+    ]
+  },
+  {
+    "id": "groom20260710024",
+    "title": "Phi-3, 3.8B 소형 언어모델의 데이터 품질·기기 구동 실험을 보고하다",
+    "titleEn": "Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone",
+    "summary": "Phi-3 기술보고서는 3.8B 파라미터 Phi-3-mini를 포함한 소형 언어모델 계열을 소개하고, 데이터 품질과 학습 커리큘럼이 소형 모델 성능에 중요하다는 실험적 주장을 제시했다.",
+    "summaryEn": "The technical report introduces Phi-3 small language models and studies the role of data quality and training curriculum.",
+    "section": "models",
+    "sub": "소형 언어모델",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-10T07:00:00+09:00",
+    "sourcePublishedAt": "2024-04-22T14:32:33Z",
+    "tags": [
+      "Phi-3",
+      "소형 언어모델",
+      "3.8B",
+      "합성 데이터"
+    ],
+    "tagsEn": [
+      "Phi-3",
+      "small language model",
+      "3.8B",
+      "synthetic data"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260710024.webp",
+      "alt": "Phi-3, 3.8B 소형 언어모델의 데이터 품질·기기 구동 실험을 보고하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "Phi-3, 3.8B 소형 언어모델의 데이터 품질·기기 구동 실험을 보고하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone",
+        "url": "https://arxiv.org/abs/2404.14219"
+      }
+    ],
+    "body": [
+      "Phi-3 기술보고서는 3.8B 파라미터 Phi-3-mini를 포함한 소형 언어모델 계열을 소개하고, 데이터 품질과 학습 커리큘럼이 소형 모델 성능에 중요하다는 실험적 주장을 제시했다.",
+      "Phi-3 보고서는 소형 언어모델 계열을 다룬다.",
+      "Phi-3-mini는 3.8B 파라미터 모델로 기술됐다.",
+      "저자들은 데이터 품질이 작은 모델의 능력에 큰 영향을 준다고 설명한다.",
+      "학습에는 웹 데이터와 합성 데이터가 함께 사용됐다고 보고한다.",
+      "보고서는 추론, 코딩, 수학, 상식 벤치마크 결과를 제시한다.",
+      "기기에서의 구동 가능성은 모델 형식과 하드웨어, 추론 설정에 따라 달라진다."
+    ]
+  },
+  {
+    "id": "groom20260711025",
+    "title": "Prov-GigaPath, 타일이 아닌 전장 슬라이드 맥락을 학습하다",
+    "titleEn": "Prov-GigaPath models whole-slide context for digital pathology",
+    "summary": "Nature 논문은 실제 진료 환경의 전장 슬라이드를 활용한 Prov-GigaPath와 26개 예측 과제로 구성한 디지털 병리 벤치마크를 제시했다.",
+    "summaryEn": "The Nature paper builds a 26-task benchmark from real-world and TCGA pathology data.",
+    "section": "health",
+    "sub": "전장 슬라이드",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-11T07:00:00+09:00",
+    "sourcePublishedAt": "2024-05-22T09:00:00+09:00",
+    "tags": [
+      "전장 슬라이드",
+      "디지털 병리",
+      "TCGA",
+      "의료 AI"
+    ],
+    "tagsEn": [
+      "whole-slide imaging",
+      "digital pathology",
+      "TCGA",
+      "medical AI"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260711025.webp",
+      "alt": "Prov-GigaPath, 타일이 아닌 전장 슬라이드 맥락을 학습하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "Prov-GigaPath, 타일이 아닌 전장 슬라이드 맥락을 학습하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "A whole-slide foundation model for digital pathology from real-world data",
+        "url": "https://www.nature.com/articles/s41586-024-07441-w"
+      }
+    ],
+    "body": [
+      "Nature 논문은 실제 진료 환경의 전장 슬라이드를 활용한 Prov-GigaPath와 26개 예측 과제로 구성한 디지털 병리 벤치마크를 제시했다.",
+      "병리 전장 슬라이드는 기가픽셀 규모여서 전체 맥락을 다루기 어렵다.",
+      "Prov-GigaPath는 개별 타일을 독립 표본처럼만 취급하는 한계를 겨냥했다.",
+      "논문은 실제 진료 자료와 TCGA 자료를 함께 사용한 벤치마크를 구축했다.",
+      "벤치마크는 병리정량과 암 아형 등을 포함한 26개 예측 과제로 구성됐다.",
+      "저자들은 모델의 전장 슬라이드 표현과 하위 과제 성능을 비교했다.",
+      "결과는 구성된 벤치마크에서의 연구 성능이므로, 특정 병원 워크플로에 바로 일반화된다는 뜻은 아니다."
+    ]
+  },
+  {
+    "id": "groom20260712026",
+    "title": "FineWeb, Common Crawl에서 대규모 고품질 텍스트 데이터를 정제하다",
+    "titleEn": "The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale",
+    "summary": "FineWeb 논문은 Common Crawl 원자료에서 대규모 텍스트 학습 데이터를 정제하는 절차를 제안하고, FineWeb과 FineWeb-Edu 데이터셋 및 데이터 품질 비교 실험을 보고했다.",
+    "summaryEn": "FineWeb describes large-scale web-text curation from Common Crawl and introduces FineWeb and FineWeb-Edu datasets.",
+    "section": "models",
+    "sub": "웹 데이터",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-12T07:00:00+09:00",
+    "sourcePublishedAt": "2024-06-25T13:50:56Z",
+    "tags": [
+      "FineWeb",
+      "Common Crawl",
+      "웹 데이터",
+      "데이터 정제"
+    ],
+    "tagsEn": [
+      "FineWeb",
+      "Common Crawl",
+      "web data",
+      "data curation"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260712026.webp",
+      "alt": "FineWeb, Common Crawl에서 대규모 고품질 텍스트 데이터를 정제하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "FineWeb, Common Crawl에서 대규모 고품질 텍스트 데이터를 정제하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale",
+        "url": "https://arxiv.org/abs/2406.17557"
+      }
+    ],
+    "body": [
+      "FineWeb 논문은 Common Crawl 원자료에서 대규모 텍스트 학습 데이터를 정제하는 절차를 제안하고, FineWeb과 FineWeb-Edu 데이터셋 및 데이터 품질 비교 실험을 보고했다.",
+      "논문은 대형 언어모델 학습에서 웹 데이터 품질이 중요하다고 전제한다.",
+      "FineWeb은 Common Crawl에서 추출한 텍스트를 필터링해 구축한 데이터셋이다.",
+      "저자들은 중복 제거와 품질 필터링을 포함한 처리 절차를 설명한다.",
+      "FineWeb-Edu는 교육적 품질을 겨냥한 별도 데이터셋으로 소개된다.",
+      "보고서는 해당 데이터로 학습한 모델의 성능 비교를 포함한다.",
+      "웹 기반 데이터셋은 유해 표현, 개인정보, 저작권 등과 관련한 추가 거버넌스 검토가 필요할 수 있다."
+    ]
+  },
+  {
+    "id": "groom20260713027",
+    "title": "NeuralGCM, 물리 모델과 신경망을 결합한 날씨·기후 시뮬레이션",
+    "titleEn": "NeuralGCM couples learned components with atmospheric circulation modelling",
+    "summary": "Nature 논문은 대기 일반순환모델의 물리 방정식과 학습된 신경 구성요소를 결합한 NeuralGCM의 날씨 예보·기후 통계 평가를 제시했다.",
+    "summaryEn": "The Nature study evaluates a hybrid neural–physical model for both weather forecasts and climate statistics.",
+    "section": "science",
+    "sub": "기후 모델",
+    "reporter": "그룸일보",
+    "authorId": "science",
+    "publishedAt": "2026-07-13T07:00:00+09:00",
+    "sourcePublishedAt": "2024-07-22T09:00:00+09:00",
+    "tags": [
+      "기후 모델",
+      "물리 AI",
+      "대기과학",
+      "시뮬레이션"
+    ],
+    "tagsEn": [
+      "climate model",
+      "physics AI",
+      "atmospheric science",
+      "simulation"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260713027.webp",
+      "alt": "NeuralGCM, 물리 모델과 신경망을 결합한 날씨·기후 시뮬레이션의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "NeuralGCM, 물리 모델과 신경망을 결합한 날씨·기후 시뮬레이션의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "Neural general circulation models for weather and climate",
+        "url": "https://www.nature.com/articles/s41586-024-07744-y"
+      }
+    ],
+    "body": [
+      "Nature 논문은 대기 일반순환모델의 물리 방정식과 학습된 신경 구성요소를 결합한 NeuralGCM의 날씨 예보·기후 통계 평가를 제시했다.",
+      "NeuralGCM은 전통적 대기 일반순환모델의 동역학적 틀에 신경망 구성요소를 결합한다.",
+      "논문은 단기 날씨 예측과 장기 기후 통계라는 서로 다른 과제를 평가했다.",
+      "저자들은 고해상도 재분석 자료와의 비교를 통해 모델의 성능을 제시했다.",
+      "이 접근은 순수 데이터 기반 예보와 순수 물리 모델 사이의 하이브리드 설계를 시험한다.",
+      "기후 시뮬레이션의 품질은 평균값뿐 아니라 극한현상·지역·변수별 검증이 필요하다.",
+      "따라서 논문 결과는 정의된 실험 조건의 연구 성능이며 개별 지역의 기후 영향 예측을 확정하지 않는다."
+    ]
+  },
+  {
+    "id": "groom20260714028",
+    "title": "Virchow, 공통·희귀암을 함께 시험한 병리 파운데이션 모델",
+    "titleEn": "Virchow reports pan-cancer and rare-cancer pathology evaluation",
+    "summary": "Nature Medicine 논문은 Virchow 기반 범암 검출기를 9개 흔한 암과 7개 희귀암에서 평가하고 표본 수준 AUROC 0.95를 보고했다.",
+    "summaryEn": "A Nature Medicine study reports specimen-level AUROC in a defined 16-cancer evaluation, not clinical authorization.",
+    "section": "health",
+    "sub": "희귀암",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-14T07:00:00+09:00",
+    "sourcePublishedAt": "2024-07-22T09:00:00+09:00",
+    "tags": [
+      "희귀암",
+      "디지털 병리",
+      "AUROC",
+      "의료 AI"
+    ],
+    "tagsEn": [
+      "rare cancer",
+      "digital pathology",
+      "AUROC",
+      "medical AI"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260714028.webp",
+      "alt": "Virchow, 공통·희귀암을 함께 시험한 병리 파운데이션 모델의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "Virchow, 공통·희귀암을 함께 시험한 병리 파운데이션 모델의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "A foundation model for clinical-grade computational pathology and rare cancers detection",
+        "url": "https://www.nature.com/articles/s41591-024-03141-0"
+      }
+    ],
+    "body": [
+      "Nature Medicine 논문은 Virchow 기반 범암 검출기를 9개 흔한 암과 7개 희귀암에서 평가하고 표본 수준 AUROC 0.95를 보고했다.",
+      "Virchow는 대규모 병리 영상에서 학습한 계산병리 파운데이션 모델이다.",
+      "논문은 바이오마커 예측과 세포 식별 외에 범암 검출도 평가했다.",
+      "평가에는 9개 흔한 암과 7개 희귀암이 포함됐다.",
+      "저자들은 이 설정에서 표본 수준 AUROC 0.95를 보고했다.",
+      "적은 추가 학습 자료로 일부 희귀 변이에서 조직별 임상급 모델보다 나았다고 제시했다.",
+      "AUROC는 해당 데이터와 판정 기준의 분류 지표이므로, 실제 임상 사용 전에는 독립 전향 검증과 오류 분석이 필요하다."
+    ]
+  },
+  {
+    "id": "groom20260715029",
+    "title": "Llama 3.1, 8B·70B·405B 모델과 학습·평가 보고서를 공개하다",
+    "titleEn": "The Llama 3 Herd of Models",
+    "summary": "Llama 3.1 기술보고서는 8B, 70B, 405B 파라미터의 다국어 대형 언어모델을 설명하고, 사전학습·후학습·안전성 평가 절차와 비교 실험을 함께 보고했다.",
+    "summaryEn": "The Llama 3.1 technical report documents 8B, 70B, and 405B multilingual models, including training, post-training, and safety evaluation.",
+    "section": "models",
+    "sub": "멀티모달 모델",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-15T07:00:00+09:00",
+    "sourcePublishedAt": "2024-07-31T17:54:27Z",
+    "tags": [
+      "Llama 3.1",
+      "Meta",
+      "405B",
+      "기술보고서"
+    ],
+    "tagsEn": [
+      "Llama 3.1",
+      "Meta",
+      "405B",
+      "technical report"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260715029.webp",
+      "alt": "Llama 3.1, 8B·70B·405B 모델과 학습·평가 보고서를 공개하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "Llama 3.1, 8B·70B·405B 모델과 학습·평가 보고서를 공개하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "The Llama 3 Herd of Models",
+        "url": "https://arxiv.org/abs/2407.21783"
+      }
+    ],
+    "body": [
+      "Llama 3.1 기술보고서는 8B, 70B, 405B 파라미터의 다국어 대형 언어모델을 설명하고, 사전학습·후학습·안전성 평가 절차와 비교 실험을 함께 보고했다.",
+      "보고서는 Llama 3 계열 모델 개발 과정을 기술한다.",
+      "Llama 3.1에서 보고된 주요 모델 크기는 8B, 70B, 405B 파라미터다.",
+      "저자들은 다국어 지원과 긴 문맥 활용을 모델 목표로 설명한다.",
+      "보고서는 사전학습 데이터 처리와 후학습 절차를 다룬다.",
+      "안전성 평가와 완화 조치도 기술보고서의 한 부분이다.",
+      "벤치마크 비교 결과는 보고서가 정한 프롬프트와 평가 조건에 의존한다."
+    ]
+  },
+  {
+    "id": "groom20260716030",
+    "title": "UNESCO 교사용 AI 역량틀, ‘인간 중심’에서 교육 혁신까지 15개 역량 제시",
+    "titleEn": "UNESCO AI Competency Framework for Teachers",
+    "summary": "교사를 대체하는 기술이 아니라 지속적 전문성 개발의 기준으로 AI 활용을 정리한 UNESCO의 2024년 틀이다.",
+    "summaryEn": "A 15-competency reference for teacher development keeps human agency central.",
+    "section": "society",
+    "sub": "AI 교육",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-16T07:00:00+09:00",
+    "sourcePublishedAt": "2024-09-03T00:00:00Z",
+    "tags": [
+      "UNESCO",
+      "교사",
+      "AI 리터러시",
+      "교육"
+    ],
+    "tagsEn": [
+      "UNESCO",
+      "teachers",
+      "AI literacy",
+      "education"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260716030.webp",
+      "alt": "UNESCO 교사용 AI 역량틀, ‘인간 중심’에서 교육 혁신까지 15개 역량 제시의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "UNESCO 교사용 AI 역량틀, ‘인간 중심’에서 교육 혁신까지 15개 역량 제시의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "UNESCO: AI competency framework for teachers",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000391104"
+      }
+    ],
+    "body": [
+      "교사를 대체하는 기술이 아니라 지속적 전문성 개발의 기준으로 AI 활용을 정리한 UNESCO의 2024년 틀이다.",
+      "UNESCO는 2024년 교사용 AI 역량틀을 공개했다.",
+      "이 틀은 정책입안자, 교원양성기관, 교원단체, 학교장과 교사를 주요 대상에 포함한다.",
+      "핵심 영역은 인간 중심 사고방식, AI 윤리, AI 기초·응용, AI 교육학, 전문성 개발의 다섯 가지다.",
+      "각 영역은 습득·심화·창조의 세 단계로 제시된다.",
+      "UNESCO는 교육 경험의 중심에 교사와 학생의 의미 있는 상호작용 및 인간의 번영이 남아야 한다고 적는다.",
+      "이 자료는 국가별 연수·역량틀 설계를 돕는 참고 기준이며, 특정 교육용 AI의 효과를 보증하지 않는다."
+    ]
+  },
+  {
+    "id": "groom20260717031",
+    "title": "UNESCO 학생용 AI 역량틀, ‘이해·적용·창조’로 AI 시민성 설계",
+    "titleEn": "UNESCO AI Competency Framework for Students",
+    "summary": "UNESCO가 학생을 단순 사용자가 아닌 책임 있는 AI 참여자·공동 창작자로 보기 위해 제안한 역량틀이다.",
+    "summaryEn": "UNESCO frames student AI literacy as understanding, applying, and creating responsibly.",
+    "section": "society",
+    "sub": "AI 교육",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-17T07:00:00+09:00",
+    "sourcePublishedAt": "2024-09-03T00:00:00Z",
+    "tags": [
+      "UNESCO",
+      "학생",
+      "AI 시민성",
+      "교육과정"
+    ],
+    "tagsEn": [
+      "UNESCO",
+      "students",
+      "AI citizenship",
+      "curriculum"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260717031.webp",
+      "alt": "UNESCO 학생용 AI 역량틀, ‘이해·적용·창조’로 AI 시민성 설계의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "UNESCO 학생용 AI 역량틀, ‘이해·적용·창조’로 AI 시민성 설계의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "UNESCO: AI competency framework for students",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000391105"
+      }
+    ],
+    "body": [
+      "UNESCO가 학생을 단순 사용자가 아닌 책임 있는 AI 참여자·공동 창작자로 보기 위해 제안한 역량틀이다.",
+      "UNESCO는 2024년 학생용 AI 역량틀을 교사용 틀과 함께 공개했다.",
+      "이 틀은 정책입안자, 교육자, 교육과정 개발자가 학생의 AI 역량을 설계하도록 돕는 목적이다.",
+      "학생 역량은 인간 중심 사고방식, AI 윤리, AI 기술·응용, AI 시스템 설계의 네 차원으로 구성된다.",
+      "각 차원은 이해·적용·창조의 세 단계로 전개된다.",
+      "UNESCO는 학생이 AI의 가능성과 위험을 함께 이해하고 안전하고 책임 있게 참여하도록 지원해야 한다고 설명한다.",
+      "이 문서는 국가와 학교가 교육과정을 현지 맥락에 맞춰 설계할 때 쓰는 참조 틀이다."
+    ]
+  },
+  {
+    "id": "groom20260718032",
+    "title": "CHIEF, 24개 병원·코호트 슬라이드로 외부 검증한 병리 AI",
+    "titleEn": "CHIEF is externally evaluated across digital-pathology slide sets",
+    "summary": "Nature 논문은 19개 해부학 부위의 전장 병리 슬라이드로 학습한 CHIEF를 24개 병원·코호트의 독립 자료에서 평가했다.",
+    "summaryEn": "The Nature study reports multi-site slide-set evaluations; it does not establish autonomous clinical diagnosis.",
+    "section": "health",
+    "sub": "디지털 병리",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-18T07:00:00+09:00",
+    "sourcePublishedAt": "2024-09-04T09:00:00+09:00",
+    "tags": [
+      "의료 AI",
+      "디지털 병리",
+      "암",
+      "외부 검증"
+    ],
+    "tagsEn": [
+      "medical AI",
+      "digital pathology",
+      "cancer",
+      "external validation"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260718032.webp",
+      "alt": "CHIEF, 24개 병원·코호트 슬라이드로 외부 검증한 병리 AI의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "CHIEF, 24개 병원·코호트 슬라이드로 외부 검증한 병리 AI의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "A pathology foundation model for cancer diagnosis and prognosis prediction",
+        "url": "https://www.nature.com/articles/s41586-024-07894-z"
+      }
+    ],
+    "body": [
+      "Nature 논문은 19개 해부학 부위의 전장 병리 슬라이드로 학습한 CHIEF를 24개 병원·코호트의 독립 자료에서 평가했다.",
+      "CHIEF는 타일 수준의 비지도 사전학습과 전장 슬라이드 수준의 약지도 사전학습을 결합한다.",
+      "학습에는 19개 해부학 부위의 전장 슬라이드 6만530장이 사용됐다.",
+      "논문은 44TB 고해상도 병리 영상 자료를 사전학습에 사용했다고 밝힌다.",
+      "독립 평가는 24개 병원·국제 코호트의 32개 슬라이드 집합, 1만9491장으로 수행됐다.",
+      "저자들은 일부 비교 과제에서 기존 딥러닝 방법보다 최대 36.1% 높은 성능을 보고했다.",
+      "이는 디지털 병리 보조 연구 결과이며 실제 진단·예후 판정은 병리전문의 검토와 임상 검증을 필요로 한다."
+    ]
+  },
+  {
+    "id": "groom20260719033",
+    "title": "AlphaProteo, 표적 단백질에 맞춘 신규 결합체 후보를 만들다",
+    "titleEn": "AlphaProteo designs novel protein binders for selected targets",
+    "summary": "Google DeepMind의 공식 프로젝트 발표는 AlphaProteo가 표적 단백질과 결합하도록 설계한 단백질 후보와 실험 측정 결과를 공개했다.",
+    "summaryEn": "An official project release describes experimentally measured binder candidates generated for selected biological targets.",
+    "section": "research",
+    "sub": "단백질 결합체",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-19T07:00:00+09:00",
+    "sourcePublishedAt": "2024-09-05T09:00:00+09:00",
+    "tags": [
+      "단백질 결합체",
+      "생물학 연구",
+      "분자 설계",
+      "AlphaProteo"
+    ],
+    "tagsEn": [
+      "protein binders",
+      "biology research",
+      "molecular design",
+      "AlphaProteo"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260719033.webp",
+      "alt": "AlphaProteo, 표적 단백질에 맞춘 신규 결합체 후보를 만들다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "AlphaProteo, 표적 단백질에 맞춘 신규 결합체 후보를 만들다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "AlphaProteo generates novel proteins for biology and health research",
+        "url": "https://deepmind.google/discover/blog/alphaproteo-generates-novel-proteins-for-biology-and-health-research/"
+      }
+    ],
+    "body": [
+      "Google DeepMind의 공식 프로젝트 발표는 AlphaProteo가 표적 단백질과 결합하도록 설계한 단백질 후보와 실험 측정 결과를 공개했다.",
+      "AlphaProteo는 표적 분자의 결합 부위에 맞춘 단백질 결합체를 생성하도록 설계됐다.",
+      "공식 발표는 바이러스 단백질, 염증 관련 표적 등 여러 표적에서 후보를 평가했다고 설명한다.",
+      "후보의 결합은 계산 예측만으로 끝내지 않고 실험 측정으로 확인했다.",
+      "발표된 비교는 연구진이 선택한 표적과 기존 설계 방법을 기준으로 한다.",
+      "결합 친화도는 생물학적 작용이나 치료 효과와 동일하지 않다.",
+      "따라서 이 결과는 초기 연구용 분자 설계의 증거이며, 후보마다 별도 특성화와 안전성 검증이 필요하다."
+    ]
+  },
+  {
+    "id": "groom20260720034",
+    "title": "유엔 AI 자문기구, 국제 과학패널·대화·역량기금 등 7개 권고 제안",
+    "titleEn": "UN Governing AI for Humanity Final Report",
+    "summary": "유엔 고위급 자문기구의 최종 보고서는 AI 거버넌스의 대표성·상호운용성·역량 격차를 국제 협력 의제로 묶었다.",
+    "summaryEn": "The UN advisory body proposes seven mechanisms for inclusive global AI governance.",
+    "section": "policy",
+    "sub": "국제 거버넌스",
+    "reporter": "그룸일보",
+    "authorId": "policy",
+    "publishedAt": "2026-07-20T07:00:00+09:00",
+    "sourcePublishedAt": "2024-09-19T00:00:00Z",
+    "tags": [
+      "유엔",
+      "AI 거버넌스",
+      "국제 협력",
+      "표준"
+    ],
+    "tagsEn": [
+      "United Nations",
+      "AI governance",
+      "international cooperation",
+      "standards"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260720034.webp",
+      "alt": "유엔 AI 자문기구, 국제 과학패널·대화·역량기금 등 7개 권고 제안의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "유엔 AI 자문기구, 국제 과학패널·대화·역량기금 등 7개 권고 제안의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "UN High-level Advisory Body: Governing AI for Humanity, Final Report",
+        "url": "https://digitallibrary.un.org/record/4062495?ln=en"
+      }
+    ],
+    "body": [
+      "유엔 고위급 자문기구의 최종 보고서는 AI 거버넌스의 대표성·상호운용성·역량 격차를 국제 협력 의제로 묶었다.",
+      "유엔 AI 고위급 자문기구는 2024년 9월 ‘Governing AI for Humanity’ 최종 보고서를 공개했다.",
+      "보고서는 AI 위험 대응과 혜택의 세계적 공유를 위한 국제 거버넌스 청사진을 제시한다.",
+      "자문기구는 현 거버넌스의 공백에 대응하는 7개 권고를 제안했다.",
+      "제안에는 국제 AI 과학패널과 유엔의 글로벌 AI 거버넌스 대화가 포함된다.",
+      "AI 지속가능발전목표 기금, 역량개발 네트워크, 표준 교류, 글로벌 데이터 프레임워크, 유엔 AI 사무국도 권고 목록에 들어갔다.",
+      "보고서는 2천 명 이상 참여자, 50회 이상의 지역별 협의, 250건 이상의 서면 의견을 바탕으로 작성됐다고 밝힌다."
+    ]
+  },
+  {
+    "id": "groom20260721035",
+    "title": "RDT-1B, 12억 매개변수 확산 모델로 양팔 조작을 학습하다",
+    "titleEn": "RDT-1B is a diffusion foundation model for bimanual manipulation",
+    "summary": "arXiv 논문은 여러 로봇의 행동 표현을 통합한 12억 매개변수 확산 파운데이션 모델 RDT-1B와 6000개 이상 양팔 에피소드의 미세조정 실험을 제시했다.",
+    "summaryEn": "The arXiv paper reports real-robot evaluations after pretraining and fine-tuning on a 6,000-plus episode bimanual dataset.",
+    "section": "robotics",
+    "sub": "양팔 조작",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-21T07:00:00+09:00",
+    "sourcePublishedAt": "2024-10-10T09:00:00+09:00",
+    "tags": [
+      "양팔 로봇",
+      "확산 모델",
+      "로봇 학습",
+      "RDT"
+    ],
+    "tagsEn": [
+      "bimanual robots",
+      "diffusion model",
+      "robot learning",
+      "RDT"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260721035.webp",
+      "alt": "RDT-1B, 12억 매개변수 확산 모델로 양팔 조작을 학습하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "RDT-1B, 12억 매개변수 확산 모델로 양팔 조작을 학습하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation",
+        "url": "https://arxiv.org/abs/2410.07864"
+      }
+    ],
+    "body": [
+      "arXiv 논문은 여러 로봇의 행동 표현을 통합한 12억 매개변수 확산 파운데이션 모델 RDT-1B와 6000개 이상 양팔 에피소드의 미세조정 실험을 제시했다.",
+      "양팔 조작은 두 팔의 행동이 함께 달라질 수 있어 행동 분포가 복잡하다.",
+      "RDT는 이러한 다중 모드 행동을 표현하기 위해 확산 모델을 사용한다.",
+      "논문은 로봇별 행동 표현의 물리적 의미를 보존하는 통합 행동 공간을 제안한다.",
+      "저자들은 여러 로봇 데이터로 사전학습해 모델을 12억 매개변수까지 확장했다.",
+      "양팔 다과제 자료 6000개 이상 에피소드로 미세조정한 뒤 실제 로봇에서 비교했다.",
+      "제로샷·1~5개 시연 학습 주장은 논문의 특정 물체·장면·과제 조건에서의 평가로 읽어야 한다."
+    ]
+  },
+  {
+    "id": "groom20260722036",
+    "title": "π₀, 시각·언어 모델 위에 흐름 매칭 행동 생성을 얹다",
+    "titleEn": "π₀ combines a vision-language model with flow-matching robot action generation",
+    "summary": "arXiv 논문은 사전학습 시각·언어 모델의 의미 지식과 흐름 매칭 행동 생성을 결합한 범용 로봇 정책 π₀를 설명한다.",
+    "summaryEn": "The arXiv paper reports selected manipulation evaluations across multiple robot embodiments.",
+    "section": "robotics",
+    "sub": "범용 조작",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-22T07:00:00+09:00",
+    "sourcePublishedAt": "2024-10-31T09:00:00+09:00",
+    "tags": [
+      "VLA",
+      "흐름 매칭",
+      "로봇 조작",
+      "파운데이션 모델"
+    ],
+    "tagsEn": [
+      "VLA",
+      "flow matching",
+      "robot manipulation",
+      "foundation model"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260722036.webp",
+      "alt": "π₀, 시각·언어 모델 위에 흐름 매칭 행동 생성을 얹다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "π₀, 시각·언어 모델 위에 흐름 매칭 행동 생성을 얹다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "π₀: A Vision-Language-Action Flow Model for General Robot Control",
+        "url": "https://arxiv.org/abs/2410.24164"
+      }
+    ],
+    "body": [
+      "arXiv 논문은 사전학습 시각·언어 모델의 의미 지식과 흐름 매칭 행동 생성을 결합한 범용 로봇 정책 π₀를 설명한다.",
+      "π₀는 비전·언어·행동을 결합한 로봇 제어 모델로 제안됐다.",
+      "논문은 사전학습 시각·언어 모델 위에 흐름 매칭 구조를 얹었다.",
+      "학습 자료에는 단일 팔, 양팔, 이동 조작 로봇 플랫폼이 포함됐다.",
+      "저자들은 제로샷 수행, 자연어 지시, 미세조정을 통한 기술 습득을 평가했다.",
+      "세탁물 접기, 테이블 닦기, 상자 조립 등이 보고된 과제 예다.",
+      "현재 원고의 결과는 연구 환경 평가이며, 일반 가정·산업 환경에서의 강건성이나 안전을 입증한 것은 아니다."
+    ]
+  },
+  {
+    "id": "groom20260723037",
+    "title": "GenCast, 단일 예보 대신 15일 확률 예보 앙상블을 생성하다",
+    "titleEn": "GenCast produces probabilistic 15-day global weather ensembles",
+    "summary": "Nature 논문은 조건부 확산 모델 GenCast가 전 지구 15일 예보의 여러 가능한 경로를 생성하고 ECMWF ENS와 비교한 결과를 보고했다.",
+    "summaryEn": "A Nature study evaluates a diffusion-based ensemble forecast against ECMWF ENS under its defined 2019 benchmark.",
+    "section": "science",
+    "sub": "기후·지구과학",
+    "reporter": "그룸일보",
+    "authorId": "science",
+    "publishedAt": "2026-07-23T07:00:00+09:00",
+    "sourcePublishedAt": "2024-12-04T09:00:00+09:00",
+    "tags": [
+      "날씨 예보",
+      "확률 예보",
+      "확산 모델",
+      "지구과학"
+    ],
+    "tagsEn": [
+      "weather forecasting",
+      "probabilistic forecast",
+      "diffusion model",
+      "Earth science"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260723037.webp",
+      "alt": "GenCast, 단일 예보 대신 15일 확률 예보 앙상블을 생성하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "GenCast, 단일 예보 대신 15일 확률 예보 앙상블을 생성하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "Probabilistic weather forecasting with machine learning",
+        "url": "https://www.nature.com/articles/s41586-024-08252-9"
+      }
+    ],
+    "body": [
+      "Nature 논문은 조건부 확산 모델 GenCast가 전 지구 15일 예보의 여러 가능한 경로를 생성하고 ECMWF ENS와 비교한 결과를 보고했다.",
+      "GenCast는 한 개의 결정론적 예보가 아니라 가능한 대기 상태의 앙상블을 생성한다.",
+      "논문 설정은 0.25도 해상도와 15일 예보 범위다.",
+      "학습에는 1979년부터 2018년까지의 ERA5 재분석 자료가 쓰였다.",
+      "저자들은 2019년 평가에서 ECMWF ENS보다 전반적으로 더 정확한 확률 예보를 보고했다.",
+      "열대저기압 경로 사례는 예보 시점에 따라 불확실성 범위가 달라짐을 보여준다.",
+      "연구 비교는 재분석 자료와 정의된 지표에 근거하므로, 모든 현장 경보·재난 의사결정의 대체 검증은 아니다."
+    ]
+  },
+  {
+    "id": "groom20260724038",
+    "title": "W3C WCAG 2.2, 웹 접근성에 새 성공 기준 9개를 더하다",
+    "titleEn": "W3C Web Content Accessibility Guidelines 2.2",
+    "summary": "W3C의 최신 WCAG 2.2 권고안은 AI 기능을 포함한 공공·생활 웹서비스의 접근성 점검에 참조할 수 있는 기술 표준이다.",
+    "summaryEn": "The latest WCAG recommendation adds nine accessibility success criteria while preserving compatibility.",
+    "section": "society",
+    "sub": "디지털 접근성",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-24T07:00:00+09:00",
+    "sourcePublishedAt": "2024-12-12T00:00:00Z",
+    "tags": [
+      "W3C",
+      "WCAG 2.2",
+      "웹 접근성",
+      "장애인 접근권"
+    ],
+    "tagsEn": [
+      "W3C",
+      "WCAG 2.2",
+      "web accessibility",
+      "disability access"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260724038.webp",
+      "alt": "W3C WCAG 2.2, 웹 접근성에 새 성공 기준 9개를 더하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "W3C WCAG 2.2, 웹 접근성에 새 성공 기준 9개를 더하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "W3C: Web Content Accessibility Guidelines (WCAG) 2.2",
+        "url": "https://www.w3.org/TR/WCAG22/"
+      }
+    ],
+    "body": [
+      "W3C의 최신 WCAG 2.2 권고안은 AI 기능을 포함한 공공·생활 웹서비스의 접근성 점검에 참조할 수 있는 기술 표준이다.",
+      "W3C는 WCAG 2.2를 2024년 12월 12일 권고안으로 발행했다.",
+      "WCAG 2.2는 2018년의 WCAG 2.1을 확장한 규격이다.",
+      "새 버전은 기존 성공 기준을 바꾸기보다 9개 기준을 추가했다.",
+      "W3C는 접근성 노력이 미래에도 적용되도록 최신 버전 사용을 권장한다.",
+      "예를 들어 비문자 콘텐츠에는 큰 글자·점자·음성·기호·쉬운 언어로 바꿀 수 있는 텍스트 대안을 제공하도록 한다.",
+      "WCAG는 법률 그 자체가 아니라 합의 기반의 웹 표준이며, 개별 법령의 적용 여부는 별도로 판단해야 한다."
+    ]
+  },
+  {
+    "id": "groom20260725039",
+    "title": "영국 정부, 공공 AI 도입의 ‘효과 검증’ 안내서 공개",
+    "titleEn": "UK Guidance on Evaluating AI Interventions",
+    "summary": "영국의 새 지침은 모델 성능 평가와 정책·서비스 개입의 효과 평가를 구분하며 공공 부문 AI의 사전·사후 검증을 다룬다.",
+    "summaryEn": "UK guidance distinguishes public-policy impact evaluation from model evaluation.",
+    "section": "policy",
+    "sub": "공공 AI 평가",
+    "reporter": "그룸일보",
+    "authorId": "policy",
+    "publishedAt": "2026-07-25T07:00:00+09:00",
+    "sourcePublishedAt": "2024-12-17T00:00:00Z",
+    "tags": [
+      "영국 정부",
+      "영향평가",
+      "공공 AI",
+      "정책 실험"
+    ],
+    "tagsEn": [
+      "UK government",
+      "impact evaluation",
+      "public AI",
+      "policy experiments"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260725039.webp",
+      "alt": "영국 정부, 공공 AI 도입의 ‘효과 검증’ 안내서 공개의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "영국 정부, 공공 AI 도입의 ‘효과 검증’ 안내서 공개의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "UK Government: Guidance on the impact evaluation of AI interventions",
+        "url": "https://www.gov.uk/government/publications/the-magenta-book/guidance-on-the-impact-evaluation-of-ai-interventions-html"
+      }
+    ],
+    "body": [
+      "영국의 새 지침은 모델 성능 평가와 정책·서비스 개입의 효과 평가를 구분하며 공공 부문 AI의 사전·사후 검증을 다룬다.",
+      "영국 정부는 2025년 1월 AI 개입의 영향평가 지침을 공개했다.",
+      "지침은 AI 도구를 도입한 정책이나 서비스가 실제로 어떤 효과를 냈는지 평가하는 방법을 다룬다.",
+      "정부 안내는 영향평가와 AI 모델의 안전성·성능 평가가 서로 다른 작업임을 구분한다.",
+      "영국 평가태스크포스는 기존 Magenta Book의 평가 원칙과 연결해 이 지침을 제시했다.",
+      "공개 안내에는 정부 AI 프레임워크, AI 안전연구소 평가 방식, NHS AI Lab 등 관련 참고자료가 함께 연결된다.",
+      "따라서 ‘작동한다’는 기술적 주장만으로 공공서비스 도입 효과가 입증되는 것은 아니라는 점이 이 지침의 출발점이다."
+    ]
+  },
+  {
+    "id": "groom20260726040",
+    "title": "MatterGen, 목표 물성을 조건으로 무기결정을 생성하다",
+    "titleEn": "MatterGen generates inorganic crystals under property constraints",
+    "summary": "Nature 논문은 확산 모델 MatterGen이 조성·대칭·물성 조건을 넣어 무기결정 후보를 생성하는 방법과 합성 검증 사례를 제시했다.",
+    "summaryEn": "A Nature study reports a diffusion model for inverse design of inorganic materials and one experimental synthesis check.",
+    "section": "science",
+    "sub": "신소재",
+    "reporter": "그룸일보",
+    "authorId": "science",
+    "publishedAt": "2026-07-26T07:00:00+09:00",
+    "sourcePublishedAt": "2025-01-16T09:00:00+09:00",
+    "tags": [
+      "신소재",
+      "확산 모델",
+      "결정 생성",
+      "역설계"
+    ],
+    "tagsEn": [
+      "materials science",
+      "diffusion model",
+      "crystal generation",
+      "inverse design"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260726040.webp",
+      "alt": "MatterGen, 목표 물성을 조건으로 무기결정을 생성하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "MatterGen, 목표 물성을 조건으로 무기결정을 생성하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "A generative model for inorganic materials design",
+        "url": "https://www.nature.com/articles/s41586-025-08628-5"
+      }
+    ],
+    "body": [
+      "Nature 논문은 확산 모델 MatterGen이 조성·대칭·물성 조건을 넣어 무기결정 후보를 생성하는 방법과 합성 검증 사례를 제시했다.",
+      "MatterGen은 원자 종류, 원자 좌표, 주기 격자를 함께 생성하는 확산 모델이다.",
+      "논문은 안정·고유·신규(SUN) 구조 비율을 기존 생성 방법과 비교했다.",
+      "저자들은 생성 구조가 기준 방법보다 SUN일 가능성이 2배 이상 높았다고 보고했다.",
+      "DFT 국소 에너지 최소점과의 거리는 기준 방법보다 10배 이상 가까웠다는 것이 해당 평가의 결과다.",
+      "미세조정으로 조성, 대칭, 기계·전자·자기 물성 등의 조건을 유도했다.",
+      "생성 물질 한 종을 실제 합성해 목표 물성과의 오차가 20% 이내였다고 제시했지만, 이는 모든 후보의 실험 성공을 뜻하지 않는다."
+    ]
+  },
+  {
+    "id": "groom20260727041",
+    "title": "EU 집행위, AI Act의 금지 관행 적용지침 공개",
+    "titleEn": "EU Guidelines on Prohibited AI Practices",
+    "summary": "EU AI Act가 금지한 조작·사회적 점수화·일부 실시간 원격 생체인식 등의 경계를 해설한 공식 지침이다.",
+    "summaryEn": "European Commission guidance explains the AI Act’s unacceptable-risk practices.",
+    "section": "policy",
+    "sub": "AI 규제",
+    "reporter": "그룸일보",
+    "authorId": "policy",
+    "publishedAt": "2026-07-27T07:00:00+09:00",
+    "sourcePublishedAt": "2025-02-04T00:00:00Z",
+    "tags": [
+      "EU AI Act",
+      "금지 AI",
+      "기본권",
+      "생체인식"
+    ],
+    "tagsEn": [
+      "EU AI Act",
+      "prohibited AI",
+      "fundamental rights",
+      "biometrics"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260727041.webp",
+      "alt": "EU 집행위, AI Act의 금지 관행 적용지침 공개의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "EU 집행위, AI Act의 금지 관행 적용지침 공개의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "European Commission: Guidelines on prohibited AI practices under the AI Act",
+        "url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act"
+      }
+    ],
+    "body": [
+      "EU AI Act가 금지한 조작·사회적 점수화·일부 실시간 원격 생체인식 등의 경계를 해설한 공식 지침이다.",
+      "유럽연합 집행위원회는 2025년 2월 AI Act상 금지 AI 관행 지침을 공개했다.",
+      "지침은 기본권과 유럽의 가치에 대한 위험이 용납될 수 없다고 판단된 관행을 다룬다.",
+      "공개 설명은 유해한 조작, 사회적 점수화, 실시간 원격 생체인식 식별 등을 주요 사례로 든다.",
+      "AI Act는 금지·고위험·투명성 의무 등 위험 범주를 구분한다.",
+      "집행위는 지침의 목적을 회원국 전반에서 일관되고 효과적인 적용을 돕는 데 둔다.",
+      "이 문서는 구체적 사실관계의 법률판단을 대체하지 않으며, 적용 시 규정 원문과 관할 해석을 함께 확인해야 한다."
+    ]
+  },
+  {
+    "id": "groom20260728042",
+    "title": "ESM3, 단백질 언어 모델로 형광 단백질을 생성하다",
+    "titleEn": "ESM3 generates a distant fluorescent protein candidate",
+    "summary": "Science 논문은 서열·구조·기능 정보를 함께 다루는 ESM3로 새로운 형광 단백질 후보를 설계하고 실험 특성을 측정했다.",
+    "summaryEn": "A Science paper tests a fluorescent protein generated with a multimodal protein language model.",
+    "section": "science",
+    "sub": "생성 생물학",
+    "reporter": "그룸일보",
+    "authorId": "science",
+    "publishedAt": "2026-07-28T07:00:00+09:00",
+    "sourcePublishedAt": "2025-02-21T09:00:00+09:00",
+    "tags": [
+      "단백질 언어모델",
+      "형광 단백질",
+      "생성 생물학",
+      "ESM3"
+    ],
+    "tagsEn": [
+      "protein language model",
+      "fluorescent protein",
+      "generative biology",
+      "ESM3"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260728042.webp",
+      "alt": "ESM3, 단백질 언어 모델로 형광 단백질을 생성하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "ESM3, 단백질 언어 모델로 형광 단백질을 생성하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "Simulating 500 million years of evolution with a language model",
+        "url": "https://www.science.org/doi/10.1126/science.ads0018"
+      }
+    ],
+    "body": [
+      "Science 논문은 서열·구조·기능 정보를 함께 다루는 ESM3로 새로운 형광 단백질 후보를 설계하고 실험 특성을 측정했다.",
+      "ESM3는 단백질 서열, 3차원 구조, 기능 주석을 함께 표현하도록 학습한 생성 모델이다.",
+      "연구진은 모델을 이용해 자연계와 멀리 떨어진 서열의 형광 단백질 후보를 만들었다.",
+      "논문은 그중 한 후보가 실험에서 녹색 형광을 보였다고 보고했다.",
+      "저자들은 그 후보가 알려진 형광 단백질과의 서열 유사성이 낮다고 설명했다.",
+      "논문의 '5억 년' 표현은 진화적 서열 거리의 비유적 추정이며 실제 시간을 재현한 실험은 아니다.",
+      "한 단백질의 실험 성공은 모델이 임의의 기능성 단백질을 항상 설계한다는 보장은 아니다."
+    ]
+  },
+  {
+    "id": "groom20260729043",
+    "title": "WHO, 의료용 대규모 멀티모달 AI에 인간 감독과 검증 원칙 제시",
+    "titleEn": "WHO Guidance on Large Multimodal Models for Health",
+    "summary": "WHO가 텍스트·영상 등 복수 입력을 다루는 의료용 AI의 활용 가능성과 함께 검증·책임의 조건을 정리했다.",
+    "summaryEn": "WHO sets governance conditions for health uses of large multimodal AI models.",
+    "section": "health",
+    "sub": "AI 보건 거버넌스",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-29T07:00:00+09:00",
+    "sourcePublishedAt": "2025-03-25T00:00:00Z",
+    "tags": [
+      "WHO",
+      "의료 AI",
+      "멀티모달",
+      "거버넌스"
+    ],
+    "tagsEn": [
+      "WHO",
+      "health AI",
+      "multimodal",
+      "governance"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260729043.webp",
+      "alt": "WHO, 의료용 대규모 멀티모달 AI에 인간 감독과 검증 원칙 제시의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "WHO, 의료용 대규모 멀티모달 AI에 인간 감독과 검증 원칙 제시의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "WHO: Ethics and governance of artificial intelligence for health: Guidance on large multi-modal models",
+        "url": "https://www.who.int/publications/i/item/9789240084759"
+      }
+    ],
+    "body": [
+      "WHO가 텍스트·영상 등 복수 입력을 다루는 의료용 AI의 활용 가능성과 함께 검증·책임의 조건을 정리했다.",
+      "WHO는 2025년 3월 대규모 멀티모달 모델(LMM)을 다룬 98쪽 지침을 발간했다.",
+      "이 지침에서 LMM은 하나 이상의 형태의 데이터를 입력받아 다양한 형태의 결과를 낼 수 있는 생성형 AI로 설명된다.",
+      "문서는 LMM이 의료, 과학연구, 공중보건, 신약개발에 쓰일 가능성이 있다고 적는다.",
+      "동시에 LMM이 광범위한 과업을 실제로 수행할 수 있는지는 아직 입증되지 않았다고 명시한다.",
+      "WHO는 안전성, 투명성, 책임성, 형평성을 거버넌스의 핵심 쟁점으로 다룬다.",
+      "따라서 이 문서는 특정 모델의 임상 효능을 인증하는 자료가 아니라 정책·조달·도입 검토를 위한 지침이다."
+    ]
+  },
+  {
+    "id": "groom20260730044",
+    "title": "스탠퍼드 AI Index 2025, 비용·모델·책임 있는 AI 데이터를 한데 모으다",
+    "titleEn": "Stanford HAI AI Index Report 2025",
+    "summary": "스탠퍼드 HAI의 연례 지표는 AI의 기술 성능만이 아니라 연구개발·경제·정책·사회 영향을 비교 가능한 자료로 정리한다.",
+    "summaryEn": "Stanford’s annual index tracks AI trends across research, costs, society, and governance.",
+    "section": "analysis",
+    "sub": "AI 지표",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-30T07:00:00+09:00",
+    "sourcePublishedAt": "2025-04-07T00:00:00Z",
+    "tags": [
+      "Stanford HAI",
+      "AI Index",
+      "추론 비용",
+      "AI 정책"
+    ],
+    "tagsEn": [
+      "Stanford HAI",
+      "AI Index",
+      "inference costs",
+      "AI policy"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260730044.webp",
+      "alt": "스탠퍼드 AI Index 2025, 비용·모델·책임 있는 AI 데이터를 한데 모으다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "스탠퍼드 AI Index 2025, 비용·모델·책임 있는 AI 데이터를 한데 모으다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "Stanford HAI: Artificial Intelligence Index Report 2025",
+        "url": "https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf"
+      }
+    ],
+    "body": [
+      "스탠퍼드 HAI의 연례 지표는 AI의 기술 성능만이 아니라 연구개발·경제·정책·사회 영향을 비교 가능한 자료로 정리한다.",
+      "스탠퍼드 인간중심AI연구소(HAI)는 2025년 제8판 AI Index 보고서를 공개했다.",
+      "보고서는 AI 하드웨어, 추론 비용, 연구·특허, 책임 있는 AI 관행, 과학·의학 활용을 새 분석 범위에 넣었다.",
+      "보고서의 연구개발 장은 주목할 만한 AI 모델의 학습 연산량이 약 5개월마다 두 배가 된다는 연구 결과를 소개한다.",
+      "같은 장은 GPT-3.5 수준 MMLU 점수의 모델 질의 비용이 2022년 11월 100만 토큰당 20달러에서 2024년 10월 0.07달러로 낮아졌다고 제시한다.",
+      "이는 약 18개월 동안 280배 이상 하락한 수치로 보고서의 비교 조건에 근거한다.",
+      "AI Index는 정책·언론·연구·대중을 위한 지표 보고서이며, 한 국가나 기업의 성과를 보증하는 인증 자료는 아니다."
+    ]
+  },
+  {
+    "id": "groom20260731045",
+    "title": "ILO·NASK “전 세계 노동자 4명 중 1명, 생성형 AI 노출 직업에 종사”",
+    "titleEn": "ILO 2025 Global Index of Generative AI Exposure",
+    "summary": "ILO의 2025년 지수는 자동화 단정 대신 직무 변형과 사회적 대화의 필요성을 강조한다.",
+    "summaryEn": "A revised ILO index measures occupational exposure rather than declaring job replacement.",
+    "section": "society",
+    "sub": "일과 AI",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-07-31T07:00:00+09:00",
+    "sourcePublishedAt": "2025-05-20T00:00:00Z",
+    "tags": [
+      "ILO",
+      "생성형 AI",
+      "고용",
+      "직무"
+    ],
+    "tagsEn": [
+      "ILO",
+      "generative AI",
+      "employment",
+      "tasks"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260731045.webp",
+      "alt": "ILO·NASK “전 세계 노동자 4명 중 1명, 생성형 AI 노출 직업에 종사”의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "ILO·NASK “전 세계 노동자 4명 중 1명, 생성형 AI 노출 직업에 종사”의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "ILO Working Paper 140: Generative AI and Jobs: A Refined Global Index of Occupational Exposure",
+        "url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure"
+      }
+    ],
+    "body": [
+      "ILO의 2025년 지수는 자동화 단정 대신 직무 변형과 사회적 대화의 필요성을 강조한다.",
+      "ILO와 폴란드 NASK의 2025년 연구는 생성형 AI에 대한 직업별 노출도를 새 틀로 계산했다.",
+      "연구진은 직무 단위 자료, 전문가 의견, AI 모델 예측을 결합했다고 설명한다.",
+      "전 세계 노동자 4명 중 1명은 어느 정도 생성형 AI 노출이 있는 직업에 속한다는 추정이 제시됐다.",
+      "가장 높은 노출 구간은 세계 고용의 3.3%이며 여성 4.7%, 남성 2.4%로 추정됐다.",
+      "사무직은 계속 가장 높은 노출을 보였고 일부 전문·기술직의 노출도도 높아졌다.",
+      "ILO는 이 지표가 직업 소멸의 예측이 아니라 직무 변화와 정책 대응을 살피는 도구임을 강조한다."
+    ]
+  },
+  {
+    "id": "groom20260801046",
+    "title": "영국 교통부, AI 활용과 위험 관리를 함께 담은 교통 실행계획 발표",
+    "titleEn": "UK Transport Artificial Intelligence Action Plan",
+    "summary": "영국 교통부는 교통 운영과 이용자 경험에 AI를 적용하는 방향을 밝히면서 위험 관리와 단계적 실행을 함께 제시했다.",
+    "summaryEn": "A transport ministry plan outlines AI adoption while explicitly retaining risk management.",
+    "section": "policy",
+    "sub": "교통 공공서비스",
+    "reporter": "그룸일보",
+    "authorId": "policy",
+    "publishedAt": "2026-08-01T07:00:00+09:00",
+    "sourcePublishedAt": "2025-06-10T00:00:00Z",
+    "tags": [
+      "교통 AI",
+      "공공서비스",
+      "영국",
+      "모빌리티"
+    ],
+    "tagsEn": [
+      "transport AI",
+      "public services",
+      "United Kingdom",
+      "mobility"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260801046.webp",
+      "alt": "영국 교통부, AI 활용과 위험 관리를 함께 담은 교통 실행계획 발표의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "영국 교통부, AI 활용과 위험 관리를 함께 담은 교통 실행계획 발표의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "UK Department for Transport: Transport artificial intelligence action plan",
+        "url": "https://www.gov.uk/government/publications/transport-artificial-intelligence-action-plan"
+      }
+    ],
+    "body": [
+      "영국 교통부는 교통 운영과 이용자 경험에 AI를 적용하는 방향을 밝히면서 위험 관리와 단계적 실행을 함께 제시했다.",
+      "영국 교통부는 2025년 6월 교통 AI 실행계획을 발표했다.",
+      "이 계획은 교통 부문에서 AI 기회를 활용하면서 잠재 위험을 관리하는 접근을 설명한다.",
+      "교통부 내부 업무 지원과 교통 체계 전반의 배치를 모두 범위에 둔다.",
+      "공개 설명은 이용자 경험 개선과 생산성·회복력 향상을 목표로 제시한다.",
+      "문서는 2025년 국가 AI 기회 실행계획 이후의 부문별 접근으로 위치한다.",
+      "이는 개별 AI 기능의 성과 발표가 아니라 정부 부처의 의도와 실행 방향을 담은 정책 문서다."
+    ]
+  },
+  {
+    "id": "groom20260802047",
+    "title": "DeepMind, DNA 변이가 유전자 조절에 미치는 영향을 예측하는 AlphaGenome 공개",
+    "titleEn": "Google DeepMind AlphaGenome",
+    "summary": "Google DeepMind의 연구 발표는 DNA 단일 변이의 조절 효과 예측을 겨냥한 연구용 모델을 소개하며, 임상 진단 도구로의 과장을 피해야 한다.",
+    "summaryEn": "A research model predicts regulatory effects of single DNA variants; it is not a clinical diagnosis claim.",
+    "section": "research",
+    "sub": "AI 생명과학",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-08-02T07:00:00+09:00",
+    "sourcePublishedAt": "2025-06-25T00:00:00Z",
+    "tags": [
+      "DeepMind",
+      "AlphaGenome",
+      "유전체",
+      "DNA"
+    ],
+    "tagsEn": [
+      "DeepMind",
+      "AlphaGenome",
+      "genomics",
+      "DNA"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260802047.webp",
+      "alt": "DeepMind, DNA 변이가 유전자 조절에 미치는 영향을 예측하는 AlphaGenome 공개의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "DeepMind, DNA 변이가 유전자 조절에 미치는 영향을 예측하는 AlphaGenome 공개의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "Google DeepMind: AlphaGenome: AI for better understanding the genome",
+        "url": "https://deepmind.google/blog/alphagenome-ai-for-better-understanding-the-genome/"
+      }
+    ],
+    "body": [
+      "Google DeepMind의 연구 발표는 DNA 단일 변이의 조절 효과 예측을 겨냥한 연구용 모델을 소개하며, 임상 진단 도구로의 과장을 피해야 한다.",
+      "Google DeepMind는 2025년 6월 AlphaGenome 연구를 공개했다.",
+      "이 모델은 인간 DNA 서열의 단일 변이 또는 돌연변이가 유전자 조절 관련 생물학적 과정에 미치는 영향을 예측하도록 설계됐다.",
+      "발표는 유전자 기능과 질병 생물학을 이해하는 데 도움이 될 수 있는 연구 자원으로 모델을 설명한다.",
+      "DNA의 작은 변이가 환경 반응이나 질병 감수성과 연결될 수 있지만, 그 해석은 여전히 어려운 생물학 문제라고 연구진은 적었다.",
+      "해당 발표는 2026년 1월 연구가 Nature에 게재됐다고 업데이트했다.",
+      "이 결과는 연구 도구의 성능 주장이지 환자 진단·치료 결정을 대신할 임상 검증을 뜻하지 않는다."
+    ]
+  },
+  {
+    "id": "groom20260803048",
+    "title": "AI 네이티브 자율실험실, 핵산 실험 흐름을 자동으로 조율하다",
+    "titleEn": "An AI-native autonomous laboratory for biomolecular engineering",
+    "summary": "arXiv 사전공개 논문은 다수 사용자의 요청을 받아 핵산 합성·전사·증폭·시퀀싱 실험을 운영하는 자율실험실 시스템을 설명한다.",
+    "summaryEn": "This arXiv preprint describes autonomous handling of selected nucleic-acid workflows; it is not yet peer reviewed.",
+    "section": "research",
+    "sub": "자율실험실",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-08-03T07:00:00+09:00",
+    "sourcePublishedAt": "2025-07-03T09:00:00+09:00",
+    "tags": [
+      "자율실험실",
+      "핵산",
+      "실험 자동화",
+      "AI for Science"
+    ],
+    "tagsEn": [
+      "autonomous laboratory",
+      "nucleic acids",
+      "lab automation",
+      "AI for Science"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260803048.webp",
+      "alt": "AI 네이티브 자율실험실, 핵산 실험 흐름을 자동으로 조율하다의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "AI 네이티브 자율실험실, 핵산 실험 흐름을 자동으로 조율하다의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "An AI-native experimental laboratory for autonomous biomolecular engineering",
+        "url": "https://arxiv.org/abs/2507.02379"
+      }
+    ],
+    "body": [
+      "arXiv 사전공개 논문은 다수 사용자의 요청을 받아 핵산 합성·전사·증폭·시퀀싱 실험을 운영하는 자율실험실 시스템을 설명한다.",
+      "논문은 모델·실험·장비를 함께 설계하는 AI 네이티브 실험실을 제안한다.",
+      "플랫폼은 핵산 합성, 전사, 증폭, 시퀀싱을 지원한다고 저자들은 설명한다.",
+      "시스템은 실험별 절차와 최적화 휴리스틱을 구성하도록 설계됐다.",
+      "다중 사용자 환경에서 장비 활용과 실험 효율을 평가 대상으로 삼았다.",
+      "저자들은 사람 개입 없이 인간 전문가 수준의 성능에 맞춘 최적화를 보고한다.",
+      "다만 이는 동료심사 전 arXiv 원고이므로 독립 재현과 운영 환경의 안전·품질 검증이 추가로 필요하다."
+    ]
+  },
+  {
+    "id": "groom20260804049",
+    "title": "WHO 유럽, 50개국 조사로 본 보건 AI 준비도와 규제 공백",
+    "titleEn": "WHO Europe Health AI Readiness Report",
+    "summary": "WHO 유럽지역 보고서는 AI 도입 여부보다 전략·법·데이터·인력·책임체계가 함께 준비되는지를 점검했다.",
+    "summaryEn": "A 50-country assessment maps health-system readiness, governance, and gaps around AI.",
+    "section": "health",
+    "sub": "보건 공공서비스",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-08-04T07:00:00+09:00",
+    "sourcePublishedAt": "2025-11-19T00:00:00Z",
+    "tags": [
+      "WHO 유럽",
+      "보건 AI",
+      "준비도",
+      "데이터 거버넌스"
+    ],
+    "tagsEn": [
+      "WHO Europe",
+      "health AI",
+      "readiness",
+      "data governance"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260804049.webp",
+      "alt": "WHO 유럽, 50개국 조사로 본 보건 AI 준비도와 규제 공백의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "WHO 유럽, 50개국 조사로 본 보건 AI 준비도와 규제 공백의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "WHO Europe: Artificial intelligence is reshaping health systems: state of readiness across the WHO European Region",
+        "url": "https://www.who.int/europe/publications/i/item/WHO-EURO-2025-12707-52481-81028"
+      }
+    ],
+    "body": [
+      "WHO 유럽지역 보고서는 AI 도입 여부보다 전략·법·데이터·인력·책임체계가 함께 준비되는지를 점검했다.",
+      "WHO 유럽지역사무소는 2025년 11월 보건의료 AI 준비도 보고서를 발간했다.",
+      "보고서는 2024~2025년 조사에 응답한 유럽지역 50개 회원국의 결과를 바탕으로 한다.",
+      "조사 범위에는 국가 전략, 거버넌스 모형, 법·윤리 체계, 인력 준비도, 데이터 거버넌스가 포함됐다.",
+      "이해관계자 참여, 민간 부문의 역할, AI 응용의 도입 양상도 함께 검토했다.",
+      "보고서는 정책결정자가 일관되고 윤리적이며 사람 중심인 접근을 설계하도록 신흥 경향과 공백을 정리한다.",
+      "따라서 특정 의료 AI의 안전성·유효성을 인증한 보고서가 아니라 보건 시스템 수준의 준비도 평가다."
+    ]
+  },
+  {
+    "id": "groom20260805050",
+    "title": "OECD “AI 시대의 병목은 첨단 코딩만이 아니라 현장 역량”",
+    "titleEn": "OECD AI and Skills Report",
+    "summary": "OECD 보고서는 AI 도입의 성패를 디지털·데이터·관리·문제해결 역량과 재교육 체계의 문제로 본다.",
+    "summaryEn": "OECD argues that broad complementary skills and training, not coding alone, shape AI adoption.",
+    "section": "society",
+    "sub": "AI와 노동",
+    "reporter": "그룸일보",
+    "authorId": "research",
+    "publishedAt": "2026-08-05T07:00:00+09:00",
+    "sourcePublishedAt": "2026-06-17T00:00:00Z",
+    "tags": [
+      "OECD",
+      "AI 역량",
+      "재교육",
+      "중소기업"
+    ],
+    "tagsEn": [
+      "OECD",
+      "AI skills",
+      "reskilling",
+      "SMEs"
+    ],
+    "flags": [],
+    "image": {
+      "src": "/assets/img/editorial/groom20260805050.webp",
+      "alt": "OECD “AI 시대의 병목은 첨단 코딩만이 아니라 현장 역량”의 연구 주제를 보여주는 편집 이미지",
+      "width": 1536,
+      "height": 1024,
+      "caption": "OECD “AI 시대의 병목은 첨단 코딩만이 아니라 현장 역량”의 핵심 연구 장면.",
+      "credit": "그룸일보"
+    },
+    "sources": [
+      {
+        "title": "OECD: AI and skills",
+        "url": "https://www.oecd.org/en/publications/ai-and-skills_f843b352-en/full-report.html"
+      }
+    ],
+    "body": [
+      "OECD 보고서는 AI 도입의 성패를 디지털·데이터·관리·문제해결 역량과 재교육 체계의 문제로 본다.",
+      "OECD의 ‘AI and skills’ 보고서는 AI 활용에서 사람의 역량을 핵심 변수로 다룬다.",
+      "보고서에 따르면 제조·금융 분야 AI 미도입 고용주의 약 40%는 역량 부족을 주요 이유로 꼽았다.",
+      "생성형 AI를 쓰지 않는 중소기업 중 절반 이상도 역량을 장애물로 답했다.",
+      "OECD는 고급 AI 기술이 필요한 노동자는 전체의 1% 미만이라고 정리한다.",
+      "대부분의 노동자에게는 디지털 활용, 데이터 해석, 문제 해결, 창의성·관리 역량이 함께 중요하다고 제시한다.",
+      "보고서는 교육훈련·사회적 대화·투명성·개인정보 보호를 함께 갖춘 정책 묶음이 필요하다고 권고한다."
     ]
   }
 ]
