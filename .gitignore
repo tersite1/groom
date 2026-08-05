@@ -1,0 +1,10 @@
+# 빌드 산출물 (npm run build 로 재생성)
+dist/
+
+# 의존성
+node_modules/
+
+# 에디터·도구 로컬 상태
+.omc/
+.claude/settings.local.json
+.DS_Store

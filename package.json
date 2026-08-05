@@ -1,0 +1,13 @@
+{
+  "name": "groomilbo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "그룸일보 - 종합 일간지 정적 사이트",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "node build.mjs && node --run serve:only",
+    "serve:only": "npx --yes serve dist -l 4173",
+    "dev": "node build.mjs && python3 -m http.server 4173 --directory dist"
+  }
+}
