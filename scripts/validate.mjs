@@ -34,9 +34,11 @@ const robots = await read('robots.txt');
 const sitemap = await read('sitemap.xml');
 const news = await read('sitemap-news.xml');
 const searchIndex = JSON.parse(await read('search-index.json'));
+const googleVerification = await read('googlea4d08d66836c8687.html');
 const imageSources = articles.map((article) => typeof article.image === 'string' ? article.image : article.image?.src);
 
 assert.equal(site.name, '그룸일보');
+assert.equal(googleVerification.trim(), 'google-site-verification: googlea4d08d66836c8687.html');
 assert.equal(new Set(imageSources).size, articles.length, 'every article must have a unique image');
 const imageHashes = new Map();
 for (const [index, src] of imageSources.entries()) {

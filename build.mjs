@@ -963,6 +963,9 @@ await mkdir(DIST, { recursive: true });
 if (existsSync(path.join(SRC, 'assets'))) {
   await cp(path.join(SRC, 'assets'), path.join(DIST, 'assets'), { recursive: true });
 }
+if (existsSync(path.join(SRC, 'public'))) {
+  await cp(path.join(SRC, 'public'), DIST, { recursive: true });
+}
 
 // 페이지
 await write('index.html', renderHome());
