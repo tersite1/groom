@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * 그룸일보 정적 사이트 빌더
+ * 카이일보 정적 사이트 빌더
  *
  * data/site.json + data/articles.json -> dist/
  *   - 홈, 섹션 목록, 기사 본문, 검색, 404
@@ -141,7 +141,7 @@ function placeholder(a, w = 1200, h = 800) {
   <rect width="${w}" height="${h}" fill="${c1}"/>
   ${shapes}
   <!-- 카드마다 표시 비율이 달라(3:2, 1:1, 4:5, 16:9) 텍스트를 넣으면 object-fit: cover 에 잘린다.
-       합성 이미지라는 표기는 기사 본문의 figcaption 과 푸터 고지가 담당한다. -->
+       편집 이미지라는 표기는 기사 본문의 figcaption 과 푸터 고지가 담당한다. -->
 </svg>`;
 }
 

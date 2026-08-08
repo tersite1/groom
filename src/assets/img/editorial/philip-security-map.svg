@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">생태안보 연결 위험 지도</title>
+  <desc id="desc">산림, 수자원, 도시 전력망이 연결된 위험 경로를 표현한 편집 그래픽</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#071b2d"/>
+      <stop offset="1" stop-color="#0b4b55"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="13"/></filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <path d="M0 742C238 590 418 652 610 570s346-222 534-129 269 76 392 14v569H0Z" fill="#0c6b67" opacity=".5"/>
+  <path d="M0 810c286-129 429-49 647-126s333-179 511-104 252 77 378 34v410H0Z" fill="#18a37e" opacity=".32"/>
+  <g fill="none" stroke="#92ffe2" stroke-width="6" opacity=".75">
+    <path d="M322 350C496 398 555 510 715 525s239-127 418-65"/>
+    <path d="M715 525c48 100 82 186 173 254"/>
+    <path d="M1133 460c44 100 69 179 55 276"/>
+  </g>
+  <g fill="#d9fff3" stroke="#20cfa0" stroke-width="9">
+    <circle cx="322" cy="350" r="86"/>
+    <circle cx="715" cy="525" r="86"/>
+    <circle cx="1133" cy="460" r="86"/>
+    <circle cx="888" cy="779" r="70"/>
+    <circle cx="1188" cy="736" r="70"/>
+  </g>
+  <g fill="#0b3b40" font-family="system-ui, sans-serif" font-weight="800" text-anchor="middle">
+    <text x="322" y="362" font-size="42">숲</text>
+    <text x="715" y="538" font-size="42">물</text>
+    <text x="1133" y="473" font-size="38">전력망</text>
+    <text x="888" y="790" font-size="30">도시</text>
+    <text x="1188" y="747" font-size="28">식량</text>
+  </g>
+  <circle cx="715" cy="525" r="142" fill="#59ffd2" opacity=".12" filter="url(#glow)"/>
+  <text x="108" y="132" fill="#e8fff9" font-family="system-ui, sans-serif" font-size="58" font-weight="850">ECOLOGICAL SECURITY</text>
+  <text x="112" y="188" fill="#8edecb" font-family="system-ui, sans-serif" font-size="28" letter-spacing="5">CONNECTED RISK MAP</text>
+</svg>

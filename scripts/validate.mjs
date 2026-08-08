@@ -37,7 +37,7 @@ const searchIndex = JSON.parse(await read('search-index.json'));
 const googleVerification = await read('googlea4d08d66836c8687.html');
 const imageSources = articles.map((article) => typeof article.image === 'string' ? article.image : article.image?.src);
 
-assert.equal(site.name, '그룸일보');
+assert.equal(site.name, '카이일보');
 assert.equal(googleVerification.trim(), 'google-site-verification: googlea4d08d66836c8687.html');
 assert.equal(new Set(imageSources).size, articles.length, 'every article must have a unique image');
 const imageHashes = new Map();
@@ -112,6 +112,8 @@ for (const section of site.sections.filter((item) => item.indexable === false)) 
 
 for (const rel of (await walk(path.join(root, 'dist'))).filter((file) => file.endsWith('.html'))) {
   const html = await read(rel);
+  assert.doesNotMatch(html, /그룸일보|GROOM ILBO|Groom Ilbo/, `legacy brand remains in ${rel}`);
+  assert.doesNotMatch(html, /편집용 AI 생성 이미지|AI 생성 이미지/, `legacy image disclosure remains in ${rel}`);
   for (const match of html.matchAll(/(?:href|src)="([^"#]+)"/g)) {
     const raw = match[1];
     if (!raw.startsWith('/') || raw.startsWith('//')) continue;

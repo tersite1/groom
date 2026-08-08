@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">블루카본 생태계</title>
+  <desc id="desc">연안 습지의 탄소 저장과 파랑 완충 기능을 단면으로 표현한 편집 그래픽</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b9eff4"/><stop offset="1" stop-color="#effbdc"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1fa4b5"/><stop offset="1" stop-color="#07577b"/></linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#705a3d"/><stop offset="1" stop-color="#2d261f"/></linearGradient>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#sky)"/>
+  <circle cx="1265" cy="176" r="83" fill="#fff4a9" opacity=".9"/>
+  <path d="M0 500c231-69 355-62 565 8 204 68 382 66 971-12v270H0Z" fill="url(#sea)"/>
+  <path d="M0 760c251-39 404-73 616-12 261 74 439 58 920-16v292H0Z" fill="url(#soil)"/>
+  <g stroke="#2e805e" stroke-width="13" stroke-linecap="round">
+    <path d="M370 776V474m0 54-72-90m72 63 86-115M560 752V505m0 47-58-70m58 42 74-96M753 749V480m0 78-76-85m76 52 81-113"/>
+  </g>
+  <g fill="none" stroke="#96e8b8" stroke-width="7" opacity=".8">
+    <path d="M370 757c-39 70-74 121-131 181m131-181c38 77 75 126 142 181M560 744c-29 73-57 131-109 203m109-203c32 79 68 137 120 203M753 742c-32 78-61 132-112 210m112-210c41 75 80 132 135 207"/>
+  </g>
+  <g fill="#e8fbff" opacity=".9">
+    <path d="m1067 510 55-30 55 30-55 30Z"/><path d="m1181 578 45-25 45 25-45 25Z"/><path d="m972 617 42-23 42 23-42 23Z"/>
+  </g>
+  <g fill="#134e59" font-family="system-ui, sans-serif">
+    <text x="92" y="126" font-size="64" font-weight="850">BLUE CARBON</text>
+    <text x="96" y="181" font-size="27" letter-spacing="4">CARBON · COAST · RESILIENCE</text>
+  </g>
+  <g fill="#d9fff2" font-family="system-ui, sans-serif" font-size="27" font-weight="750">
+    <text x="1044" y="704">파랑 완충</text><text x="486" y="965">토양 탄소 저장</text>
+  </g>
+</svg>

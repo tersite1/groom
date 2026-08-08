@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">기후 디지털 트윈</title>
+  <desc id="desc">지구 시스템 시뮬레이션을 도시, 수자원, 에너지 의사결정과 연결한 편집 그래픽</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0a1024"/><stop offset="1" stop-color="#34235b"/></linearGradient>
+    <radialGradient id="globe"><stop stop-color="#53e1c3"/><stop offset=".55" stop-color="#1d7fa1"/><stop offset="1" stop-color="#14375e"/></radialGradient>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <g opacity=".18" stroke="#bdaaff" stroke-width="2"><path d="M0 210h1536M0 410h1536M0 610h1536M0 810h1536"/><path d="M215 0v1024M515 0v1024M815 0v1024M1115 0v1024M1415 0v1024"/></g>
+  <circle cx="535" cy="575" r="292" fill="url(#globe)" stroke="#8ff5de" stroke-width="7"/>
+  <g fill="none" stroke="#b7fff0" opacity=".65"><ellipse cx="535" cy="575" rx="292" ry="104"/><ellipse cx="535" cy="575" rx="135" ry="292"/><path d="M253 500c180 74 365 74 564 0M270 680c172-57 339-57 530 0"/></g>
+  <path d="M411 398c70-55 135-43 183-2l57 70-47 75-91-9-45 82-83-23-34-92Z" fill="#8ee397" opacity=".8"/>
+  <path d="M617 650c62-48 130-29 166 17l-18 86-89 69-62-48Z" fill="#8ee397" opacity=".75"/>
+  <g stroke="#c5b3ff" stroke-width="6" fill="#251d47">
+    <path d="M823 472 1030 350M823 575h260M800 698l230 133"/>
+    <rect x="1028" y="281" width="355" height="138" rx="24"/>
+    <rect x="1080" y="506" width="326" height="138" rx="24"/>
+    <rect x="1028" y="764" width="355" height="138" rx="24"/>
+  </g>
+  <g fill="#f3efff" font-family="system-ui, sans-serif" font-size="38" font-weight="780" text-anchor="middle">
+    <text x="1206" y="365">도시 적응</text><text x="1243" y="590">수자원</text><text x="1206" y="848">에너지</text>
+  </g>
+  <text x="88" y="126" fill="#f5f1ff" font-family="system-ui, sans-serif" font-size="62" font-weight="850">CLIMATE DIGITAL TWIN</text>
+  <text x="92" y="181" fill="#baaaff" font-family="system-ui, sans-serif" font-size="27" letter-spacing="4">SIMULATE · COMPARE · DECIDE</text>
+</svg>

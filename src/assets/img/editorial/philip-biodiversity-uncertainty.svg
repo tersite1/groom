@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">생물다양성 AI와 불확실성</title>
+  <desc id="desc">위성 관측, 현장 조사, 불확실성 범위를 결합한 생물다양성 분석 편집 그래픽</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10291f"/><stop offset="1" stop-color="#31533b"/></linearGradient>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse"><path d="M72 0H0v72" fill="none" stroke="#d8f2c5" stroke-width="2" opacity=".11"/></pattern>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/><rect width="1536" height="1024" fill="url(#grid)"/>
+  <g transform="translate(130 260)">
+    <rect width="820" height="590" rx="32" fill="#173c2d" stroke="#91d986" stroke-width="6"/>
+    <path d="M34 414c116-179 239-169 346-80 123 101 242-79 406-164v386H34Z" fill="#3b8960"/>
+    <path d="M34 488c142-110 255-54 362-5 133 61 213-50 390-104v177H34Z" fill="#80bd70" opacity=".65"/>
+    <g fill="none" stroke="#f2ef9b" stroke-width="8">
+      <circle cx="240" cy="311" r="68"/><circle cx="586" cy="232" r="83"/><circle cx="670" cy="436" r="56"/>
+    </g>
+    <g fill="#f2ef9b"><circle cx="240" cy="311" r="12"/><circle cx="586" cy="232" r="12"/><circle cx="670" cy="436" r="12"/></g>
+  </g>
+  <g transform="translate(1030 290)" font-family="system-ui, sans-serif">
+    <rect width="380" height="480" rx="32" fill="#eff6dc"/>
+    <text x="42" y="72" fill="#173c2d" font-size="30" font-weight="850">CONFIDENCE</text>
+    <rect x="42" y="115" width="290" height="28" rx="14" fill="#d4dfc0"/><rect x="42" y="115" width="240" height="28" rx="14" fill="#4aa671"/>
+    <text x="42" y="200" fill="#31533b" font-size="25">관측 충분</text>
+    <rect x="42" y="232" width="290" height="28" rx="14" fill="#d4dfc0"/><rect x="42" y="232" width="151" height="28" rx="14" fill="#d1b955"/>
+    <text x="42" y="317" fill="#31533b" font-size="25">현장 확인 필요</text>
+    <rect x="42" y="349" width="290" height="28" rx="14" fill="#d4dfc0"/><rect x="42" y="349" width="74" height="28" rx="14" fill="#d77b69"/>
+    <text x="42" y="435" fill="#31533b" font-size="25">자료 공백</text>
+  </g>
+  <text x="92" y="126" fill="#f4ffe9" font-family="system-ui, sans-serif" font-size="61" font-weight="850">BIODIVERSITY AI</text>
+  <text x="96" y="181" fill="#b9e2a7" font-family="system-ui, sans-serif" font-size="27" letter-spacing="4">MAP WHAT WE KNOW — AND DON'T</text>
+</svg>

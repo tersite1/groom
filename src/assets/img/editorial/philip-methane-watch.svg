@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">위성 메탄 감시</title>
+  <desc id="desc">궤도 위성이 지상 시설의 메탄 플룸을 탐지하는 모습을 표현한 편집 그래픽</desc>
+  <defs>
+    <radialGradient id="earth"><stop stop-color="#2a8ea3"/><stop offset="1" stop-color="#07283c"/></radialGradient>
+    <linearGradient id="space" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#050716"/><stop offset="1" stop-color="#102741"/></linearGradient>
+    <linearGradient id="plume" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#ffcf67" stop-opacity=".9"/><stop offset="1" stop-color="#ff6f91" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#space)"/>
+  <g fill="#fff" opacity=".75"><circle cx="184" cy="214" r="3"/><circle cx="427" cy="104" r="5"/><circle cx="1318" cy="168" r="4"/><circle cx="1095" cy="289" r="3"/><circle cx="768" cy="164" r="4"/></g>
+  <circle cx="768" cy="1080" r="650" fill="url(#earth)" stroke="#59cde4" stroke-width="8"/>
+  <path d="M288 777c155-109 328-116 446-47 112 67 246 61 514-45" fill="none" stroke="#63d7bc" stroke-width="45" opacity=".55"/>
+  <g transform="translate(820 220) rotate(-8)">
+    <rect x="-90" y="-48" width="180" height="96" rx="18" fill="#e9f5ff"/>
+    <rect x="-295" y="-74" width="185" height="148" fill="#3876aa" stroke="#9dd8ff" stroke-width="7"/>
+    <rect x="110" y="-74" width="185" height="148" fill="#3876aa" stroke="#9dd8ff" stroke-width="7"/>
+    <circle r="30" fill="#ffcd69"/>
+  </g>
+  <path d="M830 276 675 751h310Z" fill="#8eeeff" opacity=".17" stroke="#8eeeff" stroke-width="5" stroke-dasharray="14 14"/>
+  <path d="M824 780c-42-102-18-195 38-263 30 72 89 89 91 171 2 68-40 119-129 92Z" fill="url(#plume)"/>
+  <g fill="#d9f8ff" font-family="system-ui, sans-serif">
+    <text x="94" y="126" font-size="62" font-weight="850">METHANE WATCH</text>
+    <text x="98" y="181" font-size="27" letter-spacing="4" fill="#8bcfe2">ORBIT · VERIFY · REPAIR</text>
+  </g>
+  <circle cx="824" cy="780" r="29" fill="#ffcc69" stroke="#fff0b8" stroke-width="8"/>
+</svg>
