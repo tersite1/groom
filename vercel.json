@@ -1,4 +1,18 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "groom1-inky.vercel.app"
+        }
+      ],
+      "destination": "https://groom-rho.vercel.app/:path*",
+      "permanent": true
+    }
+  ]
 }

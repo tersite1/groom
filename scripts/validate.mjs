@@ -34,11 +34,24 @@ const robots = await read('robots.txt');
 const sitemap = await read('sitemap.xml');
 const news = await read('sitemap-news.xml');
 const searchIndex = JSON.parse(await read('search-index.json'));
+const favicon = await read('assets/img/favicon.svg');
+const publisherLogo = await read('assets/img/logo-square.svg');
 const googleVerification = await read('googlea4d08d66836c8687.html');
+const vercelConfig = JSON.parse(await readFile(path.join(root, 'vercel.json'), 'utf8'));
 const imageSources = articles.map((article) => typeof article.image === 'string' ? article.image : article.image?.src);
 
 assert.equal(site.name, '카이일보');
 assert.equal(googleVerification.trim(), 'google-site-verification: googlea4d08d66836c8687.html');
+assert.ok(index.includes(`<title>${site.seoTitle}</title>`), 'homepage SEO title mismatch');
+assert.ok(index.includes(`<meta name="description" content="${site.description}">`), 'homepage description mismatch');
+assert.match(favicon, /viewBox="0 0 96 96"/);
+assert.match(publisherLogo, /viewBox="0 0 512 512"/);
+assert.equal(vercelConfig.trailingSlash, false);
+assert.ok(vercelConfig.redirects?.some((redirect) =>
+  redirect.permanent === true
+  && redirect.destination === 'https://groom-rho.vercel.app/:path*'
+  && redirect.has?.some((condition) => condition.type === 'host' && condition.value === 'groom1-inky.vercel.app')
+), 'legacy Vercel host must permanently redirect to canonical host');
 assert.equal(new Set(imageSources).size, articles.length, 'every article must have a unique image');
 const imageHashes = new Map();
 for (const [index, src] of imageSources.entries()) {
@@ -58,6 +71,7 @@ assert.doesNotMatch(robots, /^Disallow:/m, 'noindex pages must remain crawlable 
 assert.match(robots, /Sitemap: .*\/sitemap\.xml/);
 assert.match(robots, /Sitemap: .*\/sitemap-news\.xml/);
 const sitemapLocs = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1]);
+assert.ok(sitemapLocs.every((loc) => new URL(loc).origin === site.url), 'sitemap must use only the canonical origin');
 assert.ok(!sitemapLocs.some((loc) => ['/search.html', '/404.html'].includes(new URL(loc).pathname)));
 assert.equal(new Set(sitemapLocs).size, sitemapLocs.length, 'sitemap URLs must be unique');
 for (const loc of sitemapLocs) {
@@ -124,6 +138,13 @@ for (const rel of (await walk(path.join(root, 'dist'))).filter((file) => file.en
 }
 
 assert.match(index, /"NewsMediaOrganization"/);
+const homeJsonText = index.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)?.[1];
+assert.ok(homeJsonText, 'missing homepage JSON-LD');
+const homeGraph = JSON.parse(homeJsonText)['@graph'];
+const website = homeGraph?.find((node) => node['@type'] === 'WebSite');
+assert.equal(website?.name, '카이일보');
+assert.equal(website?.url, 'https://groom-rho.vercel.app/');
+assert.deepEqual(website?.alternateName, ['KAI NEWS', 'groom-rho.vercel.app']);
 for (const id of site.home?.pinnedArticleIds || []) {
   assert.ok(index.includes(`/article/${id}.html`), `pinned homepage article missing: ${id}`);
 }

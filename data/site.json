@@ -2,14 +2,15 @@
   "name": "카이일보",
   "nameEn": "KAI NEWS",
   "tagline": "논문을 읽고, 근거를 연결합니다",
-  "description": "카이일보는 인공지능 연구·안전·정책·생활 속 AI를 논문과 기관의 1차 자료에 근거해 설명하는 AI 전문 뉴스입니다.",
+  "seoTitle": "카이일보 | AI 연구·생태안보·기후테크 뉴스",
+  "description": "카이일보(KAI NEWS)는 AI 연구와 안전, 생태안보, 기후테크를 논문과 공식 기관의 1차 자료를 바탕으로 설명하는 전문 뉴스입니다.",
   "url": "https://groom-rho.vercel.app",
   "indexable": true,
   "locale": "ko_KR",
   "language": "ko",
   "founded": "2026-08-05",
   "publisher": "카이일보",
-  "logo": "/assets/img/og-default.svg",
+  "logo": "/assets/img/logo-square.svg",
   "keywords": [
     "카이일보",
     "AI 연구",
@@ -21,7 +22,11 @@
     "AI 정책",
     "로보틱스",
     "AI 논문",
-    "생성형 AI"
+    "생성형 AI",
+    "생태안보",
+    "기후테크",
+    "기후 AI",
+    "KAI NEWS"
   ],
   "masthead": {
     "운영": "카이일보 편집팀",
@@ -248,7 +253,7 @@
     }
   ],
   "taglineEn": "Reading Papers, Connecting Evidence",
-  "descriptionEn": "Kai News covers AI research, safety, policy, laboratory developments, and everyday AI through papers and primary sources.",
+  "descriptionEn": "Kai News covers AI research, safety, ecological security, climate technology, policy, and laboratory developments through papers and primary sources.",
   "keywordsEn": [
     "Kai News",
     "AI research",

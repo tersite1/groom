@@ -176,7 +176,7 @@ function authorLabel(a) {
 /* ------------------------------------------------------------- 레이아웃 */
 
 function head({ title, description, canonical, image, imageAlt, type = 'website', extraJsonLd, keywords, articleTags, indexable = true, publishedAt, modifiedAt, articleAuthor, articleSection }) {
-  const fullTitle = title === site.name ? `${site.name} — ${site.tagline}` : `${title} - ${site.name}`;
+  const fullTitle = title === site.name ? (site.seoTitle || `${site.name} — ${site.tagline}`) : `${title} - ${site.name}`;
   const desc = description || site.description;
   const img = absoluteUrl(image || '/assets/img/og-default.svg');
   const keywordList = [...new Set([...(keywords || site.keywords), ...(site.keywordsEn || [])])];
@@ -209,7 +209,7 @@ ${type === 'article' ? articleTagList.map((keyword) => `<meta property="article:
 <meta name="twitter:image" content="${attr(img)}">
 ${imageAlt ? `<meta name="twitter:image:alt" content="${attr(imageAlt)}">` : ''}
 <meta name="theme-color" content="#0A4DA6">
-<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" sizes="any">
 <link rel="alternate" type="application/rss+xml" title="${attr(site.name)} RSS" href="/rss.xml">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -545,6 +545,8 @@ function renderHome() {
   </div>
 </section>`;
 
+  const alternateNames = [...new Set([site.nameEn, new URL(site.url).hostname].filter(Boolean))];
+
   return page({
     title: site.name,
     description: site.description,
@@ -559,16 +561,17 @@ function renderHome() {
           '@type': 'NewsMediaOrganization',
           '@id': `${site.url.replace(/\/$/, '')}/#organization`,
           name: site.publisher || site.name,
-          ...(site.nameEn ? { alternateName: site.nameEn } : {}),
-          url: site.url,
-          logo: { '@type': 'ImageObject', url: publisherLogo() },
+          ...(alternateNames.length ? { alternateName: alternateNames } : {}),
+          url: url('/'),
+          logo: { '@type': 'ImageObject', url: publisherLogo(), width: 512, height: 512 },
           ...(site.sameAs?.length ? { sameAs: site.sameAs } : {}),
         },
         {
           '@type': 'WebSite',
+          '@id': `${site.url.replace(/\/$/, '')}/#website`,
           name: site.name,
-          ...(site.nameEn ? { alternateName: site.nameEn } : {}),
-          url: site.url,
+          ...(alternateNames.length ? { alternateName: alternateNames } : {}),
+          url: url('/'),
           description: site.description,
           ...(site.descriptionEn ? { abstract: site.descriptionEn } : {}),
           inLanguage: site.language,
@@ -743,8 +746,10 @@ ${related.length ? `<section class="block band">
       },
       publisher: {
         '@type': 'NewsMediaOrganization',
+        '@id': `${site.url.replace(/\/$/, '')}/#organization`,
         name: site.publisher || site.name,
-        logo: { '@type': 'ImageObject', url: publisherLogo() },
+        url: url('/'),
+        logo: { '@type': 'ImageObject', url: publisherLogo(), width: 512, height: 512 },
       },
       ...(sources.length ? { citation: sources.map((source) => typeof source === 'string' ? source : source.url || source.href).filter(Boolean) } : {}),
     },
@@ -990,7 +995,11 @@ await write(
 );
 await write(
   'assets/img/favicon.svg',
-  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><rect width="40" height="40" rx="6" fill="#0A4DA6"/><path d="M11 12h18v4.6H15.8v6.8H25v-3.1h-5.4v-4.4H29V28H11z" fill="#fff"/></svg>`
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96"><rect width="96" height="96" rx="18" fill="#0A4DA6"/><path d="M22 18h16v25l21-25h20L52 48l28 30H59L38 54v24H22z" fill="#fff"/></svg>`
+);
+await write(
+  'assets/img/logo-square.svg',
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="${attr(site.name)}"><rect width="512" height="512" rx="84" fill="#0A4DA6"/><circle cx="400" cy="105" r="128" fill="#57ABEA" opacity=".45"/><path d="M116 94h86v134L315 94h106L275 255l150 163H312L202 288v130h-86z" fill="#fff"/></svg>`
 );
 
 // 피드/색인
