@@ -33,6 +33,7 @@ const notFound = await read('404.html');
 const robots = await read('robots.txt');
 const sitemap = await read('sitemap.xml');
 const news = await read('sitemap-news.xml');
+const llms = await read('llms.txt');
 const searchIndex = JSON.parse(await read('search-index.json'));
 const favicon = await read('assets/img/favicon.svg');
 const publisherLogo = await read('assets/img/logo-square.svg');
@@ -62,7 +63,10 @@ for (const [index, src] of imageSources.entries()) {
   imageHashes.set(hash, articles[index].id);
 }
 
-assert.match(index, /name="robots" content="index, follow, max-image-preview:large"/);
+assert.match(index, /name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/);
+assert.match(index, /name="googlebot-news" content="index, follow/);
+assert.match(llms, /# 카이일보/);
+assert.match(llms, /https:\/\/groom-rho\.vercel\.app\/sitemap\.xml/);
 assert.match(index, /property="og:locale:alternate" content="en_US"/);
 assert.match(search, /name="robots" content="noindex, nofollow"/);
 assert.match(notFound, /name="robots" content="noindex, nofollow"/);
@@ -77,7 +81,7 @@ assert.equal(new Set(sitemapLocs).size, sitemapLocs.length, 'sitemap URLs must b
 for (const loc of sitemapLocs) {
   const rel = new URL(loc).pathname === '/' ? 'index.html' : new URL(loc).pathname.slice(1);
   const html = await read(rel);
-  assert.match(html, /name="robots" content="index, follow, max-image-preview:large"/);
+  assert.match(html, /name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/);
   assert.ok(html.includes(`<link rel="canonical" href="${loc}">`), `${rel} canonical mismatch`);
 }
 
@@ -94,6 +98,8 @@ for (const article of articles) {
   assert.ok(jsonText, `missing JSON-LD: ${article.id}`);
   const json = JSON.parse(jsonText);
   assert.equal(json['@type'], 'NewsArticle');
+  assert.equal(json.isAccessibleForFree, true);
+  assert.ok(json.thumbnailUrl);
   assert.equal(json.dateModified, new Date(article.modifiedAt || article.updatedAt || article.publishedAt).toISOString());
   assert.ok(json.author?.name && json.author?.['@type']);
   assert.ok(json.publisher?.logo?.url);

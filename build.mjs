@@ -187,7 +187,8 @@ function head({ title, description, canonical, image, imageAlt, type = 'website'
 <meta name="description" content="${attr(desc)}">
 <meta name="keywords" content="${attr(keywordList.join(','))}">
 <meta name="author" content="${attr(articleAuthor || site.name)}">
-<meta name="robots" content="${INDEXABLE && indexable ? 'index, follow, max-image-preview:large' : 'noindex, nofollow'}">
+<meta name="robots" content="${INDEXABLE && indexable ? 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' : 'noindex, nofollow'}">
+${INDEXABLE && indexable ? '<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">\n<meta name="googlebot-news" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">' : ''}
 <link rel="canonical" href="${attr(url(canonical))}">
 <meta property="og:locale" content="${attr(site.locale)}">
 <meta property="og:locale:alternate" content="en_US">
@@ -211,6 +212,7 @@ ${imageAlt ? `<meta name="twitter:image:alt" content="${attr(imageAlt)}">` : ''}
 <meta name="theme-color" content="#0A4DA6">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" sizes="any">
 <link rel="alternate" type="application/rss+xml" title="${attr(site.name)} RSS" href="/rss.xml">
+<link rel="alternate" type="text/plain" title="AI-readable site summary" href="/llms.txt">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
@@ -752,6 +754,8 @@ ${related.length ? `<section class="block band">
         url: url('/'),
         logo: { '@type': 'ImageObject', url: publisherLogo(), width: 512, height: 512 },
       },
+      isAccessibleForFree: true,
+      thumbnailUrl: absoluteUrl(imgPath(a)),
       ...(sources.length ? { citation: sources.map((source) => typeof source === 'string' ? source : source.url || source.href).filter(Boolean) } : {}),
     },
   });
@@ -935,6 +939,27 @@ ${items}
 `;
 }
 
+/** AI 검색·요약 시스템이 사이트와 주요 기사를 빠르게 파악할 수 있는 평문 안내 파일. */
+function llmsTxt() {
+  const lines = [
+    `# ${site.name}`,
+    '',
+    `> ${site.description}`,
+    '',
+    '## 주요 링크',
+    `- [홈](${url('/')})`,
+    `- [연구자 스토리](${url('/section/stories.html')})`,
+    `- [사이트맵](${url('/sitemap.xml')})`,
+    `- [뉴스 사이트맵](${url('/sitemap-news.xml')})`,
+    '',
+    '## 최신 기사',
+  ];
+  for (const article of sorted.slice(0, 50)) {
+    lines.push(`- [${article.title}](${url(articlePath(article))}): ${article.summary}`);
+  }
+  return `${lines.join('\n')}\n`;
+}
+
 function searchIndexJson() {
   return JSON.stringify(
     sorted.map((a) => ({
@@ -1008,6 +1033,7 @@ await write('robots.txt', robotsTxt());
 await write('sitemap.xml', sitemapXml());
 await write('sitemap-news.xml', newsSitemapXml());
 await write('rss.xml', rssXml());
+await write('llms.txt', llmsTxt());
 await write('search-index.json', searchIndexJson());
 
 console.log(`빌드 완료 -> dist/`);
