@@ -642,6 +642,7 @@ function renderArticle(a) {
       .filter((item) => item.series === a.series)
       .sort((left, right) => new Date(left.publishedAt) - new Date(right.publishedAt))
     : [];
+  const seriesTitle = a.series === 'philip-conference' ? '컨퍼런스 활동 연대표' : '관련 연재';
   // 같은 섹션·태그를 우선 배치하고, 4건이 안 되면 최신 기사로 채운다.
   const picked = new Map();
   for (const x of sorted) {
@@ -687,7 +688,7 @@ function renderArticle(a) {
 
     ${a.keyQuote ? `<blockquote class="art__keyquote">${esc(a.keyQuote)}</blockquote>` : ''}
 
-    ${seriesArticles.length > 1 ? `<aside class="art__timeline" aria-labelledby="article-timeline"><h2 id="article-timeline">컨퍼런스 활동 연대표</h2><ol>${seriesArticles.map((item) => `<li${item.id === a.id ? ' aria-current="page"' : ''}><a href="${articlePath(item)}"><strong>${esc(item.timelineLabel || fmtDate(item.publishedAt))}</strong><span>${esc(item.timelineSummary || item.title)}</span></a></li>`).join('')}</ol></aside>` : ''}
+    ${seriesArticles.length > 1 ? `<aside class="art__timeline" aria-labelledby="article-timeline"><h2 id="article-timeline">${esc(seriesTitle)}</h2><ol>${seriesArticles.map((item) => `<li${item.id === a.id ? ' aria-current="page"' : ''}><a href="${articlePath(item)}"><strong>${esc(item.timelineLabel || fmtDate(item.publishedAt))}</strong><span>${esc(item.timelineSummary || item.title)}</span></a></li>`).join('')}</ol></aside>` : ''}
 
     ${sources.length ? `<aside class="art__sources" aria-labelledby="article-sources"><h2 id="article-sources">자료·출처</h2><ul>${sources.map((source) => {
       const item = typeof source === 'string' ? { url: source, title: source } : source;
