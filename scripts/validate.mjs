@@ -112,7 +112,7 @@ for (const section of site.sections.filter((item) => item.indexable === false)) 
 
 for (const rel of (await walk(path.join(root, 'dist'))).filter((file) => file.endsWith('.html'))) {
   const html = await read(rel);
-  assert.doesNotMatch(html, /그룸일보|GROOM ILBO|Groom Ilbo/, `legacy brand remains in ${rel}`);
+  assert.doesNotMatch(html, /그룸일보|GROOM ILBO|Groom Ilbo|KAI ILBO|Kai Ilbo/, `legacy brand remains in ${rel}`);
   assert.doesNotMatch(html, /편집용 AI 생성 이미지|AI 생성 이미지/, `legacy image disclosure remains in ${rel}`);
   for (const match of html.matchAll(/(?:href|src)="([^"#]+)"/g)) {
     const raw = match[1];

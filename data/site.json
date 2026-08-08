@@ -1,6 +1,6 @@
 {
   "name": "카이일보",
-  "nameEn": "KAI ILBO",
+  "nameEn": "KAI NEWS",
   "tagline": "논문을 읽고, 근거를 연결합니다",
   "description": "카이일보는 인공지능 연구·안전·정책·생활 속 AI를 논문과 기관의 1차 자료에 근거해 설명하는 AI 전문 뉴스입니다.",
   "url": "https://groom-rho.vercel.app",
@@ -248,9 +248,9 @@
     }
   ],
   "taglineEn": "Reading Papers, Connecting Evidence",
-  "descriptionEn": "Kai Ilbo covers AI research, safety, policy, laboratory developments, and everyday AI through papers and primary sources.",
+  "descriptionEn": "Kai News covers AI research, safety, policy, laboratory developments, and everyday AI through papers and primary sources.",
   "keywordsEn": [
-    "Kai Ilbo",
+    "Kai News",
     "AI research",
     "artificial intelligence",
     "AI safety",
